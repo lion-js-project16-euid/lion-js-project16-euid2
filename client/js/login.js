@@ -30,7 +30,7 @@ phone_input.addEventListener('input', () => {
   } else {
     removeClass(registerButton, 'text-greybox');
     addClass(registerButton, 'text-black');
-    addClass(registerButton, 'text-base');
+    addClass(registerButton, 'text-lg');
   }
 });
 
