@@ -14,10 +14,8 @@ phone_input.addEventListener('input', () => {
   value_id = phone_input.value;
   let numerror = phoneReg(value_id);
   if (numerror == false) {
-    // console.log('false');
     registerButton.classList.add('is--invalid');
   } else {
-    // console.log('true');
     registerButton.classList.remove('is--invalid');
   }
 });
@@ -29,9 +27,14 @@ phone_input.addEventListener('input', () => {
     setCss(registerButton, 'class', 'border-greybox');
   } else {
     removeClass(registerButton, 'text-greybox');
+    removeClass(registerButton, 'text-sm');
     addClass(registerButton, 'text-black');
-    addClass(registerButton, 'text-lg');
+    addClass(registerButton, 'text-base');
+    addClass(registerButton, 'font-semibold');
   }
 });
-
-// attr(registerButton, 'class', )
+//is--invalid면 버튼 활성화 안되도록
+//버튼 활성화 되어서 누르면 register-certification으로 이동하도록
+//동시에 localStorage에 key값으로 전화번호 저장하기
+//랜덤한 6자리 난수 저장하기
+//해당 난수를 value로 저장
