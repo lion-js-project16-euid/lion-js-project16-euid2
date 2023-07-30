@@ -10,7 +10,8 @@
       "image": {
         "img": "/assets/device/appleMouse.jpeg",
         "alt": "애플 매직마우스 화이트"
-      }
+      },
+      "like": "2"
     },
     {
       "id": 2,
@@ -22,7 +23,8 @@
       "image": {
         "img": "/assets/device/samsungZflip.avif",
         "alt": "삼성 제트플립4 퍼플"
-      }
+      },
+      "like": 5
     },
     {
       "id": 3,
@@ -34,7 +36,8 @@
       "image": {
         "img": "/assets/device/sticker.png",
         "alt": "날아라 호빵맨 띠부씰"
-      }
+      },
+      "like": 3000
     }
   ]
 }
