@@ -19,6 +19,11 @@ module.exports = {
       width: {
         mySize300: '18.75rem',
       },
+      backgroundImage: {
+        'icon-search': 'url("/assets/icon-search.svg")',
+        'icon-plus': 'url("/assets/icon-plus.svg")',
+        'icon-checked': 'url("/assets/icon-checked.svg")',
+      },
     },
   },
   plugins: [],

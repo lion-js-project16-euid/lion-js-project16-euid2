@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- prettier-ignore -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css" />
+    <link rel="icon" href="/assets/euid-pavicon.png" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <script src="/js/main.js" type="module"></script>
+    <title>✨바른 교육 - Enter Euid</title>
+  </head>
+
+  <body>
+    <div class="block h-8 bg-green-400"></div>
+
+    <div class="relative w-full h-screen max-w-md mx-auto">
+      
+      <div class="flex w-[95%] mx-auto my-6">
+        <a href="/index.html">
+          <img src="/assets/icon-direction-left.svg" alt="이전 페이지로 이동하기" class="inline"/>
+        </a>
+        <div class="border-b-[0.5px] border-solid border-b-contentsSecondary grow mx-2">
+          <label for="searchCategory">
+            <img src="/assets/icon-search.svg" alt="검색창" class="inline w-[18px] h-[18px]"/>
+          </label>
+          <input type="search" name="searchCategory" id="searchCategory" placeholder="분야(이름)로 검색 (ex. 프론트)"
+            class="text-sm" />
+        </div>
+      </div>
+      
+      <p type="submit" class="block w-[95%] mx-auto bg-primary text-white py-2 my-5 rounded-lg text-center text-xs font-bold leading-[100%]">
+        <img src="/assets/icon-position.svg" alt="이전 페이지로 이동하기" class="inline w-[18px] h-[18px]"/>
+        관심분야 선택하기
+      </p>
+
+      <ul class="flex flex-wrap justify-between w-[95%] mx-auto">
+        <li class="categoryBox flex flex-row justify-between p-3 mx-0.5 mb-4 bg-gray-400 rounded-lg w-[48%]">
+          <div class="flex flex-col justify-between">
+            <p class="text-white text-xs leading-5 font-bold">프로그래밍</p>
+            <p class="categoryTitle text-lg font-bold leading-5">프론트엔드</p>
+          </div>
+          <div class="relative flex items-center">
+            <label for="categoryFrontend">
+              <span class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[18px] z-10"></span>
+            </label>
+            <input type="checkbox" class="categoryCheckbox w-[18px] h-[18px] appearance-none" id="categoryFrontend" />
+          </div>
+        </li>
+        <li class="categoryBox flex flex-row justify-between p-3 mx-0.5 mb-4 bg-gray-400 rounded-lg w-[48%]">
+          <div class="flex flex-col justify-between">
+            <p class="text-white text-xs leading-5 font-bold">프로그래밍</p>
+            <p class="categoryTitle text-lg font-bold leading-5">백엔드</p>
+          </div>
+          <div class="relative flex items-center">
+            <label for="categoryBackend">
+              <span class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[18px] z-10"></span>
+            </label>
+            <input type="checkbox" class="categoryCheckbox w-[18px] h-[18px] appearance-none" id="categoryBackend" />
+          </div>
+        </li>
+        <li class="categoryBox flex flex-row justify-between p-3 mx-0.5 mb-4 bg-gray-400 rounded-lg w-[48%]">
+          <div class="flex flex-col justify-between">
+            <p class="text-white text-xs leading-5 font-bold">프로그래밍</p>
+            <p class="categoryTitle text-lg font-bold leading-5">리액트</p>
+          </div>
+          <div class="relative flex items-center">
+            <label for="categoryReact">
+              <span class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[18px] z-10"></span>
+            </label>
+            <input type="checkbox" class="categoryCheckbox w-[18px] h-[18px] appearance-none" id="categoryReact" />
+          </div>
+        </li>
+        <li class="categoryBox flex flex-row justify-between p-3 mx-0.5 mb-4 bg-gray-400 rounded-lg w-[48%]">
+          <div class="flex flex-col justify-between">
+            <p class="text-white text-xs leading-5 font-bold">프로그래밍</p>
+            <p class="categoryTitle text-lg font-bold leading-5">풀스택</p>
+          </div>
+          <div class="relative flex items-center">
+            <label for="categoryFullstack">
+              <span class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[18px] z-10"></span>
+            </label>
+            <input type="checkbox" class="categoryCheckbox w-[18px] h-[18px] appearance-none" id="categoryFullstack" />
+          </div>
+        </li>
+        <li class="categoryBox flex flex-row justify-between p-3 mx-0.5 mb-4 bg-gray-400 rounded-lg w-[48%]">
+          <div class="flex flex-col justify-between">
+            <p class="text-white text-xs leading-5 font-bold">프로그래밍</p>
+            <p class="categoryTitle text-lg font-bold leading-5">알고리즘</p>
+          </div>
+          <div class="relative flex items-center">
+            <label for="categoryAlgorithm">
+              <span class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[18px] z-10"></span>
+            </label>
+            <input type="checkbox" class="categoryCheckbox w-[18px] h-[18px] appearance-none" id="categoryAlgorithm" />
+          </div>
+        </li>
+        <li class="categoryBox flex flex-row justify-between p-3 mx-0.5 mb-4 bg-gray-400 rounded-lg w-[48%]">
+          <div class="flex flex-col justify-between">
+            <p class="text-white text-xs leading-5 font-bold">프로그래밍</p>
+            <p class="categoryTitle text-lg font-bold leading-5">기초지식</p>
+          </div>
+          <div class="relative flex items-center">
+            <label for="categoryKnowledge">
+              <span class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[18px] z-10"></span>
+            </label>
+            <input type="checkbox" class="categoryCheckbox w-[18px] h-[18px] appearance-none" id="categoryKnowledge" />
+          </div>
+        </li>
+        <li class="categoryBox flex flex-row justify-between p-3 mx-0.5 mb-4 bg-gray-400 rounded-lg w-[48%]">
+          <div class="flex flex-col justify-between">
+            <p class="text-white text-xs leading-5 font-bold">디자인</p>
+            <p class="categoryTitle text-lg font-bold leading-5">UI디자인</p>
+          </div>
+          <div class="relative flex items-center">
+            <label for="categoryUIdesign">
+              <span class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[18px] z-10"></span>
+            </label>
+            <input type="checkbox" class="categoryCheckbox w-[18px] h-[18px] appearance-none" id="categoryUIdesign" />
+          </div>
+        </li>
+        <li class="categoryBox flex flex-row justify-between p-3 mx-0.5 mb-4 bg-gray-400 rounded-lg w-[48%]">
+          <div class="flex flex-col justify-between">
+            <p class="text-white text-xs leading-5 font-bold">디자인</p>
+            <p class="categoryTitle text-lg font-bold leading-5">UX디자인</p>
+          </div>
+          <div class="relative flex items-center">
+            <label for="categoryUXdesign">
+              <span class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[18px] z-10"></span>
+            </label>
+            <input type="checkbox" class="categoryCheckbox w-[18px] h-[18px] appearance-none" id="categoryUXdesign" />
+          </div>
+        </li>
+        <li class="categoryBox flex flex-row justify-between p-3 mx-0.5 mb-4 bg-gray-400 rounded-lg w-[48%]">
+          <div class="flex flex-col justify-between">
+            <p class="text-white text-xs leading-5 font-bold">디자인</p>
+            <p class="categoryTitle text-lg font-bold leading-5">UI &middot; UX</p>
+          </div>
+          <div class="relative flex items-center">
+            <label for="categoryUIUX">
+              <span class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[18px] z-10"></span>
+            </label>
+            <input type="checkbox" class="categoryCheckbox w-[18px] h-[18px] appearance-none" id="categoryUIUX" />
+          </div>
+        </li>
+        <li class="categoryBox flex flex-row justify-between p-3 mx-0.5 mb-4 bg-gray-400 rounded-lg w-[48%]">
+          <div class="flex flex-col justify-between">
+            <p class="text-white text-xs leading-5 font-bold">데이터</p>
+            <p class="categoryTitle text-lg font-bold leading-5">데이터분석</p>
+          </div>
+          <div class="relative flex items-center">
+            <label for="categoryDataAnalyze">
+              <span class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[18px] z-10"></span>
+            </label>
+            <input type="checkbox" class="categoryCheckbox w-[18px] h-[18px] appearance-none" id="categoryDataAnalyze" />
+          </div>
+        </li>
+        <li class="categoryBox flex flex-row justify-between p-3 mx-0.5 mb-4 bg-gray-400 rounded-lg w-[48%]">
+          <div class="flex flex-col justify-between">
+            <p class="text-white text-xs leading-5 font-bold">데이터</p>
+            <p class="categoryTitle text-lg font-bold leading-5">통계분석</p>
+          </div>
+          <div class="relative flex items-center">
+            <label for="categoryStatistics">
+              <span class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[18px] z-10"></span>
+            </label>
+            <input type="checkbox" class="categoryCheckbox w-[18px] h-[18px] appearance-none" id="categoryStatistics" />
+          </div>
+        </li>
+        <li class="categoryBox flex flex-row justify-between p-3 mx-0.5 mb-4 bg-gray-400 rounded-lg w-[48%]">
+          <div class="flex flex-col justify-between">
+            <p class="text-white text-xs leading-5 font-bold">데이터</p>
+            <p class="categoryTitle text-lg font-bold leading-5">시각화</p>
+          </div>
+          <div class="relative flex items-center">
+            <label for="categoryVisualization">
+              <span class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[18px] z-10"></span>
+            </label>
+            <input type="checkbox" class="categoryCheckbox w-[18px] h-[18px] appearance-none" id="categoryVisualization" />
+          </div>
+        </li>
+      </ul>
+
+
+      <div class="absolute w-full bottom-[10%]">
+        <button type="submit" class="block w-[95%] mx-auto bg-primary text-white py-3 rounded-lg text-center">
+          이대로 저장할래요
+        </button>
+      </div>
+
+    </div>
+  </body>
+</html>
