@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/euid-pavicon.png" />
+    <link rel="icon" href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" type="image/xml+svg" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="../js/device.js" type="module"></script>
+    <title>Enter Euid - Device</title>
+  </head>
+
+  <body class="m-auto">
+    <h1 class="sr-only">기기 거래</h1>
+      <!-- 작업 후 추가 -->
+      <header>위치 돋보기 햄버거 알림</header>
+      <nav class="bg-white fixed w-full max-w-3xl bottom-0 z-10">
+        <ul class="flex justify-between items-center w-full">
+          <li>
+            <a href="#" class="flex flex-col items-center py-1">
+              <img src="../assets/icon-home.svg" alt="홈으로 이동" />
+              <span class="text-xs inline-block w-16 text-center">홈</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex flex-col items-center px-"
+              ><img src="../assets/icon-life.svg" alt="게시판으로 이동" /><span class="text-xs inline-block w-16 text-center"
+                >게시판</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#" class="flex flex-col items-center py-1"
+              ><img src="../assets/icon-map.svg" alt="내근처로 이동" /><span class="text-xs inline-block w-16 text-center"
+                >내 근처</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#" class="flex flex-col items-center py-1"
+              ><img src="../assets/icon-chat.svg" alt="채팅으로 이동" /><span class="text-xs inline-block w-16 text-center"
+                >채팅</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#" class="flex flex-col items-center py-1"
+              ><img src="../assets/icon-my.svg" alt="마이이듬으로 이동" /><span class="text-xs inline-block w-16 text-center"
+                >마이 이듬</span
+              ></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <ul class="flex bg-primary justify-between text-sm px-[5%] py-2 relative">
+          <li class="text-contents"><a href="#" class="block w-full h-full">선배님 스토리</a></li>
+          <li class="text-white"><a href="#" class="block w-full h-full">기기 거래</a></li>
+          <li class="text-contents"><a href="#" class="block w-full h-full">질의응답</a></li>
+          <li class="text-contents"><a href="#" class="block w-full h-full">같이 해요</a></li>
+        </ul>
+        <div class="device-wrapper">
+          <article class="h-[130px] relative border-b border-[#D3D3D3] border-solid data-[index]:${id}">
+            <a href="https://www.apple.com/kr/shop/buy-mac/macbook-pro/14-%EC%8B%A4%EB%B2%84-10%EC%BD%94%EC%96%B4-cpu-%EB%B0%8F-16%EC%BD%94%EC%96%B4-gpu-%ED%83%91%EC%9E%AC-apple-m2-pro-%EC%B9%A9-512gb">
+            <div class="flex flex-row-reverse p-3">
+              <div class="flex flex-col grow px-6 py-3">
+                <h2 class="text-sm">MacBook Pro 14</h2>
+                <div class="flex flex-col-reverse">                
+                  <div class="flex">
+                    <span class="text-orange-500 text-sm pr-1 font-semibold">20%</span>
+                    <strong class="text-sm">2,232,000원</strong>
+                  </div>
+                  <div class="flex items-center text-[10px] text-contents">
+                    <span>Apple</span>
+                    <span class="p-1">&middot;</span>
+                    <span>광고</span>
+                  </div>
+                </div>
+              </div>
+              <img src="../assets/device/macBookM2Pro14.jpeg" alt="맥북 M2 프로 14인치" class="w-[140px] h-[110px] rounded-lg" />
+            </div>
+          </a>
+            <button type="button" class="like-button flex items-center absolute bottom-0 right-0 p-3">
+              <img src="../assets/icon-heart.svg" alt="좋아요 버튼" class="like-icon" /><span class="like-data p-1 text-xs">120</span>
+            </button>
+          </article>
+        </div>
+        
+        <div class="fixed bottom-14 pr-4 flex flex-col-reverse items-end float-right w-full max-w-3xl">
+          <button class="add-button">
+            <img src="../assets/plusButton.svg" alt="카테고리 더보기" />
+          </button>
+          <ul class="hidden">
+            <li class="px-4 py-4 bg-primary rounded-xl my-1 text-sm text-white pl-4">🎧 헤드셋</li>
+            <li class="px-4 py-4 bg-primary rounded-xl my-1 text-sm text-white pl-4">⌨️ 키보드</li>
+            <li class="px-4 py-4 bg-primary rounded-xl my-1 text-sm text-white pl-4">🖱️ 마우스</li>
+            <li class="px-4 py-4 bg-primary rounded-xl my-1 text-sm text-white pl-4">💻 컴퓨터</li>
+            <li class="px-4 py-4 bg-primary rounded-xl my-2 text-sm text-white pl-4">🎈 기타 등등</li>
+          </ul>
+      </main>
+    </div>
+  </body>
+</html>
