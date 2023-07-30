@@ -580,6 +580,14 @@ video {
   display: inline-block;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-11 {
+  height: 2.75rem;
+}
+
 .h-24 {
   height: 6rem;
 }
@@ -634,6 +642,10 @@ video {
 
 .max-w-md {
   max-width: 28rem;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed;
 }
 
 .rounded-md {

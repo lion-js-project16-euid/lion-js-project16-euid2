@@ -21,7 +21,7 @@
   </head>
 
   <body class="m-auto">
-    <div class="max-w-3xl w-80 h-screen border-solid border-black border-y border-x">
+    <div class="max-w-md h-screen border-solid border-black border-y border-x">
       <div class="w-auto h-9 px-6 pt-2 pb-1 timeLine"></div>
       <div class="w-auto h-9 backLine"></div>
       <div class="w-auto h-24 pb-3 pt-3 pl-3 pr-14 greetingLine">
@@ -31,7 +31,7 @@
         </div>
         <p class="text-mySize8 font-normal">휴대폰 번호는 안전하게 보관되며 서로에게 공개되지 않아요.</p>
       </div>
-      <div class="w-auto h-32 px-3 pt-2 pb-1 putNumLine">
+      <div class="w-auto putNumLine">
         <form>
           <!-- <label for="phone">휴대폰 번호 : </label> -->
           <input
@@ -41,14 +41,13 @@
             pattern="[0-9](3)-[0-9](4)-[0-9](4)"
             required
             placeholder="휴대폰 번호(-없이 숫자만 입력)"
-            class="w-72 h-9 rounded-md border-black border-solid border-x border-y mb-3 mt-2 placeholder:text-sm placeholder:pl-3"
+            class="w-[95%] mx-auto h-9 rounded-md pl-3 border-black border-solid border-x border-y my-3 placeholder:text-sm block"
           />
           <!-- <small>예시 : 010-1234-5678</small> -->
-          <br />
           <button
             id="loginButton"
             type="submit"
-            class="text-sm border-black border-solid border-x border-y w-72 rounded-md h-9"
+            class="w-[95%] mx-auto h-9 rounded-md border-greybox border-solid border-2 my-3 text-sm text-greybox is--invalid block cursor-not-allowed"
           >
             인증문자 받기
           </button>
