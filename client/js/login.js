@@ -24,32 +24,6 @@ Unique ID가 유효하지 않다면
 로그아웃은 클라이언트 단(?)에서 localStorage    ㅇ에 저장된 Unique ID를 삭제하는 방식으로 구현
 (뒤로가기 막아야될수도?)
 */
-/*
-import { getNode } from '../lib/index.js';
-
-const temp = getNode('#startButton');           //여기 값은 시작화면 id/class에 맞춰줘야됨
-temp.addEventListener('click',function(e){             //EventListener'click' 들어오면 UniqueID탐색
-    e.preventDefault(); 
-    const localStorageCopy = [...localStorage];
-    const keysForUnique = Object.keys(localStorageCopy);
-    const valuesForUnique = Object.values(localStorageCopy);
-    const indexOfUnique = keysForUnique.indexOf('uniqueID');
-    const uniqueNum = valuesForUnique[indexOfUnique]
-    if(uniqueNum !== ''){                       
-        if(uniqueNum.length != 10){             //유효하지않으면 사용자에게 유효하지 않다고 알리고 login.js로 리디렉션
-            alert('해당 uniqueID는 로그아웃, 만료 등의 이슈로 유효하지 않습니다. 다시 로그인해주세요.');
-            window.location.href = 'http://localhost:5500/views/login.html';
-        }
-        else{                                   //존재하면 선배님이야기로
-            window.location.href = 'http://localhost:5500/views/story.html';
-        }
-    }
-
-    else{                                       //존재하지않으면 회원가입으로
-        window.location.href = 'http://localhost:5500/views/sign-up.html';
-    }
-})
-*/
 
 function phoneReg(text) {
   const re = /^[0-9]{3}[0-9]{4}[0-9]{4}$/;
@@ -79,12 +53,12 @@ phone_input.addEventListener('input', () => {
     removeClass(loginButton, 'text-black');
     removeClass(loginButton, 'text-base');
     removeClass(loginButton, 'text-semibold');
-    addClass(loginButton, 'text-greybox');
-    addClass(loginButton, 'border-greybox');
+    addClass(loginButton, 'text-contentsSecondary');
+    addClass(loginButton, 'border-contentsSecondary');
     addClass(loginButton, 'text-sm');
     addClass(loginButton, 'cursor-not-allowed');
   } else {
-    removeClass(loginButton, 'text-greybox');
+    removeClass(loginButton, 'text-contentsSecondary');
     removeClass(loginButton, 'text-sm');
     removeClass(loginButton, 'cursor-not-allowed');
     addClass(loginButton, 'text-black');

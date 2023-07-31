@@ -28,12 +28,12 @@ phone_input.addEventListener('input', () => {
     removeClass(registerButton, 'text-black');
     removeClass(registerButton, 'text-base');
     removeClass(registerButton, 'text-semibold');
-    addClass(registerButton, 'text-greybox');
-    addClass(registerButton, 'border-greybox');
+    addClass(registerButton, 'text-contentsSecondary');
+    addClass(registerButton, 'border-contentsSecondary');
     addClass(registerButton, 'text-sm');
     addClass(registerButton, 'cursor-not-allowed');
   } else {
-    removeClass(registerButton, 'text-greybox');
+    removeClass(registerButton, 'text-contentsSecondary');
     removeClass(registerButton, 'text-sm');
     removeClass(registerButton, 'cursor-not-allowed');
     addClass(registerButton, 'text-black');

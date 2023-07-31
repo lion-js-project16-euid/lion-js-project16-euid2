@@ -97,6 +97,7 @@ signupStart.addEventListener('click', function (e) {
     uniqueID = uniqueID.join('');
     console.log(uniqueID);
     localStorage.setItem('uniqueID', uniqueID);
+    //검사해서 아니면 터지도록 하는것도
     window.location.href = 'http://localhost:5500/views/category.html';
   }
 });
