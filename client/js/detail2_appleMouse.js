@@ -1,4 +1,4 @@
-import { getNode, tiger, renderDetail, attr } from '../lib/index.js';
+import { getNode, tiger, renderDetail, attr } from '/lib/index.js';
 
 const URL = 'http://localhost:3000/device/2';
 

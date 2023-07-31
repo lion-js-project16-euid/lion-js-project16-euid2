@@ -1,4 +1,4 @@
-import { getNode, tiger, renderDetail, attr, toggleClass } from '../lib/index.js';
+import { getNode, tiger, renderDetail, attr, toggleClass } from '/lib/index.js';
 
 const detailButton = getNode('.detail-button');
 const plusButton = getNode('.plus-button');
