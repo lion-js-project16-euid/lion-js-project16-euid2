@@ -1,10 +1,10 @@
-import { addClass, getNode, getRandom, removeClass } from './../lib/index.js';
+import { addClass, getNode, getRandom, removeClass } from '../lib/index.js';
 
 const phone_input = getNode('#phone');
 const get = localStorage.getItem('phoneNum');
 const certificationNum = getNode('#certificationNum');
-const signupStart = getNode('#regi-agreeAndStart');
-const numAgain = getNode('#regiNumAgain');
+const signupStart = getNode('#login-agreeAndStart');
+const numAgain = getNode('#loginNumAgain');
 const phoneNum = localStorage.getItem('phoneNum');
 let uniqueID = [];
 phone_input.value = get;
@@ -36,7 +36,6 @@ for (let i = 0; i < 6; i++) {
 }
 let signupRandomNum_int = signupRandomNum.join('');
 alert(signupRandomNum_int);
-
 // alert(signupRandomNum_int);
 //modal로 구현해볼까?
 
@@ -59,19 +58,6 @@ function updateCountdown() {
   numAgain.innerText = `인증문자 다시 받기(${formatMin}분 ${formatSec}초)`;
 }
 const timerID = setInterval(updateCountdown, 1000);
-
-numAgain.addEventListener('click', () => {
-  signupRandomNum = [];
-  for (let i = 0; i < 6; i++) {
-    signupRandomNum.push(getRandom(9));
-  }
-  let signupRandomNum_int = signupRandomNum.join('');
-  numAgain.innerText = `인증문자 다시 받기(5분 00초)`;
-  newMin = 5;
-  newSec = 0;
-  alert(signupRandomNum_int);
-  // localStorage.setItem(phoneNum, signupRandomNum_int);
-});
 
 certificationNum.addEventListener('input', () => {
   if (certificationNum.value !== '') {
@@ -97,6 +83,6 @@ signupStart.addEventListener('click', function (e) {
     uniqueID = uniqueID.join('');
     console.log(uniqueID);
     localStorage.setItem('uniqueID', uniqueID);
-    window.location.href = 'http://localhost:5500/views/category.html';
+    window.location.href = 'http://localhost:5500/views/story.html';
   }
 });
