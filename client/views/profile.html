@@ -18,11 +18,60 @@
     <link rel="icon" href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" type="image/xml+svg" />
 
     <script src="./../js/profile.js" type="module"></script>
+    <script src="./../js/common/common.js" type="module"></script>
     <title>Enter Euid - Profile</title>
   </head>
-  <body class="">
+  <body class="m-auto">
     <h1 class="sr-only">프로필</h1>
-    <div class="max-w-md h-auto border-solid border-black border-y border-x">
+    <header>
+        <div class="flex items-center justify-between px-3 py-2">
+          <span class="nowTime text-sm font-semibold"></span>
+          <div class="flex">
+            <img src="../assets/icon-celluar.svg" alt="네트워크" class="pl-1" />
+            <img src="../assets/icon-lte.svg" alt="LTE" class="p-1" />
+            <img src="../assets/icon-battery.svg" alt="배터리 잔량" class="p-1" />
+          </div>
+        </div>
+      </header>
+    <nav class="bg-white fixed w-full max-w-3xl bottom-0 z-10 border-solid border-black border-l border-r border-b">
+        <ul class="flex justify-between items-center w-full">
+          <li>
+            <a href="#" class="flex flex-col items-center py-1">
+              <img src="../assets/icon-home.svg" alt="홈으로 이동" />
+              <span class="text-xs inline-block w-16 text-center">홈</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex flex-col items-center px-"
+              ><img src="../assets/icon-life.svg" alt="게시판으로 이동" /><span class="text-xs inline-block w-16 text-center"
+                >게시판</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#" class="flex flex-col items-center py-1"
+              ><img src="../assets/icon-map.svg" alt="내근처로 이동" /><span class="text-xs inline-block w-16 text-center"
+                >내 근처</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#" class="flex flex-col items-center py-1"
+              ><img src="../assets/icon-chat.svg" alt="채팅으로 이동" /><span class="text-xs inline-block w-16 text-center"
+                >채팅</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#" class="flex flex-col items-center py-1"
+              ><img src="../assets/icon-full-my.svg" alt="마이이듬으로 이동" /><span class="text-xs inline-block w-16 text-center"
+                >마이 이듬</span
+              ></a
+            >
+          </li>
+        </ul>
+      </nav>
+    <div class=" max-w-3xl h-auto border-solid border-black border-y border-x">
       <div class="w-auto h-9 bg-green-200"></div>
       <div class="w-auto h-60 pt-10 pl-8 pr-8 pb-5">
         <div class="w-auto h-32 pb-1">
