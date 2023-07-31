@@ -23,12 +23,12 @@
         <a href="/index.html">
           <img src="/assets/icon-direction-left.svg" alt="이전 페이지로 이동하기" class="inline"/>
         </a>
-        <div class="border-b-[0.5px] border-solid border-b-contentsSecondary grow mx-2">
+        <div class="flex border-b-[0.5px] border-solid border-b-contentsSecondary grow mx-2">
           <label for="searchCategory">
             <img src="/assets/icon-search.svg" alt="검색창" class="inline w-[18px] h-[18px]"/>
           </label>
           <input type="search" name="searchCategory" id="searchCategory" placeholder="분야(이름)로 검색 (ex. 프론트)"
-            class="text-sm" />
+            class="searchBox text-sm w-full px-1.5" />
         </div>
       </div>
       
@@ -37,7 +37,7 @@
         관심분야 선택하기
       </p>
 
-      <ul class="flex flex-wrap justify-between w-[95%] mx-auto">
+      <ul class="categoryList flex flex-wrap justify-between w-[95%] mx-auto">
         <li class="categoryBox flex flex-row justify-between p-3 mx-0.5 mb-4 bg-gray-400 rounded-lg w-[48%]">
           <div class="flex flex-col justify-between">
             <p class="text-white text-xs leading-5 font-bold">프로그래밍</p>
