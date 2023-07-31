@@ -9,11 +9,22 @@
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/main.css" />
+    <script src="../js/common/common.js" type="module"></script>
     <script src="../js/device.js" type="module"></script>
     <title>Enter Euid - Device</title>
   </head>
 
   <body class="m-auto">
+    <header>
+      <div class="flex items-center justify-between px-3 py-2">
+        <span class="nowTime text-sm font-semibold"></span>
+        <div class="flex">
+          <img src="../assets/icon-celluar.svg" alt="네트워크" class="pl-1" />
+          <img src="../assets/icon-lte.svg" alt="LTE" class="p-1" />
+          <img src="../assets/icon-battery.svg" alt="배터리 잔량" class="p-1" />
+        </div>
+      </div>
+    </header>
     <h1 class="sr-only">기기 거래</h1>
       <!-- 작업 후 추가 -->
       <header>위치 돋보기 햄버거 알림</header>
@@ -75,7 +86,7 @@
                   </div>
                   <div class="flex items-center text-[10px] text-contents">
                     <span>Apple</span>
-                    <span class="p-1">&middot;</span>
+                    <span aria-hidden="true" class="p-1">&middot;</span>
                     <span>광고</span>
                   </div>
                 </div>
@@ -90,7 +101,7 @@
         </div>
         
         <div class="fixed bottom-14 pr-4 flex flex-col-reverse items-end float-right w-full max-w-3xl">
-          <button class="add-button">
+          <button type="button" class="add-button">
             <img src="../assets/plusButton.svg" alt="카테고리 더보기" />
           </button>
           <ul class="hidden">
