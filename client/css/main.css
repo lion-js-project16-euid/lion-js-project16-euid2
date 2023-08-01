@@ -1088,6 +1088,18 @@ video {
   width: 20px;
 }
 
+.w-\[20rem\] {
+  width: 20rem;
+}
+
+.w-\[3\.25rem\] {
+  width: 3.25rem;
+}
+
+.w-\[3\.625rem\] {
+  width: 3.625rem;
+}
+
 .w-\[4\.8125rem\] {
   width: 4.8125rem;
 }
@@ -1744,10 +1756,6 @@ video {
 
 .pb-5 {
   padding-bottom: 1.25rem;
-}
-
-.pb-8 {
-  padding-bottom: 2rem;
 }
 
 .pb-9 {
