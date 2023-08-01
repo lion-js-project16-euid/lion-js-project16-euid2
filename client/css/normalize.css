@@ -1,21 +1,5 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-
-/* Document
-   ========================================================================== */
-<<<<<<< HEAD
-
-=======
->>>>>>> a7a1267f405635d91af73cca886be456ae06aaac
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
-
-<<<<<<< HEAD
- html {
-=======
 html {
->>>>>>> a7a1267f405635d91af73cca886be456ae06aaac
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -28,13 +12,10 @@ html {
  */
 
 body {
-<<<<<<< HEAD
-=======
   max-width: 768px;
   min-width: 320px;
   font-family: Pretendard, sans-serif;
->>>>>>> a7a1267f405635d91af73cca886be456ae06aaac
-  margin: 0;
+   margin: 0;
 }
 
 /**
