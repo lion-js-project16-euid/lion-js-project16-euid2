@@ -3,7 +3,7 @@
     {
       "id": 1,
       "user": "맥이뜸",
-      "userProfile": "../assets/common-logo.svg",
+      "userProfile": "/assets/common-logo.svg",
       "temperature" : "41.2℃ 😀",
       "name": "2020 MacBook Air M1",
       "category": "컴퓨터",
@@ -16,12 +16,12 @@
         "alt": "맥북 M1 에어"
       },
       "like": 20,
-      "href": "/views/detail1_MacBookAirM1.html"
+      "href": "/views/detail/1.MacBookAirM1.html"
     },
     {
       "id": 2,
       "user": "피카피카",
-      "userProfile": "../assets/detail/profile_pika.jpeg",
+      "userProfile": "/assets/detail/profile_pika.jpeg",
       "temperature" : "36.5℃ 😊",
       "name": "애플 매직마우스",
       "category": "마우스",
@@ -34,12 +34,12 @@
         "alt": "애플 매직마우스 화이트"
       },
       "like": 2,
-      "href": "/views/detail2_appleMouse.html"
+      "href": "/views/detail/2.appleMouse.html"
     },
     {
       "id": 3,
       "user": "개발래빗",
-      "userProfile": "../assets/detail/profile_rabbit.png",
+      "userProfile": "/assets/detail/profile_rabbit.png",
       "temperature" : "37.2℃ 😊",
       "name": "삼성 제트플립4 256GB",
       "category": "휴대폰",
@@ -52,12 +52,12 @@
         "alt": "삼성 제트플립4 퍼플"
       },
       "like": 5,
-      "href": "/views/detail3_samsungZflip.html"
+      "href": "/views/detail/3.samsungZflip.html"
     },
     {
       "id": 4,
       "user": "캐럿이지",
-      "userProfile": "../assets/detail/profile_carat.avif",
+      "userProfile": "/assets/detail/profile_carat.avif",
       "temperature" : "53.0℃ 😍",
       "name": "주연테크 4K UHD 모니터",
       "category": "컴퓨터",
@@ -70,12 +70,12 @@
         "alt": "주연테크 71cm 울트라 4K UHD HDR USB C지원 모니터"
       },
       "like": 17,
-      "href": "/views/datail4_jooyonMonitor.html"
+      "href": "/views/detail/4.jooyonMonitor.html"
     },
     {
       "id": 5,
       "user": "맥이뜸",
-      "userProfile": "../assets/common-logo.svg",
+      "userProfile": "/assets/common-logo.svg",
       "temperature" : "41.2℃ 😀",
       "name": "소니 헤드셋",
       "category": "헤드셋",
@@ -88,7 +88,7 @@
         "alt": "소니 WH-CH720N 헤드셋"
       },
       "like": 80,
-      "href": "/views/detail5_sonyHeadset.html"
+      "href": "/views/detail/5.sonyHeadset.html"
     }    
   ]
 }

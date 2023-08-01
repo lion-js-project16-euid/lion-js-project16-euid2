@@ -5,10 +5,14 @@ export function nowTime() {
   let hours = today.getHours();
   let minutes = today.getMinutes();
 
-  if (hours < 10 && minutes < 10) {
-    return '0' + hours + ':' + '0' + minutes;
+  if (hours < 10) {
+    return '0' + hours + ':' + minutes;
   } else {
-    return hours + ':' + minutes;
+    if (minutes < 10) {
+      return hours + ':' + '0' + minutes;
+    } else {
+      return hours + ':' + minutes;
+    }
   }
 }
 
@@ -36,8 +40,9 @@ function createPost(item) {
       <img src="${img}" alt="${alt}" class="w-[140px] h-[110px] rounded-lg" />
       </div>
     </a>
-    <button type="button" class="like-button flex items-center absolute bottom-0 right-0 p-3">
-      <img src="/assets/icon-heart.svg" alt="좋아요 버튼" class="like-icon" /><span class="like-data p-1 text-xs">${like}</span>
+    <button type="button" class="like-button flex items-center absolute bottom-0 right-0 p-3 ">
+      <img src="/assets/icon-heart.svg" alt="좋아요 버튼" class="like-icon data-[index]:${id}" />
+      <span class="p-1 text-xs">${like}</span>
     </button>
   </article>
   `;
