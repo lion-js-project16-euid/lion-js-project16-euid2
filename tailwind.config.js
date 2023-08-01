@@ -19,6 +19,7 @@ module.exports = {
       },
       width: {
         mySize18: '4.5rem',
+        mySize50: '3.125rem',
         mySize60: '3.75rem',
         mySize103: '6.44rem',
         mySize141: '8.82rem',
@@ -26,6 +27,7 @@ module.exports = {
       },
       spacing: {
         ml6: '0.4rem',
+        ml13: '0.8125rem',
         ml18: '1.125rem',
         for4gui: '0.2rem',
         profileDotTop: '3rem',
@@ -34,6 +36,12 @@ module.exports = {
         profilePencilLeft: '4.15rem',
         passionTemWord: '3.1125rem',
         passionTem: '4.35rem',
+      },
+      height: {
+        mySize50: '3.125rem',
+        myHeight74: '4.625rem',
+        myHeight348: '21.75rem',
+        myHeight820: '51.25rem',
       },
     },
   },
