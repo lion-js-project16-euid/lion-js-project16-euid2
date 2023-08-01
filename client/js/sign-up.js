@@ -35,13 +35,11 @@ phone_input.addEventListener('input', () => {
     addClass(registerButton, 'cursor-not-allowed');
   } else {
     removeClass(registerButton, 'text-contentsSecondary');
-    removeClass(registerButton, 'border-contentsSecondary');
     removeClass(registerButton, 'text-base');
     removeClass(registerButton, 'cursor-not-allowed');
     addClass(registerButton, 'text-black');
     addClass(registerButton, 'text-base');
     addClass(registerButton, 'font-bold');
-    addClass(registerButton, 'border-black');
   }
 });
 
