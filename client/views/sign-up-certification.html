@@ -5,51 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- prettier-ignore -->
-    <link
-      rel="stylesheet"
-      as="style"
-      crossorigin
-      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css"
-    />
-    <link rel="icon" href="/assets/euid-pavicon.png" />
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css" />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/main.css" />
-
-    <script src="/js/sign-up-certification.js" type="module"></script>
+    <link rel="icon" href="/assets/euid-pavicon.png" />
     <script src="/js/common/common.js" type="module"></script>
-    <title>Enter Euid - SignUpCertification</title>
+    <script src="/js/sign-up-certification.js" type="module"></script>
+    <title>✨Enter Euid - 인증 번호 입력</title>
   </head>
-  <header>
-    <div class="flex items-center justify-between px-3 py-2">
-      <span class="nowTime text-sm font-semibold"></span>
-      <div class="flex">
-        <img src="/assets/icon-celluar.svg" alt="네트워크" class="pl-1" />
-        <img src="/assets/icon-lte.svg" alt="LTE" class="p-1" />
-        <img src="/assets/icon-battery.svg" alt="배터리 잔량" class="p-1" />
+
+  <body class="mx-auto">
+    <header>
+      <div class="flex items-center justify-between px-3 py-2">
+        <span class="nowTime text-sm font-semibold"></span>
+        <div class="flex">
+          <img src="/assets/icon-celluar.svg" alt="네트워크" class="pl-1" />
+          <img src="/assets/icon-lte.svg" alt="LTE" class="p-1" />
+          <img src="/assets/icon-battery.svg" alt="배터리 잔량" class="p-1" />
+        </div>
       </div>
+    </header>
+
+    <h1 class="sr-only">엔터 이듬 회원가입</h1>
+    <div class="flex gap-2 w-[95%] mx-auto mt-3">
+      <a href="/index.html" class="flex items-center">
+        <img src="/assets/icon-direction-left.svg" alt="이전 페이지로 이동하기" class="inline" />
+      </a>
     </div>
-  </header>
-  <body class="m-auto">
-    <h1 class="sr-only">회원가입 인증번호</h1>
-    <div class="max-w-3xl h-screen border-solid border-black border-y border-x">
-      <div class="w-auto h-9 px-6 pt-2 pb-1 timeLine"></div>
-      <div class="w-auto h-9 backLine"></div>
-      <div class="w-auto h-64 pb-3 px-2.5 certificateLine">
+
+    <div class="max-w-3xl mt-3">
+      <div class="w-auto pb-3 px-2.5">
         <form>
           <input
             type="tel"
             id="phone"
             name="phone"
             placeholder="휴대폰 번호(-없이 숫자만 입력)"
-            class="w-[95%] mx-auto h-10 rounded-md pl-3 border-black border-solid border-x border-y my-3 text-contentsSecondary placeholder:text-sm block"
+            class="w-[95%] mx-auto pl-4 py-2 my-3 border-contentsSecondary border-solid border rounded-md text-contentsSecondary placeholder:text-sm block"
           />
           <!-- placeholer글자에 이전에 입력했던 전화번호 들어오도록 -->
           <!-- 비활성화도 해놓으면 좋을듯? -->
           <button
             id="regiNumAgain"
             type="submit"
-            class="w-[95%] mx-auto h-10 text-sm border-black border-solid border-x border-y rounded-md mb-3 font-semibold block"
+            class="w-[95%] mx-auto py-2 mb-6 text-sm border-gray-200 border-solid border rounded-md font-bold block"
           >
             인증문자 다시 받기(05분 00초)
           </button>
@@ -61,19 +61,19 @@
             id="certificationNum"
             name="certificationNum"
             placeholder="인증번호 입력"
-            class="w-[95%] mx-auto h-10 rounded-md pl-3 border-black border-solid border-x border-y placeholder:text-sm block"
+            class="w-[95%] mx-auto pl-4 py-2 my-1 border-contentsSecondary border-solid border rounded-md placeholder:text-sm block"
           />
-          <p class="text-mySize10 inline-block text-gray-400 pl-3">어떤 경우에도 타인에게 공유하지마세요!</p>
+          <p class="text-xs mt-1 text-contentsSecondary pl-6">어떤 경우에도 타인에게 공유하지마세요!</p>
           <button
             id="regi-agreeAndStart"
             type="submit"
-            class="w-[95%] mx-auto h-11 text-sm border-black border-solid border-x border-y rounded-md mt-3 mb-3 bg-contentsSecondary text-white font-bold block cursor-not-allowed"
+            class="w-[95%] mx-auto text-sm py-3 border-none rounded-md mt-3 mb-3 bg-contentsSecondary text-white font-bold block cursor-not-allowed"
             disabled
           >
             동의하고 시작하기
           </button>
         </form>
-        <p class="text-mySize10 mx-auto w-24 text-greybox underline">인증번호가 오지 않아요!</p>
+        <a href="#" class="block text-xs mx-auto text-center text-contentsSecondary underline">인증번호가 오지 않아요?</a>
       </div>
     </div>
   </body>
