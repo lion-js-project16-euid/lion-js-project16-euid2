@@ -1,4 +1,4 @@
-import { addClass, getNode, getRandom, removeClass } from './../lib/index.js';
+import { addClass, getNode, getRandom, removeClass } from '/lib/index.js';
 
 const phone_input = getNode('#phone');
 const get = localStorage.getItem('phoneNum');
@@ -14,22 +14,6 @@ let seconds = 0;
 let newMin = minutes;
 let newSec = seconds;
 
-/*
-랜덤한 6자리 난수 생성(인증번호)(완료)
-
-휴대폰번호와 인증번호 모두 입력되어 있으면(폰번호는 disable되어있으니까 인증번호만 입력되어있으면) 제출버튼 활성화(완료)
-
-인증번호 입력 해서 동의하고시작하기(회원가입) 성공하면 Unique ID숫자를 부여
-해당 Unique ID는 localStorage의 value값으로, key값으로는 휴대폰번호를 가지고 있어야함(완료)
-
-인증번호 입력시 Unique숫자를 부여
-key : value
-UniqueID : randomvalue
-로 부여하면 될 것같은느낌?
-
-타이머 작동하도록 하기
-*/
-
 let signupRandomNum = [];
 for (let i = 0; i < 6; i++) {
   signupRandomNum.push(getRandom(9));
@@ -37,41 +21,43 @@ for (let i = 0; i < 6; i++) {
 let signupRandomNum_int = signupRandomNum.join('');
 alert(signupRandomNum_int);
 
-// alert(signupRandomNum_int);
-//modal로 구현해볼까?
+function getNumAgain(event) {
+  event.preventDefault();
+  signupRandomNum = [];
+  for (let i = 0; i < 6; i++) {
+    signupRandomNum.push(getRandom(9));
+  }
+  numAgain.innerText = `인증문자 다시 받기(5분 00초)`;
+  newMin = 5;
+  newSec = 0;
+  signupRandomNum_int = signupRandomNum.join('');
+  alert(signupRandomNum_int);
+}
+
+function gotoEnter(e) {
+  if (e.key == 'Enter') {
+    alert('엔터를 다시 한 번 눌러주세요');
+    e.preventDefault();
+    signupStart.focus();
+  }
+}
 
 function updateCountdown() {
   if (minutes == 0 && seconds == 0) {
     clearInterval(timerID);
     return;
   }
-
   if (newSec == 0) {
     newMin--;
     newSec = 59;
   } else {
     newSec--;
   }
-
   const formatMin = String(newMin).padStart(2, '0');
   const formatSec = String(newSec).padStart(2, '0');
-
   numAgain.innerText = `인증문자 다시 받기(${formatMin}분 ${formatSec}초)`;
 }
 const timerID = setInterval(updateCountdown, 1000);
-
-numAgain.addEventListener('click', () => {
-  signupRandomNum = [];
-  for (let i = 0; i < 6; i++) {
-    signupRandomNum.push(getRandom(9));
-  }
-  let signupRandomNum_int = signupRandomNum.join('');
-  numAgain.innerText = `인증문자 다시 받기(5분 00초)`;
-  newMin = 5;
-  newSec = 0;
-  alert(signupRandomNum_int);
-  // localStorage.setItem(phoneNum, signupRandomNum_int);
-});
 
 certificationNum.addEventListener('input', () => {
   if (certificationNum.value !== '') {
@@ -92,12 +78,13 @@ signupStart.addEventListener('click', function (e) {
 
     for (let j = 0; j < 10; j++) {
       uniqueID.push(String.fromCharCode(Math.round(Math.random() * (122 - 97) + 97)));
-      //중복되지않는 유니크값 주는 로직
     }
     uniqueID = uniqueID.join('');
     console.log(uniqueID);
     localStorage.setItem('uniqueID', uniqueID);
-    //검사해서 아니면 터지도록 하는것도
-    window.location.href = 'http://localhost:5500/views/category.html';
+    window.location.href = '/views/category.html';
   }
 });
+
+numAgain.addEventListener('click', getNumAgain);
+certificationNum.addEventListener('keydown', gotoEnter);

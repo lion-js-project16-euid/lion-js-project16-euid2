@@ -22,7 +22,7 @@
     <script src="/js/common/common.js" type="module"></script>
     <title>Enter Euid - Profile</title>
   </head>
-  <body>
+  <body class="m-auto">
     <h1 class="sr-only">프로필</h1>
     <header>
       <div class="flex items-center justify-between px-3 py-2">
@@ -34,7 +34,7 @@
         </div>
       </div>
     </header>
-    <nav class="bg-white fixed w-full max-w-3xl bottom-0 z-10 border-solid border-black border-l border-r border-b">
+    <nav class="bg-white fixed w-full max-w-3xl bottom-0 z-10">
       <ul class="flex justify-between items-center w-full">
         <li>
           <a href="/views/story.html" class="flex flex-col items-center py-1">
@@ -75,11 +75,10 @@
         </li>
       </ul>
     </nav>
-    <div class="max-w-3xl h-auto border-solid border-black border-y border-x">
-      <div class="w-auto h-9 bg-green-200"></div>
+    <div class="max-w-3xl h-auto border-solid">
       <div class="w-auto h-12 bg-white p-3.5 flex justify-between items-center">
         <p class="text-sm font-semibold">프로필수정</p>
-        <img src="/assets/icon-close.svg" alt="프로필수정 종료" / class="w-4 h-4 cancelProfile">
+        <img src="/assets/icon-close.svg" alt="프로필수정 종료" / class="w-4 h-4 cancelProfile hover:cursor-pointer" tabindex="1">
       </div>
       <div class="w-auto h-myHeight820 bg-contentsSecondary px-3 pb-16 pt-2">
         <div class="w-auto h-5 flex items-center">
@@ -89,7 +88,7 @@
         <div class="w-auto h-myHeight74 p-3 bg-white rounded-lg my-ml13 flex justify-between items-center">
             <div class="w-14 h-10">
                 <div class="text-sm font-semibold w-14 h-5 pb-1">EUID***</div>
-                <div class="text-mySize10 text-blue-500 w-6 h-4 pl-for4gui border-solid border-blue-500 border-x border-y rounded-lg">4기</div>
+                <div class="text-mySize10 text-blue-500 w-6 h-4 pl-for4gui border-solid border-blue-500 border-x border-y rounded-lg">6기</div>
             </div>
             <img src="/assets/profile-img.png" alt="" / class="w-mySize50 h-mySize50">
         </div>

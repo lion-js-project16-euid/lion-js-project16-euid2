@@ -4,26 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- prettier-ignore -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css" />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/story.css" />
-    <link rel="stylesheet" href="/css/tailwind.css" />    
-    <link
-      rel="stylesheet"
-      as="style"
-      crossorigin
-      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/story.css" /> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="icon" href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" type="image/xml+svg" />
-    <title>Enter Euid - story</title>
+    <title>✨엔터 이듬</title>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script defer src="/js/swiperSlide.js"></script>
+    <script src="/js/swiperSlide.js" defer></script>
     <script src="/js/common/common.js" type="module"></script>
-    <script defer src="/js/storyData.js"></script>
-    <script defer src="/js/storyCategoryActive.js"></script>
+    <script src="/js/storyData.js" defer></script>
+    <script src="/js/storyCategoryActive.js" defer></script>
   </head>
   <body class="m-auto">
       <header class="flex-wrap max-w-3xl bg-contents">
@@ -42,9 +36,10 @@
             <span aria-label="위치" class="min-w-[7.25rem] min-h-[1.5625rem] text-lg text-center font-semibold"
               >남가좌제2동</span
             >
-            <img alt="하단 펼치기" src="/assets/icons/Icon/underBtn.svg" />
+            <img alt="하단 펼치기" src="/assets/icon-direction-down.svg" />
           </div>
           <div class="flex justify-center items-center flex-shrink-0 w-[5.375rem] h-[1.625rem] gap-[0.4375rem]">
+<<<<<<< HEAD
             <a href="/views/storySearch.html">
               <img alt="검색" src="/assets/icons/Icon/search.svg" />
             </a>
@@ -54,6 +49,13 @@
             <a href="#">
               <img class="w-[1.25rem] h-[1.25rem]" alt="알림" src="/assets/icons/Icon/alramBell.svg" />
             </a>
+=======
+            <a href="#">
+              <img alt="검색" src="/assets/search.svg" />
+            </a>
+            <img class="w-[1.625rem] h-[1.625rem]" alt="메뉴" src="/assets/hamburger.svg" />
+            <img class="w-[1.25rem] h-[1.25rem]" alt="알림" src="/assets/icon-alram-bell.svg" />
+>>>>>>> 81bab7a306c292b381d0cc8e28b7be2d5dffe509
           </div>
         </div>
 
@@ -73,7 +75,7 @@
                 </div>
                 <div class="flex items-center w-[4.8125rem] h-[1rem] gap-[0.3125rem]">
                   <span class="text-[0.625rem] text-white font-semibold line-height-150">01</span>
-                  <img class="w-[2.5625rem]" aria-hidden="true" alt="바" src="/assets/icons/Icon/bar.svg" />
+                  <img class="w-[2.5625rem]" aria-hidden="true" alt="바" src="/assets/bar.svg" />
                   <span class="text-[0.625rem] text-white font-semibold line-height-150">03</span>
                 </div>
               </div>
@@ -91,7 +93,7 @@
                 </div>
                 <div class="flex items-center w-[4.8125rem] h-[1rem] gap-[0.3125rem]">
                   <span class="text-[0.625rem] text-white font-semibold line-height-150">01</span>
-                  <img class="w-[2.5625rem]" aria-hidden="true" alt="바" src="/assets/icons/Icon/bar.svg" />
+                  <img class="w-[2.5625rem]" aria-hidden="true" alt="바" src="/assets/bar.svg" />
                   <span class="text-[0.625rem] text-white font-semibold line-height-150">03</span>
                 </div>
               </div>
@@ -115,7 +117,7 @@
                 </div>
                 <div class="flex items-center w-[4.8125rem] h-[1rem] gap-[0.3125rem]">
                   <span class="text-[0.625rem] text-white font-semibold line-height-150">01</span>
-                  <img class="w-[2.5625rem]" aria-hidden="true" alt="바" src="/assets/icons/Icon/bar.svg" />
+                  <img class="w-[2.5625rem]" aria-hidden="true" alt="바" src="/assets/bar.svg" />
                   <span class="text-[0.625rem] text-white font-semibold line-height-150">03</span>
                 </div>
               </div>
@@ -126,21 +128,59 @@
           <div class="swiper-button-prev" style="color: white" aria-label="슬라이드 이전으로 넘기기"></div>
 
           <button class="absolute top-[28rem] left-[23.5rem] z-50">
-            <img class="play hidden" alt="슬라이드 시작" src="/assets/icons/Icon/playBtn.svg" />
+            <img class="play hidden" alt="슬라이드 시작" src="/assets/playBtn.svg" />
           </button>
           <button class="absolute top-[28rem] left-[23.5rem] z-50">
-            <img class="stop" alt="슬라이드 멈춤" src="/assets/icons/Icon/pauseBtn.svg" />
+            <img class="stop" alt="슬라이드 멈춤" src="/assets/pauseBtn.svg" />
           </button>
         </div>
         <nav class="nav">
           <ul class="flex bg-primary justify-between text-sm px-[5%] py-2 relative">
             <li class="is-active text-contents"><a href="/views/story.html" class="block w-full">선배님 스토리</a></li>
             <li class="text-contents"><a href="/views/device.html" class="block w-full">기기 거래</a></li>
-            <li class="text-contents"><a href="#" class="block w-full">질의응답</a></li>
-            <li class="text-contents"><a href="#" class="block w-full">같이 해요</a></li>
+            <li class="text-contents"><a href="#" class="block w-full" tabindex="-1">질의응답</a></li>
+            <li class="text-contents"><a href="#" class="block w-full" tabindex="-1">같이 해요</a></li>
           </ul>
         </nav>
       </header>
+      <nav class="bg-white fixed w-full max-w-3xl bottom-0 z-10">
+        <ul class="flex justify-between items-center w-full">
+          <li>
+            <a href="/views/story.html" class="flex flex-col items-center py-1">
+              <img src="/assets/icon-full-home.svg" alt="홈으로 이동" />
+              <span class="text-xs inline-block w-16 text-center">홈</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="flex flex-col items-center px-"
+              ><img src="/assets/icon-life.svg" alt="게시판으로 이동" /><span class="text-xs inline-block w-16 text-center"
+                >게시판</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="/views/device.html" class="flex flex-col items-center py-1"
+              ><img src="/assets/icon-map.svg" alt="내근처로 이동" /><span class="text-xs inline-block w-16 text-center"
+                >내 근처</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#" class="flex flex-col items-center py-1"
+              ><img src="/assets/icon-chat.svg" alt="채팅으로 이동" /><span class="text-xs inline-block w-16 text-center"
+                >채팅</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="/views/profile.html" class="flex flex-col items-center py-1"
+              ><img src="/assets/icon-my.svg" alt="마이이듬으로 이동" /><span class="text-xs inline-block w-16 text-center"
+                >마이 이듬</span
+              ></a
+            >
+          </li>
+        </ul>
+      </nav>
       <div class="flex flex-col max-w-3xl h-screen items-center pt-[2.3125rem]">
       <main class="story-list flex py-3 px-4 flex-col justify-center items-center gap-7">
         <h2 class="absolute w-1 h-1 p-0 m-n1 overflow-hidden clip-rect-0 whitespace-nowrap border-0">
