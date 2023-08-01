@@ -35,25 +35,27 @@ function displayPosts(posts) {
   }
 
   const postItems = posts.map(post =>
-    `<article class="h-[130px] relative border-b border-[#D3D3D3] border-solid data-[index]:10">
-      <a href=${post.url}>
-        <div class="flex flex-row-reverse p-3">
-          <div class="flex flex-col grow px-6 py-3">
-            <h2 class="text-sm">${post.title}</h2>
-            <div class="flex flex-col-reverse">
-              <div class="state flex">    
-                <strong class="text-sm">${post.price}</strong>
-              </div>
-              <div class="flex items-center text-[10px] text-contents">
-                <span>${post.location}</span>
-                <span aria-hidden="true" class="p-1">&middot;</span>
-                <span>${post.upload}</span>
+    `
+      <article class="h-[130px] relative border-b border-[#D3D3D3] border-solid data-[index]:10">
+        <a href=${post.url}>
+          <div class="flex flex-row-reverse p-3">
+            <div class="flex flex-col grow px-6 py-3">
+              <h2 class="text-sm">${post.title}</h2>
+              <div class="flex flex-col-reverse">
+                <div class="state flex">    
+                  <strong class="text-sm">${post.price}</strong>
+                </div>
+                <div class="flex items-center text-[10px] text-contents">
+                  <span>${post.location}</span>
+                  <span aria-hidden="true" class="p-1">&middot;</span>
+                  <span>${post.upload}</span>
+                </div>
               </div>
             </div>
+              <img src=${post.imgSrc} alt=${post.alt} class="w-[140px] h-[110px] rounded-lg" />
           </div>
-            <img src=${post.imgSrc} alt=${post.alt} class="w-[140px] h-[110px] rounded-lg" />
-        </div>
-      </a>`
+        </a>
+     `
   );
   postList.innerHTML = postItems.join('');
 }
