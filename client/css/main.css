@@ -1,6 +1,6 @@
 /* @import 'tailwindcss/base'; */
 
-/* ! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -191,6 +191,10 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
@@ -338,6 +342,14 @@ ul,
 menu {
   list-style: none;
   margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
   padding: 0;
 }
 
@@ -578,8 +590,8 @@ video {
   top: 28rem;
 }
 
-.top-\[45\%\] {
-  top: 45%;
+.top-\[40\%\] {
+  top: 40%;
 }
 
 .top-profileDotTop {
@@ -1157,6 +1169,10 @@ video {
   max-width: 48rem;
 }
 
+.max-w-lg {
+  max-width: 32rem;
+}
+
 .max-w-md {
   max-width: 28rem;
 }
@@ -1334,6 +1350,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
 
 .overflow-x-scroll {
@@ -2057,6 +2077,10 @@ video {
 .placeholder\:text-sm::placeholder {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
 }
 
 .focus\:outline-none:focus {

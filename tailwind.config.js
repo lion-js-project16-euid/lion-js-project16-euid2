@@ -38,6 +38,12 @@ module.exports = {
         profilePencilLeft: '4.15rem',
         passionTemWord: '3.1125rem',
         passionTem: '4.35rem',
+        forDeviceHeadset: '36rem',
+        forDeviceKeyboard: '40rem',
+        forDeviceMouse: '44rem',
+        forDeviceComputer: '48rem',
+        forDevicePhone: '52rem',
+        forDeviceElse: '56rem',
       },
       height: {
         mySize50: '3.125rem',
