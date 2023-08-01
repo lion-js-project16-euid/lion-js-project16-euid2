@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function handleTab(event) {
     if (event.keyCode === 13) {
-      history.back(); 
+      event.preventDefault();
+      window.location.href = back.getAttribute('href'); 
     }
   }
 
