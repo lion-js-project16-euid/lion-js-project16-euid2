@@ -6,10 +6,13 @@ import { getNode } from '/lib/index.js';
 
 const logout = getNode('#profileLogout');
 const myProfile = getNode('.myProfile');
+const logoutName = getNode('.logoutNickname');
+
+logoutName.textContent = localStorage.getItem('phoneNum');
 
 function logoutFunc() {
   localStorage.setItem('uniqueID', ' ');
-  window.location.href = '/views/index.html';
+  window.location.href = '/index.html';
 }
 
 function myProfileHref() {

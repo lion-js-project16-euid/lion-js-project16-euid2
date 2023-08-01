@@ -13,6 +13,7 @@ import {
 const ul = getNode('.categoryList');
 const listNodes = getNodes('.categoryList li');
 const searchBox = getNode('.searchBox');
+const submitCategory = getNode('.submitCategory');
 let valueArray = [];
 
 function handleCategoryClass(e) {
@@ -55,3 +56,12 @@ function searchCategory(e) {
 }
 
 searchBox.addEventListener('input', searchCategory);
+
+/* -------------------------------------------------------------------------- */
+
+function submitAndGoStory(e) {
+  e.preventDefault();
+  window.location.href = '/views/story.html';
+}
+
+submitCategory.addEventListener('click', submitAndGoStory);
