@@ -21,37 +21,43 @@ for (let i = 0; i < 6; i++) {
 let signupRandomNum_int = signupRandomNum.join('');
 alert(signupRandomNum_int);
 
+function getNumAgain(event) {
+  event.preventDefault();
+  signupRandomNum = [];
+  for (let i = 0; i < 6; i++) {
+    signupRandomNum.push(getRandom(9));
+  }
+  numAgain.innerText = `인증문자 다시 받기(5분 00초)`;
+  newMin = 5;
+  newSec = 0;
+  signupRandomNum_int = signupRandomNum.join('');
+  alert(signupRandomNum_int);
+}
+
+function gotoEnter(e) {
+  if (e.key == 'Enter') {
+    alert('엔터를 다시 한 번 눌러주세요');
+    e.preventDefault();
+    signupStart.focus();
+  }
+}
+
 function updateCountdown() {
   if (minutes == 0 && seconds == 0) {
     clearInterval(timerID);
     return;
   }
-
   if (newSec == 0) {
     newMin--;
     newSec = 59;
   } else {
     newSec--;
   }
-
   const formatMin = String(newMin).padStart(2, '0');
   const formatSec = String(newSec).padStart(2, '0');
-
   numAgain.innerText = `인증문자 다시 받기(${formatMin}분 ${formatSec}초)`;
 }
 const timerID = setInterval(updateCountdown, 1000);
-
-numAgain.addEventListener('click', () => {
-  signupRandomNum = [];
-  for (let i = 0; i < 6; i++) {
-    signupRandomNum.push(getRandom(9));
-  }
-  let signupRandomNum_int = signupRandomNum.join('');
-  numAgain.innerText = `인증문자 다시 받기(5분 00초)`;
-  newMin = 5;
-  newSec = 0;
-  alert(signupRandomNum_int);
-});
 
 certificationNum.addEventListener('input', () => {
   if (certificationNum.value !== '') {
@@ -79,3 +85,6 @@ signupStart.addEventListener('click', function (e) {
     window.location.href = '/views/category.html';
   }
 });
+
+numAgain.addEventListener('click', getNumAgain);
+certificationNum.addEventListener('keydown', gotoEnter);
