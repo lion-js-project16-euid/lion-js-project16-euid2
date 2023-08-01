@@ -1,84 +1,94 @@
 {
-  "products": [
+  "device": [
     {
-      "id": "product-rksk",
-      "name": "[대구 반할만떡] 유부호만두",
-      "description": "유부로 속을 든든히 채운 군만두",
-      "price": 6900,
-      "saleRatio": 0.24,
-      "salePrice": 5244,
+      "id": 1,
+      "user": "맥이뜸",
+      "userProfile": "../assets/common-logo.svg",
+      "temperature" : "41.2℃ 😀",
+      "name": "2020 MacBook Air M1",
+      "category": "컴퓨터",
+      "description": "상태 깨끗하고 좋아요. 왜냐하면 맥을 사용할 줄 몰라서 넷플릭스용으로만 봤어요. 집 근처에서 거래 희망합니다.",
+      "price": "820,000원",
+      "location": "마포구 염리동",
+      "upload": "13일 전",
       "image": {
-        "thumbnail": "ubuho/thumbnail.jpg",
-        "view": "ubuho/detail_view.jpg",
-        "banner": "ubuho/detail_banner.jpg",
-        "info": "ubuho/detail_info.jpg",
-        "alt": "유부호 만두"
+        "img": "/assets/device/MacBookAirM1.jpg",
+        "alt": "맥북 M1 에어"
       },
-      "stock": 5
+      "like": 20,
+      "href": "/views/detail1_MacBookAirM1.html"
     },
     {
-      "id": "product-ekfk",
-      "name": "[풀무원] 탱탱쫄면 (4개입)",
-      "description": "튀기지 않아 부드럽고 매콤한",
-      "price": 4980,
-      "saleRatio": 0,
-      "salePrice": 0,
+      "id": 2,
+      "user": "피카피카",
+      "userProfile": "../assets/detail/profile_pika.jpeg",
+      "temperature" : "36.5℃ 😊",
+      "name": "애플 매직마우스",
+      "category": "마우스",
+      "description": "애플 매직마우스 판매합니다. 클릭감이 저랑 안 맞아서 2번밖에 사용하지 않은 거의 새상품입니다.",
+      "price": "55,000원",
+      "location": "마포구 신수동",
+      "upload": "1주 전",
       "image": {
-        "thumbnail": "tangtang/thumbnail.jpg",
-        "view": "tangtang/detail_view.jpg",
-        "banner": "tangtang/detail_banner.jpg",
-        "info": "tangtang/detail_info.jpg",
-        "alt": "풀무원 탱탱쫄면"
+        "img": "/assets/device/appleMouse.jpeg",
+        "alt": "애플 매직마우스 화이트"
       },
-      "stock": 10
+      "like": 2,
+      "href": "/views/detail2_appleMouse.html"
     },
     {
-      "id": "product-akqk",
-      "name": "[홍대주꾸미] 주꾸미 볶음 300g (냉동)",
-      "description": "매콤달콤한 마력의 밥도둑",
-      "price": 7900,
-      "saleRatio": 0.13,
-      "salePrice": 6800,
+      "id": 3,
+      "user": "개발래빗",
+      "userProfile": "../assets/detail/profile_rabbit.png",
+      "temperature" : "37.2℃ 😊",
+      "name": "삼성 제트플립4 256GB",
+      "category": "휴대폰",
+      "description": "Z플립4 자급제 제품 판매합니다. 퍼플색이고 잔기스 거의 없습니다. 자급제 제품이라 통신사 상관없이 사용가능합니다.",
+      "price": "600,000원",
+      "location": "마포구 도화동",
+      "upload": "7일 전",
       "image": {
-        "thumbnail": "jukkumi/thumbnail.jpg",
-        "view": "jukkumi/detail_view.jpg",
-        "banner": "jukkumi/detail_banner.jpg",
-        "info": "jukkumi/detail_info.jpg",
-        "alt": "홍대 주꾸미"
+        "img": "/assets/device/samsungZflip.avif",
+        "alt": "삼성 제트플립4 퍼플"
       },
-      "stock": 8
+      "like": 5,
+      "href": "/views/detail3_samsungZflip.html"
     },
     {
-      "id": "product-tkwk",
-      "name": "[강남면옥] 소갈비찜",
-      "description": "보는 맛과 먹는 맛 모두 푸짐",
-      "price": 29800,
-      "saleRatio": 0,
-      "salePrice": 0,
+      "id": 4,
+      "user": "캐럿이지",
+      "userProfile": "../assets/detail/profile_carat.avif",
+      "temperature" : "53.0℃ 😍",
+      "name": "주연테크 4K UHD 모니터",
+      "category": "컴퓨터",
+      "description": "4K 모니터 판매합니다. 고해상도 디자인 작업하시는 분들께 추천합니다. 노트북과의 호환도 잘되고 닌텐도 스위치와도 연결 가능합니다.",
+      "price": "300,000원",
+      "location": "마포구 합정동",
+      "upload": "7일 전",
       "image": {
-        "thumbnail": "kangnam/thumbnail.jpg",
-        "view": "kangnam/detail_view.jpg",
-        "banner": "kangnam/detail_banner.jpg",
-        "info": "kangnam/detail_info.jpg",
-        "alt": "강남면옥 소갈비찜"
+        "img": "/assets/device/jooyonMonitor.png",
+        "alt": "주연테크 71cm 울트라 4K UHD HDR USB C지원 모니터"
       },
-      "stock": 2
+      "like": 17,
+      "href": "/views/datail4_jooyonMonitor.html"
     },
     {
-      "id": "product-ckzk",
-      "name": "[Kalry's] 한돈 삼겹 베이컨",
-      "description": "무항생제 한돈 삼겹살의 고소한 풍미 그대로",
-      "price": 4500,
-      "saleRatio": 0.25,
-      "salePrice": 3375,
+      "id": 5,
+      "user": "맥이뜸",
+      "userProfile": "../assets/common-logo.svg",
+      "temperature" : "41.2℃ 😀",
+      "name": "소니 헤드셋",
+      "category": "헤드셋",
+      "description": "소니 헤드셋 미개봉 새상품입니다. 선물로 헤드셋을 2개나 선물받아서 판매해요! 흰색이라 깔끔하고 노이스 캔슬링도 괜찮다는 평을 받는 헤드셋입니다!",
+      "price": "170,000원",
+      "location": "마포구 염리동",
+      "upload": "3일 전",
       "image": {
-        "thumbnail": "bacon/thumbnail.jpg",
-        "view": "bacon/detail_view.jpg",
-        "banner": "bacon/detail_banner.jpg",
-        "info": "bacon/detail_info.jpg",
-        "alt": "칼리 한돈 삼겹 베이컨"
+        "img": "/assets/device/sonyHeadset.png",
+        "alt": "소니 WH-CH720N 헤드셋"
       },
-      "stock": 13
-    }
+      "like": 80,
+      "href": "/views/detail5_sonyHeadset.html"
+    }    
   ]
 }
