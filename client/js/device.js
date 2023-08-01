@@ -34,8 +34,6 @@ function handleLike(e) {
   const buttonNum = e.target.closest('button').querySelector('span');
   count = Number(buttonNum.innerText);
 
-  console.log(e.target);
-
   if (status === true) {
     attr(buttonImg, 'src', '/assets/icon-heart-full.svg');
     buttonNum.innerText = ++count;

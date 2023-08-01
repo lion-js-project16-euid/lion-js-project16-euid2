@@ -1,10 +1,13 @@
 import { insertLast } from '/lib/index.js';
 
-export function nowTime() {
-  let today = new Date();
-  let hours = today.getHours();
-  let minutes = today.getMinutes();
+const today = new Date();
+const years = today.getFullYear();
+const month = today.getMonth();
+const day = today.getDate();
+const hours = today.getHours();
+const minutes = today.getMinutes();
 
+export function nowTime() {
   if (hours < 10) {
     return '0' + hours + ':' + minutes;
   } else {
@@ -13,6 +16,25 @@ export function nowTime() {
     } else {
       return hours + ':' + minutes;
     }
+  }
+}
+
+export function nowDay() {
+  return years + '년 ' + (month + 1) + '월 ' + day + '일';
+}
+
+export function nowDayHyphen() {
+  return years + '-' + (month + 1) + '-' + day;
+}
+
+export function now24Time() {
+  if (hours < 12) {
+    return '오전' + hours + ':' + minutes;
+  } else {
+    if (minutes < 10) {
+      return '오후 ' + (hours - 12) + ':' + 0 + minutes;
+    }
+    return '오후 ' + (hours - 12) + ':' + minutes;
   }
 }
 
@@ -41,7 +63,7 @@ function createPost(item) {
       </div>
     </a>
     <button type="button" class="like-button flex items-center absolute bottom-0 right-0 p-3 ">
-      <img src="/assets/icon-heart.svg" alt="좋아요 버튼" class="like-icon data-[index]:${id}" />
+      <img src="/assets/icon-heart.svg" alt="좋아요 버튼" class="data-[index]:${id}" />
       <span class="p-1 text-xs">${like}</span>
     </button>
   </article>
