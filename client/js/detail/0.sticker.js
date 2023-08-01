@@ -1,17 +1,7 @@
-import { getNode, tiger, renderDetail, attr } from '/lib/index.js';
-
-const URL = 'http://localhost:3000/device/3';
-
-const postDetail = getNode('.detail-wrapper');
-const response = await tiger.get(URL);
-const data = response.data;
+import { getNode, attr, toggleClass } from '/lib/index.js';
 
 const detailButton = getNode('.detail-button');
-
-async function renderDetailList() {
-  response;
-  renderDetail(postDetail, data);
-}
+const plusButton = getNode('.plus-button');
 
 let status = true;
 function handleLikeButton() {
@@ -23,5 +13,11 @@ function handleLikeButton() {
   status = !status;
 }
 
-renderDetailList();
+let buttonState = true;
+function handleList() {
+  toggleClass('.plus-list', 'hidden');
+  buttonState = !buttonState;
+}
+
 detailButton.addEventListener('click', handleLikeButton);
+plusButton.addEventListener('click', handleList);

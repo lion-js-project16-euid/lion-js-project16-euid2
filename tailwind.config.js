@@ -10,6 +10,8 @@ module.exports = {
         contents: '#9DA1B4',
         contentsSecondary: '#919191',
         negative: '#E11900',
+        'bluelight-400': '#8DB8F9',
+        'bluegray-100': '#EBECF0',
       },
       fontSize: {
         mySize8: '0.5rem',
@@ -19,6 +21,7 @@ module.exports = {
       },
       width: {
         mySize18: '4.5rem',
+        mySize50: '3.125rem',
         mySize60: '3.75rem',
         mySize103: '6.44rem',
         mySize141: '8.82rem',
@@ -26,6 +29,7 @@ module.exports = {
       },
       spacing: {
         ml6: '0.4rem',
+        ml13: '0.8125rem',
         ml18: '1.125rem',
         for4gui: '0.2rem',
         profileDotTop: '3rem',
@@ -35,10 +39,21 @@ module.exports = {
         passionTemWord: '3.1125rem',
         passionTem: '4.35rem',
       },
+      height: {
+        mySize50: '3.125rem',
+        myHeight74: '4.625rem',
+        myHeight348: '21.75rem',
+        myHeight820: '51.25rem',
+      },
       backgroundImage: {
         'icon-search': 'url("/assets/icon-search.svg")',
         'icon-plus': 'url("/assets/icon-plus.svg")',
         'icon-checked': 'url("/assets/icon-checked.svg")',
+        'icon-calender': 'url("/assets/icon-calender.svg")',
+        'icon-won': 'url("/assets/icon-won.svg")',
+      },
+      lineHeight: {
+        base: '1.6',
       },
     },
   },
