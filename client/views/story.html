@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="✨Enter Euid" />
+    <meta name="author" content="방서빈" />
+    <meta name="keywords" content="story, main, swiper" />
+    <meta name="description" content="선배님 이야기 화면입니다" />
     <!-- prettier-ignore -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css" />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/story.css" />
     <link rel="stylesheet" href="/css/story.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
@@ -24,9 +29,9 @@
       <div class="flex items-center justify-between px-3 py-2 bg-white">
         <span class="nowTime text-sm font-semibold"></span>
         <div class="flex">
-          <img src="/assets/icon-celluar.svg" alt="네트워크" class="pl-1" />
-          <img src="/assets/icon-lte.svg" alt="LTE" class="p-1" />
-          <img src="/assets/icon-battery.svg" alt="배터리 잔량" class="p-1" />
+          <img src="/assets/icon-celluar.svg" alt="네트워크" class="pl-1 w-6 h-6" />
+          <img src="/assets/icon-lte.svg" alt="LTE" class="p-1 w-6 h-6" />
+          <img src="/assets/icon-battery.svg" alt="배터리 잔량" class="p-1 w-6 h-6" />
         </div>
       </div>
       <div
@@ -36,17 +41,17 @@
           <span aria-label="위치" class="min-w-[7.25rem] min-h-[1.5625rem] text-lg text-center font-semibold"
             >남가좌제2동</span
           >
-          <img alt="하단 펼치기" src="/assets/icon-direction-down.svg" />
+          <img alt="하단 펼치기" src="/assets/icon-direction-down.svg" class="w-5 h-5" />
         </div>
         <div class="flex justify-center items-center flex-shrink-0 w-[5.375rem] h-[1.625rem] gap-[0.4375rem]">
           <a href="/views/storySearch.html">
-            <img alt="검색" src="/assets/icon-search.svg" />
+            <img alt="검색" src="/assets/icons/Icon/search.svg" />
           </a>
           <a href="#">
-            <img class="w-[1.625rem] h-[1.625rem]" alt="메뉴" src="/assets/hamburger.svg" />
+            <img class="w-[1.625rem] h-[1.625rem]" alt="메뉴" src="/assets/icons/Icon/hamburger.svg" />
           </a>
           <a href="#">
-            <img class="w-[1.25rem] h-[1.25rem]" alt="알림" src="/assets/icon-alram-bell.svg" />
+            <img class="w-[1.25rem] h-[1.25rem]" alt="알림" src="/assets/icons/Icon/alramBell.svg" />
           </a>
         </div>
       </div>
@@ -139,13 +144,13 @@
       <ul class="flex justify-between items-center w-full">
         <li>
           <a href="/views/story.html" class="flex flex-col items-center py-1">
-            <img src="/assets/icon-full-home.svg" alt="홈으로 이동" />
+            <img src="/assets/icon-full-home.svg" alt="홈으로 이동" class="w-5 h-5" />
             <span class="text-xs inline-block w-16 text-center">홈</span>
           </a>
         </li>
         <li>
           <a href="#" class="flex flex-col items-center px-"
-            ><img src="/assets/icon-life.svg" alt="게시판으로 이동" /><span
+            ><img src="/assets/icon-life.svg" alt="게시판으로 이동" class="w-5 h-5" /><span
               class="text-xs inline-block w-16 text-center"
               >게시판</span
             ></a
@@ -153,21 +158,23 @@
         </li>
         <li>
           <a href="/views/device.html" class="flex flex-col items-center py-1"
-            ><img src="/assets/icon-map.svg" alt="내근처로 이동" /><span class="text-xs inline-block w-16 text-center"
+            ><img src="/assets/icon-map.svg" alt="내근처로 이동" class="w-5 h-5" /><span
+              class="text-xs inline-block w-16 text-center"
               >내 근처</span
             ></a
           >
         </li>
         <li>
           <a href="#" class="flex flex-col items-center py-1"
-            ><img src="/assets/icon-chat.svg" alt="채팅으로 이동" /><span class="text-xs inline-block w-16 text-center"
+            ><img src="/assets/icon-chat.svg" alt="채팅으로 이동" class="w-5 h-5" /><span
+              class="text-xs inline-block w-16 text-center"
               >채팅</span
             ></a
           >
         </li>
         <li>
           <a href="/views/profile.html" class="flex flex-col items-center py-1"
-            ><img src="/assets/icon-my.svg" alt="마이이듬으로 이동" /><span
+            ><img src="/assets/icon-my.svg" alt="마이이듬으로 이동" class="w-5 h-5" /><span
               class="text-xs inline-block w-16 text-center"
               >마이 이듬</span
             ></a
