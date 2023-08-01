@@ -9,11 +9,11 @@ const myProfile = getNode('.myProfile');
 
 function logoutFunc() {
   localStorage.setItem('uniqueID', ' ');
-  window.location.href = 'http://localhost:5500/views/index.html';
+  window.location.href = '/views/index.html';
 }
 
 function myProfileHref() {
-  window.location.href = 'http://localhost:5500/views/profileCard.html';
+  window.location.href = '/views/profileCard.html';
 }
 
 logout.addEventListener('click', logoutFunc);

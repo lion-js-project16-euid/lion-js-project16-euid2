@@ -83,6 +83,6 @@ signupStart.addEventListener('click', function (e) {
     uniqueID = uniqueID.join('');
     console.log(uniqueID);
     localStorage.setItem('uniqueID', uniqueID);
-    window.location.href = 'http://localhost:5500/views/story.html';
+    window.location.href = '/views/story.html';
   }
 });

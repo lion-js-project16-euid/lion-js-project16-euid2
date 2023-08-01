@@ -51,5 +51,5 @@ registerButton.addEventListener('click', function (e) {
   /* const value = localStorage.getItem('phoneNum');
   console.log(value); */
   e.preventDefault();
-  window.location.href = 'http://localhost:5500/views/sign-up-certification.html';
+  window.location.href = '/views/sign-up-certification.html';
 });

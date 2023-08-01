@@ -4,7 +4,7 @@ const cancelProfile = getNode('.cancelProfile');
 
 function cancelProf() {
   console.log(1);
-  window.location.href = 'http://localhost:5500/views/profile.html';
+  window.location.href = '/views/profile.html';
 }
 
 cancelProfile.addEventListener('click', cancelProf);

@@ -76,5 +76,5 @@ loginButton.addEventListener('click', function (e) {
   /* const value = localStorage.getItem('phoneNum');
     console.log(value); */
   e.preventDefault();
-  window.location.href = 'http://localhost:5500/views/login-certification.html';
+  window.location.href = '/views/login-certification.html';
 });
