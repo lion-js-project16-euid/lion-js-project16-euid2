@@ -3,8 +3,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-.detail-button {
-  @apply text-black;
-}

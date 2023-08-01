@@ -61,6 +61,9 @@ module.exports = {
       lineHeight: {
         base: '1.6',
       },
+      aspectRatio: {
+        '4/3': '4 / 3',
+      },
     },
   },
   plugins: [],

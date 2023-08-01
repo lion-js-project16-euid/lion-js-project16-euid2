@@ -12,7 +12,7 @@
     <link rel="icon" href="/assets/euid-pavicon.png" />
     <script src="/js/common/common.js" type="module"></script>
     <script src="/js/device.js" type="module"></script>
-    <title>✨엔터 이듬 - 기기 거래</title>
+    <title>✨Enter Euid - 기기 거래</title>
   </head>
 
   <body class="m-auto">
@@ -26,11 +26,12 @@
         </div>
       </div>
     </header>
+
     <h1 class="sr-only">기기 거래</h1>
-      <!-- 작업 후 추가 -->
+      <!--! 작업 후 추가 -->
       <header>위치 돋보기 햄버거 알림</header>
       <nav class="bg-white fixed w-full max-w-3xl bottom-0 z-10">
-        <ul class="flex justify-between items-center w-full">
+        <ul class="flex justify-around items-center w-full">
           <li>
             <a href="/views/story.html" class="flex flex-col items-center py-1">
               <img src="/assets/icon-home.svg" alt="홈으로 이동" />
@@ -74,7 +75,7 @@
           <li class="text-contents"><a href="#" class="block w-full">질의응답</a></li>
           <li class="text-contents"><a href="#" class="block w-full">같이 해요</a></li>
         </ul>
-        <div class="device-wrapper">
+        <div class="device-wrapper px-2">
           <article class="h-[130px] relative border-b border-[#D3D3D3] border-solid data-[index]:0">
             <a href="https://www.apple.com/kr/shop/buy-mac/macbook-pro/14-%EC%8B%A4%EB%B2%84-10%EC%BD%94%EC%96%B4-cpu-%EB%B0%8F-16%EC%BD%94%EC%96%B4-gpu-%ED%83%91%EC%9E%AC-apple-m2-pro-%EC%B9%A9-512gb">
             <div class="flex flex-row-reverse p-3">
@@ -85,7 +86,7 @@
                     <span class="text-orange-500 text-sm pr-1 font-semibold">20%</span>
                     <strong class="text-sm">2,232,000원</strong>
                   </div>
-                  <div class="flex items-center text-[10px] text-contents">
+                  <div class="flex items-center text-xs text-contents">
                     <span>Apple</span>
                     <span aria-hidden="true" class="p-1">&middot;</span>
                     <span>광고</span>
@@ -94,7 +95,10 @@
               </div>
               <img src="/assets/device/macBookM2Pro14.jpeg" alt="맥북 M2 프로 14인치" class="w-[140px] h-[110px] rounded-lg" />
             </div>
-          </a>            
+          </a>
+          <button type="button" class="like-button flex items-center absolute bottom-0 right-0 p-3">
+            <img src="/assets/icon-heart-full.svg" alt="좋아요 버튼" class="data-[index]:10" /><span class="like-data p-1 text-xs">102</span>
+          </button>      
           </article>
 
           <article class="h-[130px] relative border-b border-[#D3D3D3] border-solid data-[index]:10">
@@ -106,7 +110,7 @@
                     <div class="state flex">    
                       <strong class="text-sm">30,000원</strong>
                     </div>
-                    <div class="flex items-center text-[10px] text-contents">
+                    <div class="flex items-center text-xs text-contents">
                       <span>마포구 공덕동</span>
                       <span aria-hidden="true" class="p-1">&middot;</span>
                       <span>10일 전</span>
@@ -117,7 +121,7 @@
               </div>
             </a>
             <button type="button" class="like-button flex items-center absolute bottom-0 right-0 p-3">
-              <img src="/assets/icon-heart.svg" alt="좋아요 버튼" class="like-icon" /><span class="like-data p-1 text-xs">3000</span>
+              <img src="/assets/icon-heart.svg" alt="좋아요 버튼" class="data-[index]:10" /><span class="like-data p-1 text-xs">3000</span>
             </button>
           </article>
         </div>
@@ -126,13 +130,13 @@
           <button type="button" class="add-button">
             <img src="/assets/icon-plus-button.svg" alt="카테고리 더보기" class="add-button-img rounded-[50px] shadow-[0_4px_4px_0px_rgba(0,0,0,50)]" />
           </button>
-          <ul class="hidden">
-            <li><a href="#" class="block px-4 py-4 bg-primary rounded-xl my-1 text-sm text-white">🎧 헤드셋</a></li>
-            <li><a href="#" class="block px-4 py-4 bg-primary rounded-xl my-1 text-sm text-white">⌨️ 키보드</a></li>
-            <li><a href="#" class="block px-4 py-4 bg-primary rounded-xl my-1 text-sm text-white">🖱️ 마우스</a></li>
-            <li><a href="#" class="block px-4 py-4 bg-primary rounded-xl my-1 text-sm text-white">💻 컴퓨터</a></li>
-            <li><a href="#" class="block px-4 py-4 bg-primary rounded-xl my-1 text-sm text-white">📱 휴대폰</a></li>
-            <li><a href="#" class="block px-4 py-4 bg-primary rounded-xl my-1 text-sm text-white">🎈 기타 등등</a></li>
+          <ul class="hidden mb-1">
+            <li><a href="#" class="block px-4 py-4 bg-primary rounded-xl my-1 text-sm text-white"><span class="inline-block w-6 text-center">🎧</span> 헤드셋</a></li>
+            <li><a href="#" class="block px-4 py-4 bg-primary rounded-xl my-1 text-sm text-white"><span class="inline-block w-6 text-center">⌨️</span> 키보드</a></li>
+            <li><a href="#" class="block px-4 py-4 bg-primary rounded-xl my-1 text-sm text-white"><span class="inline-block w-6 text-center">🖱️</span> 마우스</a></li>
+            <li><a href="#" class="block px-4 py-4 bg-primary rounded-xl my-1 text-sm text-white"><span class="inline-block w-6 text-center">💻</span> 컴퓨터</a></li>
+            <li><a href="#" class="block px-4 py-4 bg-primary rounded-xl my-1 text-sm text-white"><span class="inline-block w-6 text-center">📱</span> 휴대폰</a></li>
+            <li><a href="#" class="block px-4 py-4 bg-primary rounded-xl my-1 text-sm text-white"><span class="inline-block w-6 text-center">🎈</span> 기타 등등</a></li>
           </ul>
       </main>
     </div></a>

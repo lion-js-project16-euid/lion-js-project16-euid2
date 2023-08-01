@@ -1,82 +1,160 @@
-<!doctype html>
+<!-- prettier-ignore -->
+<!DOCTYPE html>
 <html lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
     <!-- prettier-ignore -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css" />
     <link rel="icon" href="/assets/euid-pavicon.png" />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/main.css" />
+    <script src="/js/common/common.js" type="module"></script>
     <script src="/js/chat.js" type="module"></script>
     <title>✨바른 교육 - Enter Euid</title>
   </head>
 
-  <body class="h-screen">
-    <div class="h-8 bg-green-400"></div>
-
-    <div class="relative w-full max-w-3xl mx-auto">
-
-      <div class="flex justify-between w-[95%] mx-auto mt-1 mb-4">
-        <!-- ! 링크 연결해야함 -->
-        <a href="/index.html" class="flex items-center w-[52px]">
-          <img src="/assets/icon-direction-left.svg" alt="이전 페이지로 이동하기" class="" />
-        </a>
-        <div class="flex flex-col text-center leading-base">
-          <p class="font-bold text-sm">카페인조아</p>
-          <p class="text-mySize10 text-contentsSecondary">보통 3일 내 응답</p>
-        </div>
-        <div class="flex items-center justify-between w-[52px]">
-          <button>
-            <img src="/assets/icon-call.svg" alt="통화 연결 버튼" class="w-[22px]" />
-          </button>
-          <button>
-            <img src="/assets/icon-more.svg" alt="통화 연결 버튼" class="w-[22px]" />
-          </button>
+  <body>
+    <header>
+      <div class="flex items-center justify-between px-3 py-2">
+        <span class="nowTime text-sm font-semibold"></span>
+        <div class="flex">
+          <img src="/assets/icon-celluar.svg" alt="네트워크" class="pl-1" />
+          <img src="/assets/icon-lte.svg" alt="LTE" class="p-1" />
+          <img src="/assets/icon-battery.svg" alt="배터리 잔량" class="p-1" />
         </div>
       </div>
+    </header>
 
-      <div class="flex px-6">
-        <!-- !사용자 프로필 사진 -->
-        <img src="" alt="판매중인 상품 사진" class="w-28 h-28 bg-gray-600 rounded-[4px]" />
-        <div class="flex flex-col px-2 text-xs font-bold leading-base">
-          <p>판매중
-            <span class="px-1 font-medium">intel mac 2017</span>
-          </p>
-          <p>800,000원</p>
+    <div class="contents">
+      <div class="relative w-full max-w-3xl mx-auto">
+        <div class="flex justify-between w-[95%] mx-auto mt-1 mb-4">
+          <div class="leading-base absolute left-1/2">
+            <p class="font-bold text-sm">캐럿이지</p>
+            <p class="text-mySize10 text-contentsSecondary">보통 3일 내 응답</p>
+          </div>
+          <div class="inline-flex px-2 py-2">
+            <a href="/views/device.html" class="pr-3"
+              ><img src="/assets/icon-direction-left.svg" alt="이전으로 가기"
+            /></a>
+          </div>
+          <div class="flex pl-4 py-2">
+            <a href="tel:010-1234-1234" class="pr-5">
+              <img src="/assets/icon-call.svg" alt="통화 연결하기" />
+            </a>
+            <div class="flex flex-col items-end">
+              <button type="button" class="plus-button">
+                <img src="/assets/icon-more.svg" alt="더보기" data-name="etc" />
+              </button>
+              <ul class="hidden plus-list absolute mt-5">
+                <li>
+                  <a href="#" class="block px-1 py-1 rounded-md bg-black mt-2 text-xs text-white text-center"
+                    >이 사용자 차단하기</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-1 py-1 rounded-md bg-black mt-1 text-xs text-white text-center"
+                    >채팅 나가기</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex px-6">
+          <img
+            src="/assets/device/jooyonMonitor.png"
+            alt="주연테크 71cm 울트라 4K UHD HDR USB C지원 모니터"
+            class="w-28 h-28 rounded-[4px]"
+          />
+          <div class="flex flex-col px-2 text-xs font-bold leading-base">
+            <p>
+              판매중
+              <span class="px-1 font-medium">주연테크 4K UHD 모니터</span>
+            </p>
+            <p>300,000원</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 px-6 py-3 border-solid border-b-contentsSecondary border-b-[0.3px]">
+          <a href="/" class="px-3 pb-0.5 border-solid border-contentsSecondary border rounded-md"
+            ><span class="inline-block h-4 bg-icon-calender bg-no-repeat pl-6 text-xs">약속 잡기</span></a
+          >
+          <a href="/" class="px-3 pb-0.5 border-solid border-contentsSecondary border rounded-md"
+            ><span class="inline-block bg-icon-won h-4 bg-no-repeat pl-6 text-xs">송금 하기</span></a
+          >
+        </div>
+        <div class="chat-wrapper overflow-scroll">
+          <div class="mt-3 px-3">
+            <p class="my-2 px-4 py-3 text-xs rounded-xl text-white leading-base bg-bluelight-400">
+              💸 <span class="font-bold">캐럿이지님은 우수판매자에요.</span> 개인정보유도와 명예훼손 내용은 차단될 수
+              있어요. <br />
+              <a href="#" class="underline pl-4">자세히 보기</a>
+            </p>
+          </div>
+          <div class="my-4">
+            <time datetime="2023-07-28" class="text-[10px] text-contentsSecondary block text-center"
+              >2023년 7월 28일</time
+            >
+            <div class="flex items-center justify-end mx-4 my-2">
+              <span class="text-[10px] text-contentsSecondary pr-2">오후 5:32</span>
+              <span class="px-[14px] py-2 text-xs rounded-[20px] bg-bluelight-400 text-white"
+                >가격 네고 가능한가요?</span
+              >
+            </div>
+            <div class="flex items-center justify-end mx-4 my-2">
+              <span class="text-[10px] text-contentsSecondary pr-2">오후 5:32</span>
+              <span class="px-[14px] py-2 text-xs rounded-[20px] bg-bluelight-400 text-white"
+                >토요일에 거래 가능할까요?</span
+              >
+            </div>
+            <div class="flex items-center justify-end mx-4 my-2">
+              <span class="text-[10px] text-contentsSecondary pr-2">오후 9:16</span>
+              <span class="px-[14px] py-2 text-xs rounded-[20px] bg-bluelight-400 text-white"
+                >판매 안하시나요? ㅠㅠ</span
+              >
+            </div>
+          </div>
+          <div class="message-text my-4">
+            <time datetime="2023-07-28" class="text-[10px] text-contentsSecondary block text-center"
+              >2023년 7월 31일</time
+            >
+            <div class="flex flex-row-reverse items-center justify-end mx-4 my-2">
+              <span class="block w-[80px] text-[10px] text-contentsSecondary pl-2">오후 7:14</span>
+              <span class="px-[14px] py-2 text-xs rounded-[20px] bg-bluegray-100 text-black"
+                >죄송해요 ㅜㅜ 제가 핸드폰을 바꿔서 지금 봤네요 ㅠㅠ 판매는 안되었는데 먼저 연락하신 분이 있어서 답장
+                기다리고 있습니다 ㅠㅠ</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="message-wrapper">
+          <div class="message-container my-5 w-full max-w-3xl">
+            <form class="flex items-center relative">
+              <label for="device4"></label>
+              <button type="button" class="py-2 pl-2">
+                <img src="/assets/icon-plus2.svg" alt="파일 추가" class="" />
+              </button>
+              <input
+                type="text"
+                id="device4"
+                class="message-write text-sm px-3 py-2 mx-2 rounded-[20px] bg-bluegray-100 grow"
+                placeholder="메시지 보내기"
+              />
+              <button type="button" class="absolute right-14">
+                <img src="/assets/icon-smile2.svg" alt="이모티콘" />
+              </button>
+              <button
+                type="submit"
+                class="send px-3 py-3 bg-[url('/assets/icon-send2.svg')] bg-no-repeat mr-2"
+                data-name="send"
+              ></button>
+            </form>
+          </div>
         </div>
       </div>
-
-      <div class="flex items-center gap-2 px-6 py-3 border-solid border-b-contentsSecondary border-b-[0.3px]">
-        <a href="/" class="px-3 pb-0.5 border-solid border-contentsSecondary border rounded-md"><span class="inline-block h-4 bg-icon-calender bg-no-repeat pl-6 text-xs">약속 잡기</span></a>
-        <a href="/" class="px-3 pb-0.5 border-solid border-contentsSecondary border rounded-md"><span class="inline-block bg-icon-won h-4 bg-no-repeat pl-6 text-xs">송금 하기</span></a>
-      </div>
-
-      <div class="px-3">
-        <p class="my-2 px-4 py-3 text-xs rounded-xl bg-bluelight-400 text-white leading-base">💸 <span class="font-bold">카페인조아님은 우수판매자에요.</span> 개인정보유도와 명예훼손 내용은 차단될 수 있어요.
-          <a href="" class="underline">자세히 보기</a>
-        </p>
-        <p class="mt-5 mb-1 text-[10px] text-contentsSecondary text-center"><time datetime="2023-07-31">2023년 7월 31일</time></p>
-      </div>
-
-      <div class="fixed bottom-14 flex px-3 justify-between w-full max-w-3xl">
-        <button type="button" class="w-6 flex items-center">
-          <img src="/assets/icon-plus2.svg" alt="" class="w-6" />
-        </button>
-        <label for="inputMessage" class="sr-only">메세지 입력란</label>
-        <div class="flex grow justify-between bg-bluegray-100 mx-2 p-4 py-2 text-sm rounded-3xl gap-3">
-          <input type="text" id="inputMessage" class="grow bg-transparent focus:outline-none" placeholder="메세지 보내기"/>
-          <button type="button" class="">
-            <img src="/assets/icon-smile2.svg" alt="" />
-          </button>
-        </div>
-        <button type="submit" class="w-6 items-center">
-          <img src="/assets/icon-send2.svg" alt="" class="w-5" />
-        </button>
-      </div>
-
     </div>
   </body>
 </html>
