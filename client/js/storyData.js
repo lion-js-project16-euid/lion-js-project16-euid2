@@ -27,7 +27,7 @@ function setWriterText(writerElements, product) {
 
 async function fetchProductData() {
   try {
-    const response = await fetch('http://localhost:3000/storyData'); // Replace 'data.json' with the actual file path if it's different
+    const response = await fetch('http://localhost:3000/storyData'); 
     const data = await response.json();
     return data;
   } catch (error) {
