@@ -1,6 +1,7 @@
 import {
   nowDay,
   getNode,
+  getNodes,
   endScroll,
   now24Time,
   insertLast,
@@ -13,15 +14,27 @@ const contents = getNode('.contents');
 const inputMessage = getNode('.message-write');
 const chatWrapper = getNode('.chat-wrapper');
 
-// todo 확인 필요
-function createMessage(today, time, text) {
-  const template = /* html */ `
+// TODO 확인 필요
+function createMessage(text) {
+  const dates = [...getNodes('time')].map(i => i.dateTime);
+  let template = ``;
+
+  if (dates.includes(nowDayHyphen())) {
+    template = /* html */ `
+      <div class="flex items-center justify-end mx-4 my-2">
+        <span class="text-[10px] text-contentsSecondary pr-2">${now24Time()}</span>
+        <span class="px-[14px] py-2 text-xs rounded-[20px] bg-bluelight-400 text-white">${text}</span>
+      </div>
+    `;
+  } else {
+    template = /* html */ `
       <time datetime=${nowDayHyphen()} class="text-[10px] text-contentsSecondary block text-center">${nowDay()}</time>
       <div class="flex items-center justify-end mx-4 my-2">
         <span class="text-[10px] text-contentsSecondary pr-2">${now24Time()}</span>
         <span class="px-[14px] py-2 text-xs rounded-[20px] bg-bluelight-400 text-white">${text}</span>
       </div>
-      `;
+    `;
+  }
 
   return template;
 }
@@ -32,8 +45,6 @@ const handleChat = e => {
 
   while (!name) {
     target = target.parentNode;
-    console.log(target);
-
     if (target.nodeName === 'BODY') {
       target = null;
       return;
@@ -48,7 +59,7 @@ const handleChat = e => {
     let value = inputMessage.value;
     if (value === '') return;
 
-    insertLast(chatWrapper, createMessage('2023-08-01', '13:00', value));
+    insertLast(chatWrapper, createMessage(value));
 
     endScroll(chatWrapper);
     clearContents(inputMessage);
