@@ -4,16 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/assets/euid-pavicon.png" />
-    <link rel="icon" href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" type="image/xml+svg" />
+    <!-- prettier-ignore -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css" />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/main.css" />
+    <link rel="icon" href="/assets/euid-pavicon.png" />
     <script src="/js/common/common.js" type="module"></script>
     <script src="/js/detail/4.jooyonMonitor.js" type="module"></script>
-    <title>Enter Euid - 주연테크 4K UHD 모니터</title>
+    <title>✨Enter Euid - 주연테크 4K UHD 모니터</title>
   </head>
-  <body>
+
+  <body class="mx-auto">
     <header>
       <div class="flex items-center justify-between px-3 py-2">
         <span class="nowTime text-sm font-semibold"></span>
@@ -44,43 +46,48 @@
         </div>
       </div>
     </header>
+
     <main>
       <h1 class="sr-only">기기 상세보기</h1>
       <div class="detail-wrapper"></div>
       <article>
-        <h2 class="text-sm font-semibold border-t border-contentsSecondary border-solid py-3">이 글과 함께 봤어요</h2>
-        <div class="flex justify-around mb-5">
-          <figure>
-            <img src="/assets/detail/coffee.jpeg" alt="스타벅스 아이스 아메리카노" class="w-56 h-56" />
-            <figcaption class="text-[10px] flex flex-col my-3">
-              <span>스타벅스 아이스 아메리카노</span>
-              <span class="font-semibold">10,000원</span>
-            </figcaption>
-          </figure>
-          <figure>
-            <img src="/assets/detail/apple-pencil.jpeg" alt="애플 펜슬 2세대" class="w-56 h-56" />
-            <figcaption class="text-[10px] flex flex-col my-3">
-              <span>Apple Pencil 2세대</span>
-              <span class="font-semibold">100,000원</span>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="flex justify-around">
-          <figure>
-            <img
-              src="/assets/detail/coxKeyboard.jpeg"
-              alt="콕스 엠프리스 오리지널 레트로 PBT 무접점 키보드 50g"
-              class="w-56 h-56"
-            />
-            <figcaption class="text-[10px] flex flex-col my-3">
-              <span>COX 무접점 키보드</span>
-              <span>80,000원</span>
-            </figcaption>
-          </figure>
-          <a href="/detail/0.sticker.html">
+        <h2 class="text-sm font-semibold border-t border-gray-200 border-solid px-2 py-3">이 글과 함께 봤어요</h2>
+        <div class="flex flex-wrap justify-between px-5 mb-5">
+          <a href="#" class="w-[45%] my-2">
             <figure>
-              <img src="/assets/device/sticker.png" alt="날아라 호빵맨 띠부씰" class="w-56 h-56" />
-              <figcaption class="text-[10px] flex flex-col my-3">
+              <img src="/assets/detail/coffee.jpeg" alt="스타벅스 아이스 아메리카노" class="rounded-lg aspect-4/3" />
+              <figcaption class="text-xs leading-base flex flex-col my-3">
+                <span>스타벅스 아이스 아메리카노</span>
+                <span class="font-semibold">10,000원</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#" class="w-[45%] my-2">
+            <figure>
+              <img src="/assets/detail/apple-pencil.jpeg" alt="애플 펜슬 2세대" class="rounded-lg aspect-4/3" />
+              <figcaption class="text-xs leading-base flex flex-col my-3">
+                <span>Apple Pencil 2세대</span>
+                <span class="font-semibold">100,000원</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="#" class="w-[45%] my-2">
+            <figure>
+              <img
+                src="/assets/detail/coxKeyboard.jpeg"
+                alt="콕스 엠프리스 오리지널 레트로 PBT 무접점 키보드 50g"
+                class="rounded-lg aspect-4/3"
+              />
+              <figcaption class="text-xs leading-base flex flex-col my-3">
+                <span>COX 무접점 키보드</span>
+                <span>80,000원</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="/views/detail/0.sticker.html" class="w-[45%] my-2">
+            <figure>
+              <img src="/assets/device/sticker.png" alt="날아라 호빵맨 띠부씰" class="rounded-lg aspect-4/3" />
+              <figcaption class="text-xs leading-base flex flex-col my-3">
                 <span>날아라 호빵맨 스티커(카레빵맨 포함)</span>
                 <span>30,000원</span>
               </figcaption>
