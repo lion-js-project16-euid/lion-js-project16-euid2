@@ -8,6 +8,10 @@ module.exports = {
         secondary: '#5A85EE',
         tertiary: '#719CF7',
         contents: '#9DA1B4',
+<<<<<<< HEAD
+        negative: '#E11900',
+      },
+=======
         contentsSecondary: '#919191',
         negative: '#E11900',
       },
@@ -35,6 +39,7 @@ module.exports = {
         passionTemWord: '3.1125rem',
         passionTem: '4.35rem',
       },
+>>>>>>> a7a1267f405635d91af73cca886be456ae06aaac
     },
   },
   plugins: [],
