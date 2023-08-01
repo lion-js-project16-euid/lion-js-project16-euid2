@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/euid-pavicon.png" />
+    <link rel="icon" href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" type="image/xml+svg" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <script src="/js/common/common.js" type="module"></script>
+    <script src="/js/detail/1.MacBookAirM1.js" type="module"></script>
+    <title>Enter Euid - 2020 MacBook Air M1</title>
+  </head>
+  <body>
+    <header>
+      <div class="flex items-center justify-between px-3 py-2">
+        <span class="nowTime text-sm font-semibold"></span>
+        <div class="flex">
+          <img src="/assets/icon-celluar.svg" alt="네트워크" class="pl-1" />
+          <img src="/assets/icon-lte.svg" alt="LTE" class="p-1" />
+          <img src="/assets/icon-battery.svg" alt="배터리 잔량" class="p-1" />
+        </div>
+      </div>
+      <div class="flex justify-between">
+        <div class="inline-flex px-4 py-2">
+          <a href="/views/device.html" class="pr-3"
+            ><img src="/assets/icon-direction-left.svg" alt="이전으로 가기"
+          /></a>
+          <a href="/views/story.html"><img src="/assets/icon-home.svg" alt="홈으로 가기" /></a>
+        </div>
+        <div class="inline-flex pl-4 py-2">
+          <a href="/assets/detail/download_macBookAirM1.png" download="macBookAirM1.png" class="pr-3"
+            ><img src="/assets/icon-share.svg" alt="다운로드"
+          /></a>
+          <div class="flex flex-col items-end">
+            <button type="button" class="plus-button"><img src="/assets/icon-more.svg" alt="더보기" /></button>
+            <ul class="hidden plus-list absolute mt-5">
+              <li class="px-1 py-1 bg-secondary mt-2 text-xs text-white">신고</li>
+              <li class="px-1 py-1 bg-secondary mt-1 mb-2 text-xs text-white">이 사용자의 글 보지 않기</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1 class="sr-only">기기 상세보기</h1>
+      <div class="detail-wrapper"></div>
+      <article>
+        <h2 class="text-sm font-semibold border-t border-contentsSecondary border-solid py-3">이 글과 함께 봤어요</h2>
+        <div class="flex justify-around mb-5">
+          <figure>
+            <img src="/assets/detail/coffee.jpeg" alt="스타벅스 아이스 아메리카노" class="w-56 h-56" />
+            <figcaption class="text-[10px] flex flex-col my-3">
+              <span>스타벅스 아이스 아메리카노</span>
+              <span class="font-semibold">10,000원</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="/assets/detail/apple-pencil.jpeg" alt="애플 펜슬 2세대" class="w-56 h-56" />
+            <figcaption class="text-[10px] flex flex-col my-3">
+              <span>Apple Pencil 2세대</span>
+              <span class="font-semibold">100,000원</span>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="flex justify-around">
+          <figure>
+            <img
+              src="/assets/detail/coxKeyboard.jpeg"
+              alt="콕스 엠프리스 오리지널 레트로 PBT 무접점 키보드 50g"
+              class="w-56 h-56"
+            />
+            <figcaption class="text-[10px] flex flex-col my-3">
+              <span>COX 무접점 키보드</span>
+              <span>80,000원</span>
+            </figcaption>
+          </figure>
+          <a href="/views/detail/0.sticker.html">
+            <figure>
+              <img src="/assets/device/sticker.png" alt="날아라 호빵맨 띠부씰" class="w-56 h-56" />
+              <figcaption class="text-[10px] flex flex-col my-3">
+                <span>날아라 호빵맨 스티커(카레빵맨 포함)</span>
+                <span>30,000원</span>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
