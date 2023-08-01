@@ -8,7 +8,7 @@ import {
   toggleClass,
   nowDayHyphen,
   clearContents,
-} from '../lib/index.js';
+} from '/lib/index.js';
 
 const contents = getNode('.contents');
 const inputMessage = getNode('.message-write');
