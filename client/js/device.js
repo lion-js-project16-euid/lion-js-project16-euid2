@@ -1,12 +1,11 @@
-import { getNode, renderPost, tiger, toggleClass, attr } from '/lib/index.js';
+import { getNode, getNodes, renderPost, tiger, toggleClass, attr } from '/lib/index.js';
 
 const URL = 'http://localhost:3000/device';
 
 const postDevice = getNode('.device-wrapper');
 const button = getNode('.add-button');
 const addList = getNode('.hidden');
-const likeButton = getNode('.like-button');
-const likeData = getNode('.like-data');
+
 const response = await tiger.get(URL);
 
 async function renderPostList() {
@@ -30,21 +29,26 @@ function handleAddDevice() {
 }
 
 let status = true;
-let count = Number(likeData.innerText);
-function handleLike() {
+let count;
+function handleLike(e) {
+  const buttonImg = e.target.closest('button').querySelector('img');
+  const buttonNum = e.target.closest('button').querySelector('span');
+  count = Number(buttonNum.innerText);
+
+  console.log(e.target);
+
   if (status === true) {
-    attr('.like-icon', 'src', '/assets/icon-heart-full.svg');
-    likeData.innerText = count + 1;
-    console.log(likeData.innerText);
+    attr(buttonImg, 'src', '/assets/icon-heart-full.svg');
+    buttonNum.innerText = ++count;
   } else {
-    attr('.like-icon', 'src', '/assets/icon-heart.svg');
-    likeData.innerText = count;
-    console.log(likeData.innerText);
+    attr(buttonImg, 'src', '/assets/icon-heart.svg');
+    buttonNum.innerText = --count;
   }
+
   status = !status;
   response;
 }
 
 renderPostList();
 button.addEventListener('click', handleAddDevice);
-likeButton.addEventListener('click', handleLike);
+postDevice.addEventListener('click', handleLike);
