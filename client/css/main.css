@@ -1,6 +1,6 @@
 /* @import 'tailwindcss/base'; */
 
-/* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -191,10 +191,6 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
-  font-feature-settings: inherit;
-  /* 1 */
-  font-variation-settings: inherit;
-  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
@@ -342,14 +338,6 @@ ul,
 menu {
   list-style: none;
   margin: 0;
-  padding: 0;
-}
-
-/*
-Reset default styling for dialogs.
-*/
-
-dialog {
   padding: 0;
 }
 
@@ -904,20 +892,12 @@ video {
   height: 20rem;
 }
 
-.h-\[1\.0625rem\] {
-  height: 1.0625rem;
-}
-
 .h-\[1\.25rem\] {
   height: 1.25rem;
 }
 
 .h-\[1\.625rem\] {
   height: 1.625rem;
-}
-
-.h-\[1\.8125rem\] {
-  height: 1.8125rem;
 }
 
 .h-\[110px\] {
@@ -930,6 +910,10 @@ video {
 
 .h-\[1rem\] {
   height: 1rem;
+}
+
+.h-\[2\.2125rem\] {
+  height: 2.2125rem;
 }
 
 .h-\[2\.5rem\] {
@@ -1076,6 +1060,10 @@ video {
   width: 14.875rem;
 }
 
+.w-\[14\.9rem\] {
+  width: 14.9rem;
+}
+
 .w-\[140px\] {
   width: 140px;
 }
@@ -1124,16 +1112,16 @@ video {
   width: 48%;
 }
 
+.w-\[5\.25rem\] {
+  width: 5.25rem;
+}
+
 .w-\[5\.375rem\] {
   width: 5.375rem;
 }
 
 .w-\[7\.625rem\] {
   width: 7.625rem;
-}
-
-.w-\[8\.625rem\] {
-  width: 8.625rem;
 }
 
 .w-\[80px\] {
@@ -1343,12 +1331,12 @@ video {
   gap: 3.625rem;
 }
 
-.gap-\[4\.875rem\] {
-  gap: 4.875rem;
+.gap-\[3\.75rem\] {
+  gap: 3.75rem;
 }
 
-.gap-\[5\.75rem\] {
-  gap: 5.75rem;
+.gap-\[4\.875rem\] {
+  gap: 4.875rem;
 }
 
 .gap-\[9\.75rem\] {
@@ -1709,11 +1697,6 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.py-1\.5 {
-  padding-top: 0.375rem;
-  padding-bottom: 0.375rem;
-}
-
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -1767,24 +1750,24 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.pb-5 {
-  padding-bottom: 1.25rem;
+.pb-4 {
+  padding-bottom: 1rem;
 }
 
-.pb-8 {
-  padding-bottom: 2rem;
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 
 .pb-9 {
   padding-bottom: 2.25rem;
 }
 
-.pb-\[16\.5rem\] {
-  padding-bottom: 16.5rem;
-}
-
 .pb-\[2\.8125rem\] {
   padding-bottom: 2.8125rem;
+}
+
+.pb-\[3\.5rem\] {
+  padding-bottom: 3.5rem;
 }
 
 .pl-0 {
@@ -1831,6 +1814,10 @@ video {
   padding-left: 1.25rem;
 }
 
+.pl-\[1\.5rem\] {
+  padding-left: 1.5rem;
+}
+
 .pl-\[2\.5rem\] {
   padding-left: 2.5rem;
 }
@@ -1875,8 +1862,12 @@ video {
   padding-right: 2rem;
 }
 
-.pr-\[7\.625rem\] {
-  padding-right: 7.625rem;
+.pr-\[0\.375rem\] {
+  padding-right: 0.375rem;
+}
+
+.pr-\[32\.625rem\] {
+  padding-right: 32.625rem;
 }
 
 .pr-\[9\.5625rem\] {
@@ -1905,6 +1896,10 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pt-\[0\.3rem\] {
+  padding-top: 0.3rem;
 }
 
 .pt-\[1\.875rem\] {
@@ -1938,6 +1933,10 @@ video {
 
 .text-\[0\.6564375rem\] {
   font-size: 0.6564375rem;
+}
+
+.text-\[0\.7564375rem\] {
+  font-size: 0.7564375rem;
 }
 
 .text-\[0\.8564375rem\] {
