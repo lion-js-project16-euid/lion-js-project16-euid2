@@ -89,7 +89,79 @@
       },
       "like": 80,
       "href": "/views/detail/5.sonyHeadset.html"
-    }    
+    },
+    {
+      "id": 6,
+      "user": "피카피카",
+      "userProfile": "/assets/detail/profile_pika.jpeg",
+      "temperature" : "36.5℃ 😊",
+      "name": "스타벅스 아이스 아메리카노",
+      "category": "음료",
+      "description": "커피를 못 마셔서 쿠폰 처분합니다. 유효기간 1년 정도 남아서 사용하시기에 충분할 겁니다! 구매 희망하시는 분들 DM 부탁드려요~",
+      "price": "3,500원",
+      "location": "마포구 신수동",
+      "upload": "1일 전",
+      "image": {
+        "img": "/assets/detail/coffee.jpeg",
+        "alt": "스타벅스 아이스 아메리카노"
+      },
+      "like": 8,
+      "href": "/views/detail/6.coffee.html"
+    },
+    {
+      "id": 7,
+      "user": "망그러진곰돌이",
+      "userProfile": "/assets/detail/profile_bear.png",
+      "temperature" : "34.1℃ 😊",
+      "name": "Apple Pencil 2세대",
+      "category": "컴퓨터",
+      "description": "아이패드 살 때 애플펜슬은 필수일 것 같아서 샀는데 그림을 그리지 않아서 그런지 잘 안 쓰게 되어 올립니다. 3번 정도 사용했고 박스까지 모두 있습니다.",
+      "price": "100,000원",
+      "location": "마포구 합정동",
+      "upload": "36분 전",
+      "image": {
+        "img": "/assets/detail/apple-pencil.jpeg",
+        "alt": "애플 펜슬 2세대"
+      },
+      "like": 72,
+      "href": "/views/detail/7.applePencil.html"
+    },
+    {
+      "id": 8,
+      "user": "망그러진곰돌이",
+      "userProfile": "/assets/detail/profile_bear.png",
+      "temperature" : "34.1℃ 😊",
+      "name": "COX 무접점 키보드",
+      "category": "키보드",
+      "description": "전직장에서 사용하려고 샀는데 소리도 크지 않고 타건감도 좋아서 1년 동안 아주 잘 썼습니다. 회사 제 자리에서만 사용해서 상태 깨끗한 편입니다. 이직하면서 새로운 키보드 경험해 보고 싶어서 기존 키보느는 처분합니다. 싸게 내놓은 만큼 가격 조율은 불가합니다.",
+      "price": "80,000원",
+      "location": "마포구 합정동",
+      "upload": "11분 전",
+      "image": {
+        "img": "/assets/detail/coxKeyboard.jpeg",
+        "alt": "콕스 엠프리스 오리지널 레트로 PBT 무접점 키보드 50g"
+      },
+      "like": 72,
+      "href": "/views/detail/8.coxKeyboard.html"
+    },
+    {
+      "id": 9,
+      "user": "",
+      "userProfile": "",
+      "temperature" : "",
+      "name": "",
+      "category": "",
+      "description": "",
+      "price": "",
+      "location": "",
+      "upload": "",
+      "image": {
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmzDw2Cm5zMwwkJ3oYWkQkLjJVzYYeJ5PhKg&usqp=CAU",
+        "alt": ""
+      },
+      "like": "",
+      "href": ""
+    }
   ],
   "storyData": [
     {
