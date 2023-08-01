@@ -37,7 +37,7 @@
       <div class="w-auto h-9 px-6 pt-2 pb-1 timeLine"></div>
       <div class="w-auto h-9 backLine"></div>
       <div class="w-auto h-64 pb-3 px-2.5 certificateLine">
-        <form>
+        <form class="loginForm">
           <input
             type="tel"
             id="phone"
@@ -45,8 +45,6 @@
             placeholder="휴대폰 번호(-없이 숫자만 입력)"
             class="w-[95%] mx-auto h-10 rounded-md pl-3 border-black border-solid border-x border-y my-3 text-contentsSecondary placeholder:text-sm block"
           />
-          <!-- placeholer글자에 이전에 입력했던 전화번호 들어오도록 -->
-          <!-- 비활성화도 해놓으면 좋을듯? -->
           <button
             id="loginNumAgain"
             type="submit"
@@ -54,9 +52,6 @@
           >
             인증문자 다시 받기(05분 00초)
           </button>
-          <!-- 타이머 설정해서 시간 바뀌도록 -->
-          <!-- timeset하면 되려나... -->
-          <!-- timeset1000 해서 00이면 앞에꺼 바꾸고 뭐 그런식? -->
           <input
             type="tel"
             id="certificationNum"
