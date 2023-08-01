@@ -1,0 +1,8 @@
+.hidden {
+  display: none;
+}
+
+.is-active{
+  color: white;
+  border-bottom: 1px solid #719CF7;
+}

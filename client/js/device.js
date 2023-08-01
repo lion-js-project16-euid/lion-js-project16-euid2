@@ -1,4 +1,4 @@
-import { getNode, renderPost, tiger, toggleClass, attr } from '../lib/index.js';
+import { getNode, renderPost, tiger, toggleClass, attr } from '/lib/index.js';
 
 const URL = 'http://localhost:3000/device';
 
@@ -17,8 +17,15 @@ async function renderPostList() {
   });
 }
 
+let buttonState = true;
 function handleAddDevice() {
   toggleClass(addList, 'hidden');
+  if (buttonState === true) {
+    attr('.add-button-img', 'src', '/assets/icon-plus-button-full.svg');
+  } else {
+    attr('.add-button-img', 'src', '/assets/icon-plus-button.svg');
+  }
+  buttonState = !buttonState;
 }
 
 let status = true;

@@ -1,8 +1,5 @@
 // re-export
 
-//! DOM 에 없어서 에러 발생 -> 추후 사용 시 추가 필요
-// export * from './swiper.js';
-// export * from '../../js/partials/userList.js';
 export * from './css.js';
 export * from './attr.js';
 export * from './insert.js';

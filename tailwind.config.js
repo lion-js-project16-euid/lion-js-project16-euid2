@@ -43,6 +43,11 @@ module.exports = {
         myHeight348: '21.75rem',
         myHeight820: '51.25rem',
       },
+      backgroundImage: {
+        'icon-search': 'url("/assets/icon-search.svg")',
+        'icon-plus': 'url("/assets/icon-plus.svg")',
+        'icon-checked': 'url("/assets/icon-checked.svg")',
+      },
     },
   },
   plugins: [],
