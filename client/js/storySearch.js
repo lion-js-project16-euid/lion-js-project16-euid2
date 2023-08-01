@@ -55,6 +55,10 @@ function displayPosts(posts) {
               <img src=${post.imgSrc} alt=${post.alt} class="w-[140px] h-[110px] rounded-lg" />
           </div>
         </a>
+        <button type="button" class="like-button flex items-center absolute bottom-0 right-0 p-3">
+          <img src="/assets/icon-heart.svg" alt="좋아요 버튼" class="like-icon" /><span class="like-data p-1 text-xs">${post.like}</span>
+        </button>
+      </article>
      `
   );
   postList.innerHTML = postItems.join('');
