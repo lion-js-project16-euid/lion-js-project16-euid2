@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/normalize.css" />
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/tailwind.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/tailwind.css" />
+    <link rel="icon" href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" type="image/xml+svg" />
     <link
       rel="stylesheet"
       as="style"
@@ -16,13 +17,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <title>Enter Euid - Search</title>
+    <script src="/js/common/common.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   </head>
-  <body>
+  <body class="m-auto">
     <div class="flex flex-col max-w-3xl h-screen items-center pt-[2.3125rem]">
       <header class="flex justify-center items-center pt-1 pl-0 pb-2 pr-0 self-stretch gap-4">
+        <div class="flex items-center justify-between px-3 py-2 bg-white">
+          <span class="nowTime text-sm font-semibold"></span>
+          <div class="flex">
+            <img src="/assets/icon-celluar.svg" alt="네트워크" class="pl-1" />
+            <img src="/assets/icon-lte.svg" alt="LTE" class="p-1" />
+            <img src="/assets/icon-battery.svg" alt="배터리 잔량" class="p-1" />
+          </div>
+        </div>
         <div>
-          <img alt="뒤로가기" src="../assets/icons/Icon/backBtn.svg" />
+          <img alt="뒤로가기" src="/assets/icons/Icon/backBtn.svg" onclick="history.back()" />
         </div>
         <div>
           <input

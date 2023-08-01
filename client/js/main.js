@@ -1,14 +1,16 @@
-import { getNode } from './../lib/index.js';
+import { getNode } from '/lib/index.js';
 
 const temp = getNode('.startButton'); //여기 값은 시작화면 id/class에 맞춰줘야됨
+
 temp.addEventListener('click', function (e) {
   //EventListener'click' 들어오면 UniqueID탐색
   e.preventDefault();
-  //   const localStorageCopy = [...localStorage];
+
   const keysForUnique = Object.keys(localStorage);
   const valuesForUnique = Object.values(localStorage);
   const indexOfUnique = keysForUnique.indexOf('uniqueID');
   const uniqueNum = valuesForUnique[indexOfUnique];
+
   if (typeof uniqueNum !== 'undefined') {
     console.log(1);
     if (uniqueNum.length != 10) {
