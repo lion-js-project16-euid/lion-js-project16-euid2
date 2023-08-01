@@ -1,4 +1,4 @@
-import { addClass, attr, getNode, removeClass } from '../lib/index.js';
+import { addClass, attr, getNode, removeClass } from '/lib/index.js';
 
 function phoneReg(text) {
   const re = /^[0-9]{3}[0-9]{4}[0-9]{4}$/;

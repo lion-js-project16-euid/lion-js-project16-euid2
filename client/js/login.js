@@ -1,4 +1,4 @@
-import { addClass, attr, getNode, removeClass } from '../lib/index.js';
+import { addClass, attr, getNode, removeClass } from '/lib/index.js';
 /*
 import { addClass } from './../lib/dom/css';
 ------------------Login----------------

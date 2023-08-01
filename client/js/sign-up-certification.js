@@ -1,4 +1,4 @@
-import { addClass, getNode, getRandom, removeClass } from './../lib/index.js';
+import { addClass, getNode, getRandom, removeClass } from '/lib/index.js';
 
 const phone_input = getNode('#phone');
 const get = localStorage.getItem('phoneNum');

@@ -1,4 +1,4 @@
-import { getNode } from '../lib/index.js';
+import { getNode } from '/lib/index.js';
 
 const cancelProfile = getNode('.cancelProfile');
 
