@@ -1324,6 +1324,10 @@ video {
   gap: 9.9rem;
 }
 
+.gap-\[3\.75rem\] {
+  gap: 3.75rem;
+}
+
 .self-stretch {
   align-self: stretch;
 }
@@ -1888,6 +1892,10 @@ video {
 
 .pt-\[3\.75rem\] {
   padding-top: 3.75rem;
+}
+
+.pl-\[8\.4375rem\] {
+  padding-left: 8.4375rem;
 }
 
 .text-left {
