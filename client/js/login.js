@@ -27,7 +27,7 @@ phone_input.addEventListener('input', () => {
   if (checkValidationPhoneNumRegister.includes('is--invalid')) {
     removeClass(loginButton, 'text-black');
     removeClass(loginButton, 'text-base');
-    removeClass(loginButton, 'text-bold');
+    removeClass(loginButton, 'font-bold');
     removeClass(loginButton, 'border-black');
     addClass(loginButton, 'text-contentsSecondary');
     addClass(loginButton, 'border-contentsSecondary');

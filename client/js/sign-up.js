@@ -27,18 +27,21 @@ phone_input.addEventListener('input', () => {
   if (checkValidationPhoneNumRegister.includes('is--invalid')) {
     removeClass(registerButton, 'text-black');
     removeClass(registerButton, 'text-base');
-    removeClass(registerButton, 'text-semibold');
+    removeClass(registerButton, 'font-bold');
+    removeClass(registerButton, 'border-black');
     addClass(registerButton, 'text-contentsSecondary');
     addClass(registerButton, 'border-contentsSecondary');
-    addClass(registerButton, 'text-sm');
+    addClass(registerButton, 'text-base');
     addClass(registerButton, 'cursor-not-allowed');
   } else {
     removeClass(registerButton, 'text-contentsSecondary');
-    removeClass(registerButton, 'text-sm');
+    removeClass(registerButton, 'border-contentsSecondary');
+    removeClass(registerButton, 'text-base');
     removeClass(registerButton, 'cursor-not-allowed');
     addClass(registerButton, 'text-black');
     addClass(registerButton, 'text-base');
-    addClass(registerButton, 'font-semibold');
+    addClass(registerButton, 'font-bold');
+    addClass(registerButton, 'border-black');
   }
 });
 

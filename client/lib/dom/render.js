@@ -52,7 +52,7 @@ function createPost(item) {
             <div class="state flex">    
               <strong class="text-sm">${price}</strong>
             </div>
-            <div class="flex items-center text-[10px] text-contents">
+            <div class="flex items-center text-xs text-contents">
               <span>${location}</span>
               <span aria-hidden="true" class="p-1">&middot;</span>
               <span>${upload}</span>
@@ -83,23 +83,23 @@ function createDetail(item) {
         src="${userProfile}"
         ,
         alt="${user} 사용자 프로필 사진"
-        class="w-12 h-12 rounded-[50px] m-[6px]"
+        class="w-12 h-12 rounded-[50px] m-[6px] mr-3"
       />
       <div class="flex flex-col">
         <span class="text-sm font-semibold" aria-label="닉네임 ${user}">${user}</span>
-        <span class="text-[10px]" aria-label="위치 ${location}">${location}</span>
+        <span class="text-xs" aria-label="위치 ${location}">${location}</span>
       </div>
     </div>
     <div class="flex flex-col-reverse justify-center">
-      <span class="text-[10px] text-contentsSecondary">매너온도</span>
+      <span class="text-xs text-contentsSecondary">매너온도</span>
       <span class="text-secondary text-sm font-semibold">${temperature}</span>
     </div>
   </a>
 </div>
 
-<article class="m-[10px]">
+<article class="m-4">
   <h2 class="text-lg font-semibold my-1">${name}</h2>
-  <div class="text-[10px] text-contentsSecondary">
+  <div class="text-xs text-contentsSecondary">
     <span aria-label="카테고리 ${category}">${category}</span>
     <span class="p-1">&middot;</span>
     <span aria-label="업로드 ${upload}">${upload}</span>
@@ -111,7 +111,7 @@ function createDetail(item) {
     </button>
     <div class="flex flex-col border-l border-contentsSecondary border-solid mx-3 px-3">
       <span class="text-sm font-semibold">${price}</span>
-      <a href="#" class="text-secondary text-[10px] font-semibold">가격 제안하기</a>
+      <a href="#" class="text-secondary text-xs font-semibold">가격 제안하기</a>
     </div>
     <a
       href="/views/chat.html"
