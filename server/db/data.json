@@ -146,5 +146,67 @@
       "school": "프론트엔드",
       "writer": "1기 수강생"
     }
+  ],
+  "searchData": [
+    {
+      "title": "날아라 호빵맨 스티커(카라빵맨 포함)",
+      "url": "/views/detail/0.sticker.html",
+      "imgSrc": "/assets/device/sticker.png",
+      "location": "마포구 공덕공",
+      "upload": "10일 전",
+      "price": "30,000원",
+      "alt": "날아라 호빵맨 띠부씰",
+      "like": 3000
+    },
+    {
+      "title": "2020 MacBook Air M1",
+      "url": "/views/detail/1.MacBookAirM1.html",
+      "imgSrc": "/assets/device/MacBookAirM1.jpg",
+      "location": "마포구 염리동",
+      "upload": "13일 전",
+      "price": "820,000원",
+      "alt": "맥북 M1 에어",
+      "like": 20
+    },
+    {
+      "title": "애플 매직마우스",
+      "url": "/views/detail/2.appleMouse.html",
+      "imgSrc": "/assets/device/appleMouse.jpeg",
+      "location": "마포구 신수동",
+      "upload": "1주 전",
+      "price": "55,000원",
+      "alt": "애플 매직마우스 화이트",
+      "like": 2
+    },
+    {
+      "title": "삼성 제트플립4 256GB",
+      "url": "/views/detail/3.samsungZflip.html",
+      "imgSrc": "/assets/device/samsungZflip.avif",
+      "location": "마포구 도화동",
+      "upload": "7일 전",
+      "price": "600,000원",
+      "alt": "삼성 제트플립4 퍼플",
+      "like": 5
+    },
+    {
+      "title": "주연테크 4K UHD 모니터",
+      "url": "/views/detail/4.jooyonMonitor.html",
+      "imgSrc": "/assets/device/jooyonMonitor.png",
+      "location": "마포구 합정동",
+      "upload": "7일 전",
+      "price": "300,000원",
+      "alt": "주연테크 71cm 울트라 4K UHD HDR USB C지원 모니터",
+      "like": 17
+    },
+    {
+      "title": "소니 헤드셋",
+      "url": "/views/detail/5.sonyHeadset.html",
+      "imgSrc": "/assets/device/sonyHeadset.png",
+      "location": "마포구 염리동",
+      "upload": "3일 전",
+      "price": "170,000원",
+      "alt": "소니 WH-CH720N 헤드셋",
+      "like": 80
+    }
   ]
 }
