@@ -41,7 +41,7 @@ function createPost(item) {
       </div>
     </a>
     <button type="button" class="like-button flex items-center absolute bottom-0 right-0 p-3 ">
-      <img src="/assets/icon-heart.svg" alt="좋아요 버튼" class="like-icon data-[index]:${id}" />
+      <img src="/assets/icon-heart.svg" alt="좋아요 버튼" class="data-[index]:${id}" />
       <span class="p-1 text-xs">${like}</span>
     </button>
   </article>
