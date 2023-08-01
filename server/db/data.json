@@ -89,7 +89,79 @@
       },
       "like": 80,
       "href": "/views/detail/5.sonyHeadset.html"
-    }    
+    },
+    {
+      "id": 6,
+      "user": "피카피카",
+      "userProfile": "/assets/detail/profile_pika.jpeg",
+      "temperature" : "36.5℃ 😊",
+      "name": "스타벅스 아이스 아메리카노",
+      "category": "음료",
+      "description": "커피를 못 마셔서 쿠폰 처분합니다. 유효기간 1년 정도 남아서 사용하시기에 충분할 겁니다! 구매 희망하시는 분들 DM 부탁드려요~",
+      "price": "3,500원",
+      "location": "마포구 신수동",
+      "upload": "1일 전",
+      "image": {
+        "img": "/assets/detail/coffee.jpeg",
+        "alt": "스타벅스 아이스 아메리카노"
+      },
+      "like": 8,
+      "href": "/views/detail/6.coffee.html"
+    },
+    {
+      "id": 7,
+      "user": "망그러진곰돌이",
+      "userProfile": "/assets/detail/profile_bear.png",
+      "temperature" : "34.1℃ 😊",
+      "name": "Apple Pencil 2세대",
+      "category": "컴퓨터",
+      "description": "아이패드 살 때 애플펜슬은 필수일 것 같아서 샀는데 그림을 그리지 않아서 그런지 잘 안 쓰게 되어 올립니다. 3번 정도 사용했고 박스까지 모두 있습니다.",
+      "price": "100,000원",
+      "location": "마포구 합정동",
+      "upload": "36분 전",
+      "image": {
+        "img": "/assets/detail/apple-pencil.jpeg",
+        "alt": "애플 펜슬 2세대"
+      },
+      "like": 72,
+      "href": "/views/detail/7.applePencil.html"
+    },
+    {
+      "id": 8,
+      "user": "망그러진곰돌이",
+      "userProfile": "/assets/detail/profile_bear.png",
+      "temperature" : "34.1℃ 😊",
+      "name": "COX 무접점 키보드",
+      "category": "키보드",
+      "description": "전직장에서 사용하려고 샀는데 소리도 크지 않고 타건감도 좋아서 1년 동안 아주 잘 썼습니다. 회사 제 자리에서만 사용해서 상태 깨끗한 편입니다. 이직하면서 새로운 키보드 경험해 보고 싶어서 기존 키보느는 처분합니다. 싸게 내놓은 만큼 가격 조율은 불가합니다.",
+      "price": "80,000원",
+      "location": "마포구 합정동",
+      "upload": "11분 전",
+      "image": {
+        "img": "/assets/detail/coxKeyboard.jpeg",
+        "alt": "콕스 엠프리스 오리지널 레트로 PBT 무접점 키보드 50g"
+      },
+      "like": 72,
+      "href": "/views/detail/8.coxKeyboard.html"
+    },
+    {
+      "id": 9,
+      "user": "",
+      "userProfile": "",
+      "temperature" : "",
+      "name": "",
+      "category": "",
+      "description": "",
+      "price": "",
+      "location": "",
+      "upload": "",
+      "image": {
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmzDw2Cm5zMwwkJ3oYWkQkLjJVzYYeJ5PhKg&usqp=CAU",
+        "alt": ""
+      },
+      "like": "",
+      "href": ""
+    }
   ],
   "storyData": [
     {
@@ -145,6 +217,68 @@
       "text": "필수 교육시간 9-18시 시간외에도 활발히 소통하는 운영부가 최대 장점이었다고 생각합니다. 100% 온라인 교육이라는 것을 알고 기대 없이 시작했는데 온라인 교육도 연결감을 형성할 수 잇다는 것에 놀랐습니다. 국비교육치고 이탈자가 정말 적엇다고 들었는데 이점이 큰 역할을 한것 같습니다.",
       "school": "프론트엔드",
       "writer": "1기 수강생"
+    }
+  ],
+  "searchData": [
+    {
+      "title": "날아라 호빵맨 스티커(카라빵맨 포함)",
+      "url": "/views/detail/0.sticker.html",
+      "imgSrc": "/assets/device/sticker.png",
+      "location": "마포구 공덕공",
+      "upload": "10일 전",
+      "price": "30,000원",
+      "alt": "날아라 호빵맨 띠부씰",
+      "like": 3000
+    },
+    {
+      "title": "2020 MacBook Air M1",
+      "url": "/views/detail/1.MacBookAirM1.html",
+      "imgSrc": "/assets/device/MacBookAirM1.jpg",
+      "location": "마포구 염리동",
+      "upload": "13일 전",
+      "price": "820,000원",
+      "alt": "맥북 M1 에어",
+      "like": 20
+    },
+    {
+      "title": "애플 매직마우스",
+      "url": "/views/detail/2.appleMouse.html",
+      "imgSrc": "/assets/device/appleMouse.jpeg",
+      "location": "마포구 신수동",
+      "upload": "1주 전",
+      "price": "55,000원",
+      "alt": "애플 매직마우스 화이트",
+      "like": 2
+    },
+    {
+      "title": "삼성 제트플립4 256GB",
+      "url": "/views/detail/3.samsungZflip.html",
+      "imgSrc": "/assets/device/samsungZflip.avif",
+      "location": "마포구 도화동",
+      "upload": "7일 전",
+      "price": "600,000원",
+      "alt": "삼성 제트플립4 퍼플",
+      "like": 5
+    },
+    {
+      "title": "주연테크 4K UHD 모니터",
+      "url": "/views/detail/4.jooyonMonitor.html",
+      "imgSrc": "/assets/device/jooyonMonitor.png",
+      "location": "마포구 합정동",
+      "upload": "7일 전",
+      "price": "300,000원",
+      "alt": "주연테크 71cm 울트라 4K UHD HDR USB C지원 모니터",
+      "like": 17
+    },
+    {
+      "title": "소니 헤드셋",
+      "url": "/views/detail/5.sonyHeadset.html",
+      "imgSrc": "/assets/device/sonyHeadset.png",
+      "location": "마포구 염리동",
+      "upload": "3일 전",
+      "price": "170,000원",
+      "alt": "소니 WH-CH720N 헤드셋",
+      "like": 80
     }
   ]
 }
