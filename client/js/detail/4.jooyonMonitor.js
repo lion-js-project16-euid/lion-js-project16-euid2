@@ -6,22 +6,25 @@ const postDetail = getNode('.detail-wrapper');
 const response = await tiger.get(URL);
 const data = response.data;
 
-const detailButton = getNode('.detail-button');
-
 async function renderDetailList() {
   response;
   renderDetail(postDetail, data);
 }
 
 let status = true;
-function handleLikeButton() {
+function handleLikeButton(e) {
+  const buttonImg = e.target.closest('button').querySelector('img');
+  console.log(buttonImg);
+
   if (status === true) {
-    attr('.detail-like-button', 'src', '/assets/icon-heart-strignt-full.svg');
+    attr(buttonImg, 'src', '/assets/icon-heart-strignt-full.svg');
   } else {
-    attr('.detail-like-button', 'src', '/assets/icon-heart-strignt.svg');
+    attr(buttonImg, 'src', '/assets/icon-heart-strignt.svg');
   }
+
   status = !status;
+  response;
 }
 
 renderDetailList();
-detailButton.addEventListener('click', handleLikeButton);
+postDetail.addEventListener('click', handleLikeButton);
