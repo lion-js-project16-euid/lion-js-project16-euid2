@@ -5,10 +5,16 @@ import { getNode } from './../lib/index.js';
 //uniqueID의 값을 유효하지않게 만들어주기
 
 const logout = getNode('#profileLogout');
+const myProfile = getNode('.myProfile');
 
 function logoutFunc() {
   localStorage.setItem('uniqueID', ' ');
-  window.location.href = 'http://localhost:5500/index.html';
+  window.location.href = 'http://localhost:5500/views/index.html';
+}
+
+function myProfileHref() {
+  window.location.href = 'http://localhost:5500/views/profileCard.html';
 }
 
 logout.addEventListener('click', logoutFunc);
+myProfile.addEventListener('click', myProfileHref);
