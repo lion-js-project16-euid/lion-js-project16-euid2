@@ -558,12 +558,12 @@ video {
   position: relative;
 }
 
-.bottom-0 {
-  bottom: 0px;
+.-right-4 {
+  right: -1rem;
 }
 
-.bottom-14 {
-  bottom: 3.5rem;
+.bottom-0 {
+  bottom: 0px;
 }
 
 .bottom-\[10\%\] {
@@ -572,6 +572,10 @@ video {
 
 .left-\[9\.5rem\] {
   left: 9.5rem;
+}
+
+.left-full {
+  left: 100%;
 }
 
 .left-profileDotLeft {
@@ -594,12 +598,120 @@ video {
   top: 45%;
 }
 
+.top-forDeviceComputer {
+  top: 48rem;
+}
+
+.top-forDeviceElse {
+  top: 56rem;
+}
+
+.top-forDeviceHeadset {
+  top: 36rem;
+}
+
+.top-forDeviceKeyboard {
+  top: 40rem;
+}
+
+.top-forDeviceMouse {
+  top: 44rem;
+}
+
+.top-forDevicePhone {
+  top: 52rem;
+}
+
 .top-profileDotTop {
   top: 3rem;
 }
 
 .top-profilePencilTop {
   top: 3.15rem;
+}
+
+.left-3\/4 {
+  left: 75%;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.-right-10 {
+  right: -2.5rem;
+}
+
+.-right-20 {
+  right: -5rem;
+}
+
+.-right-1\/4 {
+  right: -25%;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.bottom-3 {
+  bottom: 0.75rem;
+}
+
+.bottom-1 {
+  bottom: 0.25rem;
+}
+
+.bottom-20 {
+  bottom: 5rem;
+}
+
+.bottom-4 {
+  bottom: 1rem;
+}
+
+.bottom-8 {
+  bottom: 2rem;
+}
+
+.bottom-12 {
+  bottom: 3rem;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
+.left-auto {
+  left: auto;
+}
+
+.left-1\/3 {
+  left: 33.333333%;
+}
+
+.-right-14 {
+  right: -3.5rem;
+}
+
+.left-52 {
+  left: 13rem;
+}
+
+.right-20 {
+  right: 5rem;
+}
+
+.left-96 {
+  left: 24rem;
+}
+
+.left-forDeviceElse {
+  left: 56rem;
+}
+
+.left-forDeviceHeadset {
+  left: 36rem;
 }
 
 .z-10 {
@@ -990,6 +1102,10 @@ video {
 
 .w-24 {
   width: 6rem;
+}
+
+.w-28 {
+  width: 7rem;
 }
 
 .w-3 {

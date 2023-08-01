@@ -19,9 +19,10 @@ async function renderPostList() {
 
 let buttonState = true;
 function handleAddDevice() {
-  toggleClass(addList, 'hidden');
+  // toggleClass(addList, 'hidden');
   if (buttonState === true) {
     attr('.add-button-img', 'src', '/assets/icon-plus-button-full.svg');
+    
   } else {
     attr('.add-button-img', 'src', '/assets/icon-plus-button.svg');
   }
