@@ -4,21 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../assets/euid-pavicon.png" />
-    <link rel="stylesheet" href="./../css/reset.css" />
-    <link rel="stylesheet" href="./../css/normalize.css" />
-    <link rel="stylesheet" href="./../css/main.css" />
+    <!-- prettier-ignore -->
     <link
       rel="stylesheet"
       as="style"
       crossorigin
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css"
     />
+    <link rel="icon" href="/assets/euid-pavicon.png" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/main.css" />
 
     <link rel="icon" href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" type="image/xml+svg" />
 
-    <script src="./../js/profileCard.js" type="module"></script>
-    <script src="./../js/common/common.js" type="module"></script>
+    <script src="/js/profileCard.js" type="module"></script>
+    <script src="/js/common/common.js" type="module"></script>
     <title>Enter Euid - Profile</title>
   </head>
   <body>
@@ -27,38 +28,38 @@
       <div class="flex items-center justify-between px-3 py-2">
         <span class="nowTime text-sm font-semibold"></span>
         <div class="flex">
-          <img src="../assets/icon-celluar.svg" alt="네트워크" class="pl-1" />
-          <img src="../assets/icon-lte.svg" alt="LTE" class="p-1" />
-          <img src="../assets/icon-battery.svg" alt="배터리 잔량" class="p-1" />
+          <img src="/assets/icon-celluar.svg" alt="네트워크" class="pl-1" />
+          <img src="/assets/icon-lte.svg" alt="LTE" class="p-1" />
+          <img src="/assets/icon-battery.svg" alt="배터리 잔량" class="p-1" />
         </div>
       </div>
     </header>
     <nav class="bg-white fixed w-full max-w-3xl bottom-0 z-10 border-solid border-black border-l border-r border-b">
       <ul class="flex justify-between items-center w-full">
         <li>
-          <a href="./story.html" class="flex flex-col items-center py-1">
-            <img src="../assets/icon-home.svg" alt="홈으로 이동" />
+          <a href="/views/story.html" class="flex flex-col items-center py-1">
+            <img src="/assets/icon-home.svg" alt="홈으로 이동" />
             <span class="text-xs inline-block w-16 text-center">홈</span>
           </a>
         </li>
         <li>
           <a href="#" class="flex flex-col items-center px-"
-            ><img src="../assets/icon-life.svg" alt="게시판으로 이동" /><span
+            ><img src="/assets/icon-life.svg" alt="게시판으로 이동" /><span
               class="text-xs inline-block w-16 text-center"
               >게시판</span
             ></a
           >
         </li>
         <li>
-          <a href="./device.html" class="flex flex-col items-center py-1"
-            ><img src="../assets/icon-map.svg" alt="내근처로 이동" /><span class="text-xs inline-block w-16 text-center"
+          <a href="/views/device.html" class="flex flex-col items-center py-1"
+            ><img src="/assets/icon-map.svg" alt="내근처로 이동" /><span class="text-xs inline-block w-16 text-center"
               >내 근처</span
             ></a
           >
         </li>
         <li>
           <a href="#" class="flex flex-col items-center py-1"
-            ><img src="../assets/icon-chat.svg" alt="채팅으로 이동" /><span
+            ><img src="/assets/icon-chat.svg" alt="채팅으로 이동" /><span
               class="text-xs inline-block w-16 text-center"
               >채팅</span
             ></a
@@ -66,7 +67,7 @@
         </li>
         <li>
           <a href="#" class="flex flex-col items-center py-1"
-            ><img src="../assets/icon-full-my.svg" alt="마이이듬으로 이동" /><span
+            ><img src="/assets/icon-full-my.svg" alt="마이이듬으로 이동" /><span
               class="text-xs inline-block w-16 text-center"
               >마이 이듬</span
             ></a
@@ -78,19 +79,19 @@
       <div class="w-auto h-9 bg-green-200"></div>
       <div class="w-auto h-12 bg-white p-3.5 flex justify-between items-center">
         <p class="text-sm font-semibold">프로필수정</p>
-        <img src="./../assets/icon-close.svg" alt="프로필수정 종료" / class="w-4 h-4 cancelProfile">
+        <img src="/assets/icon-close.svg" alt="프로필수정 종료" / class="w-4 h-4 cancelProfile">
       </div>
       <div class="w-auto h-myHeight820 bg-contentsSecondary px-3 pb-16 pt-2">
         <div class="w-auto h-5 flex items-center">
           <p class="text-sm font-semibold">프로필카드</p>
-          <img src="./../assets/icon-information.svg" alt="" / class="w-3.5 h-3.5">
+          <img src="/assets/icon-information.svg" alt="" / class="w-3.5 h-3.5">
         </div>
         <div class="w-auto h-myHeight74 p-3 bg-white rounded-lg my-ml13 flex justify-between items-center">
             <div class="w-14 h-10">
                 <div class="text-sm font-semibold w-14 h-5 pb-1">EUID***</div>
                 <div class="text-mySize10 text-blue-500 w-6 h-4 pl-for4gui border-solid border-blue-500 border-x border-y rounded-lg">4기</div>
             </div>
-            <img src="./../assets/profile-img.png" alt="" / class="w-mySize50 h-mySize50">
+            <img src="/assets/profile-img.png" alt="" / class="w-mySize50 h-mySize50">
         </div>
         <div class="w-auto h-11 rounded-t-lg bg-white pl-3 pb-3 pr-4 pt-2.5 flex justify-between items-center border-solid border-b border-contentsSecondary">
             <p class="text-sm font-semibold">기본 정보</p>
@@ -99,7 +100,7 @@
         <div class="w-auto h-myHeight348 bg-white mb-4 py-2.5 px-ml13">
             <div class="flex justify-between items-center">
                 <p class="text-sm font-semibold">프로필 사진</p>
-                <img src="./../assets/profile-img.png" alt="" / class="w-6 h-6">
+                <img src="/assets/profile-img.png" alt="" / class="w-6 h-6">
             </div>
             <div class="my-ml18 flex justify-between items-center">
                 <p class="text-sm font-semibold">이름(별명)</p>
