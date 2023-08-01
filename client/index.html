@@ -6,18 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- prettier-ignore -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css" />
-    <link rel="icon" href="/assets/euid-pavicon.png" />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/main.css" />
+    <link rel="icon" href="/assets/euid-pavicon.png" />
+    <script src="/js/common/common.js" type="module"></script>
     <script src="/js/main.js" type="module"></script>
-    <title>✨바른 교육 - Enter Euid</title>
+    <title>✨Enter Euid - 바른 교육 엔터 이듬</title>
   </head>
 
-  <body>
-    <div class="block h-8 bg-green-400"></div>
-    <div class="relative w-full h-screen max-w-md mx-auto">
-      <div class="absolute w-full top-[45%] -translate-y-1/2 flex flex-col basis-auto">
+  <body class="mx-auto overflow-y-hidden h-screen rounded-3xl">
+    <header>
+      <div class="flex items-center justify-between px-3 py-2">
+        <span class="nowTime text-sm font-semibold"></span>
+        <div class="flex">
+          <img src="/assets/icon-celluar.svg" alt="네트워크" class="pl-1" />
+          <img src="/assets/icon-lte.svg" alt="LTE" class="p-1" />
+          <img src="/assets/icon-battery.svg" alt="배터리 잔량" class="p-1" />
+        </div>
+      </div>
+    </header>
+
+    <div class="relative w-full h-full max-w-lg mx-auto">
+      <div class="absolute w-full top-[40%] -translate-y-1/2 flex flex-col basis-auto">
         <h1 class="logo mx-auto block pb-9">
           <a href="#">
             <img src="/assets/common-logo.svg" alt="바른 교육 엔터 이듬" class="w-24 h-8" />
@@ -29,8 +40,8 @@
         </p>
       </div>
 
-      <div class="absolute w-full bottom-[10%] mx-auto startButton">
-        <p class="block w-[95%] mx-auto mb-6 bg-primary text-white py-3 rounded-lg text-center">시작하기</p>
+      <div class="absolute w-full bottom-[10%] mx-auto">
+        <button type="button" class="block w-[95%] mx-auto mb-6 bg-primary text-white py-3 rounded-lg text-center startButton">시작하기</button>
         <p class="text-center text-contentsSecondary text-sm">
           이미 계정이 있나요?
           <a href="/views/login.html" class="text-primary font-bold px-2">로그인</a>

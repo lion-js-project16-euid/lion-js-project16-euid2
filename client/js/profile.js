@@ -1,19 +1,22 @@
 //여기서 메인으로 구현해야 할 부분은 로그아웃
-import { getNode } from './../lib/index.js';
+import { getNode } from '/lib/index.js';
 //로그아웃을 하면
 //localStorage.removeItem('uniqueID')를 해서
 //uniqueID의 값을 유효하지않게 만들어주기
 
 const logout = getNode('#profileLogout');
 const myProfile = getNode('.myProfile');
+const logoutName = getNode('.logoutNickname');
+
+logoutName.textContent = localStorage.getItem('phoneNum');
 
 function logoutFunc() {
   localStorage.setItem('uniqueID', ' ');
-  window.location.href = 'http://localhost:5500/views/index.html';
+  window.location.href = '/index.html';
 }
 
 function myProfileHref() {
-  window.location.href = 'http://localhost:5500/views/profileCard.html';
+  window.location.href = '/views/profileCard.html';
 }
 
 logout.addEventListener('click', logoutFunc);
