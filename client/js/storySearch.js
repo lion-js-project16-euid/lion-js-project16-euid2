@@ -1,21 +1,20 @@
 const searchForm = document.getElementById('searchForm');
-const searchInput = document.getElementById('searchInput');
+const searchInput = document.querySelector('input[name="searchInput"]');
 const keywordDivs = document.querySelectorAll('.keyword');
 const postList = document.getElementById('postList');
 
 document.addEventListener('DOMContentLoaded', () => {
-  searchInput.addEventListener('submit', async event => {
+  searchForm.addEventListener('submit', async event => {
     event.preventDefault();
     const formData = new FormData(searchForm);
-    const searchQuery = formData.get('searchQuery');
-
-    searchInput.value = '';
+    const searchQuery = formData.get('searchInput');
 
     try {
       const response = await fetch('http://localhost:3000/searchData');
       const posts = await response.json();
+      
       const filteredPosts = posts.filter(post => post.title.toLowerCase().includes(searchQuery.toLowerCase()));
-
+     
       displayPosts(filteredPosts);
     } catch (error) {
       console.error('Error fetching product data:', error);
@@ -23,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
 
 function displayPosts(posts) {
   postList.innerHTML = '';
@@ -32,7 +32,7 @@ function displayPosts(posts) {
   }
 
   const postItems = posts.map(
-    post => /* html */ `
+    post =>  `
         <article class="h-[130px] relative border-b border-[#D3D3D3] border-solid data-[index]:10">
           <a href=${post.url}>
             <div class="flex flex-row-reverse p-3">
@@ -59,9 +59,8 @@ function displayPosts(posts) {
       `
   );
   postList.innerHTML = postItems.join('');
-
-  console.log(postItems);
 }
+
 
 // Select Search Keyword
 keywordDivs.forEach(keywordDiv => {
