@@ -138,34 +138,45 @@ Enter-Euid 구현한 기능
 3. 로그아웃 클릭 시 localStorage의 데이터인 Unique ID 값 삭제
 
 ### 성능 검사
+
 1. 시작 페이지 (index.html)
+
 ![](https://lh6.googleusercontent.com/FzQF1Qt3RdpfnAonjFB_I__Yf7DXT5CaEqV4GAZkMYexliLUUcMH4r7rDj9CO0glOroCEkFE2zKzxSMgVO1aHJPTYcVTwodpGWgfJ_--8GvVgx-3vdOARYOVJegCp534CbGU_YKQoQFIpbw7fsnj2mVE9g=s2048)
 
 2. 회원가입 & 로그인 (sign-up.html & login.html)
+
 ![](https://lh3.googleusercontent.com/zYToZMJiQAiIbHAEcRjglhwtSbM7MuJ710-dOVpbPZzVGCHyRBD7NkxdhIznpJgbBwzVpfOF0Pn-iJ07qUwOYl8PXaIRjiZbPbzsVbnH1jgzN0tQExzJyA-KtNoxRY-gZ2eIWE3N_3U3A1dSreB69RPO6A=s2048)
 
 3. 회원가입 & 로그인 인증 (sign-up-certification.html & login-certification.html)
+
 ![](https://lh3.googleusercontent.com/u0Dm-stxnec4KbOahqo3SC07XXEI5xoSZXcrRvFamjWcIja1Rzkjwo4g1_wWUwwaX63Fvvv26cTyoNgXAslOHzDaexg4OWbjqmZviHND67wP8NXPgtV9XLTqjxwcWLmb70OhQLvT3m82uJiPR812KFhw-g=s2048)
 
 4. 카테고리 (category.html)
+
 ![](https://lh3.googleusercontent.com/vHz02nVpyfZNQ1-tFwnA-eDMUNoWZifbmzBMmA-pPFEA2uqphtRvtPgqnS5gEdZILeAsogAu_nL4fALsteTb89EFGaU3bvG0mNR_XK7QVmv4fN1u71wBZi6i2ZoX3k_DbnIhZzYRN6VOxj3EwfuJ9W7yoQ=s2048)
 
 5. 선배님 스토리 (story.html)
+
 ![](https://lh3.googleusercontent.com/yW1Ydf9mJswyxWm8zV--mOKQnMUfVVrz0Tb9_Tp0andGlnHr2iteJorkuXqPdGUVw2CpnxoHLg1ADejyVvOP5ftzRGdUWzu0jE0RsFuN3u2KvzpjQY5NPPaGCjc7_t1lDuLwIqnV1Pt2UaGv09FJH8REgQ=s2048)
 
 6. 기기 거래 (device.html)
+
 ![](https://lh5.googleusercontent.com/I2WWxFG8Et4gdePibRgnb-bhcx6DXyHxp_AnBb96yv1IPz9W88EEsN9d54FaO0MnF94hYOejxUOr0nPl9S4gGgx0fWtPBHNwF9H2DiVuDGckFko28c1KJ0T9w93Z2xJHvt7vRRKlgKJ894Wq16QfOcCjNw=s2048)
 
 7. 기기 상세 
+
 ![](https://lh4.googleusercontent.com/-1czJ3cZIXMz-wUiBo1vDgWimxucD-AGttkFQMt1KiAsPJdkMXmYaaubasvXdQXZyAP-HGxRTyUZpGahQYXIb3NBlySJRk64r2O2wrTCBYyll-RN-VG1099jmZdrWylJOTphPcjvPIURRl77uDjmfJz44A=s2048)
 
 8. 기기 거래 채팅 (chat.html)
+
 ![](https://lh5.googleusercontent.com/Zl75ayf5bVGTnCnqpAcNSTbdPCdlIlloElf6z64fWjBFnJ7J9LXVahVDpYRGePBcOWJh437G80TukvPlewxVvUTT-Mlp_dRqjEKm_In5TVX_rMImWJzU8Fwly6Z7Kyvp0-DFmKmT38dqwUGd-kqGIS78wg=s2048)
 
 9. 프로필 (profile.html)
+
 ![](https://lh5.googleusercontent.com/WIeI6uWe2RFq9LNzQ0bjsc3Tnpyy4wEKByvfoWK11G6N497a4wGDPAGOLSuYhQe6wnOUFHJTa_8aYRKMAfrpwP8eKf2J1ef1_U-Pw84RuX5D7VA93P6tP3hEqrW9RyUDojO6oyXcv-3DAPIYvglYSm-jJw=s2048)
 
 10. 프로필 수정 (profileCard.html)
+
 ![](https://lh6.googleusercontent.com/tQPTgYgz8KNWZyurtrOyGKPJ6w77eOqTKHce6ByaApfd9nzdqow8PQoACGwFJ2rmB8BdolQrElY5lsnk9JeSdTPTJUThZZnuKhWLqQ3hrFP2XSKqLXyq8KwpVRTbytT8k6siMlmnZ7eI7zYcMXJ4G4bPEg=s2048)
 
 
