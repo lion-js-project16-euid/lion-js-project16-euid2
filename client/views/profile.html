@@ -6,75 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="title" content="✨Enter Euid - 프로필" />
     <meta name="author" content="김민성" />
-    <meta name="keywords" content="Profile, logout, passion temperature"/>
-    <meta name="description" content="개인 프로필 화면입니다"/>
-        <!-- prettier-ignore -->
-        <link
-        rel="stylesheet"
-        as="style"
-        crossorigin
-        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css"
-      />
-      <link rel="icon" href="/assets/euid-pavicon.png" />
-      <link rel="stylesheet" href="/css/reset.css" />
-      <link rel="stylesheet" href="/css/normalize.css" />
-      <link rel="stylesheet" href="/css/main.css" />
-
-    <script src="/js/profile.js" type="module"></script>
+    <meta name="keywords" content="Profile, logout, passion temperature" />
+    <meta name="description" content="개인 프로필 화면입니다" />
+    <!-- prettier-ignore -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="icon" href="/assets/euid-pavicon.png" />
     <script src="/js/common/common.js" type="module"></script>
+    <script src="/js/profile.js" type="module"></script>
     <title>Enter Euid - Profile</title>
   </head>
+
   <body class="m-auto">
     <h1 class="sr-only">사용자 프로필</h1>
     <header>
-        <div class="flex items-center justify-between px-3 py-2">
-          <span class="nowTime text-sm font-semibold"></span>
-          <div class="flex">
-            <img src="/assets/icon-celluar.svg" alt="네트워크" class="pl-1" />
-            <img src="/assets/icon-lte.svg" alt="LTE" class="p-1" />
-            <img src="/assets/icon-battery.svg" alt="배터리 잔량" class="p-1" />
-          </div>
+      <div class="flex items-center justify-between px-3 py-2">
+        <span class="nowTime text-sm font-semibold"></span>
+        <div class="flex">
+          <img src="/assets/icon-celluar.svg" alt="네트워크" class="pl-1" />
+          <img src="/assets/icon-lte.svg" alt="LTE" class="p-1" />
+          <img src="/assets/icon-battery.svg" alt="배터리 잔량" class="p-1" />
         </div>
-      </header>
+      </div>
+    </header>
+
     <nav class="bg-white fixed w-full max-w-3xl bottom-0 z-10">
-        <ul class="flex justify-between items-center w-full">
-          <li>
-            <a href="/views/story.html" class="flex flex-col items-center py-1">
-              <img src="../assets/icon-home.svg" alt="홈으로 이동" />
-              <span class="text-xs inline-block w-16 text-center">홈</span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="flex flex-col items-center px-"
-              ><img src="../assets/icon-life.svg" alt="게시판으로 이동" /><span class="text-xs inline-block w-16 text-center"
-                >게시판</span
-              ></a
-            >
-          </li>
-          <li>
-            <a href="/views/device.html" class="flex flex-col items-center py-1"
-              ><img src="../assets/icon-map.svg" alt="내근처로 이동" /><span class="text-xs inline-block w-16 text-center"
-                >내 근처</span
-              ></a
-            >
-          </li>
-          <li>
-            <a href="#" class="flex flex-col items-center py-1"
-              ><img src="../assets/icon-chat.svg" alt="채팅으로 이동" /><span class="text-xs inline-block w-16 text-center"
-                >채팅</span
-              ></a
-            >
-          </li>
-          <li>
-            <a href="#" class="flex flex-col items-center py-1"
-              ><img src="../assets/icon-full-my.svg" alt="마이이듬으로 이동" /><span class="text-xs inline-block w-16 text-center"
-                >마이 이듬</span
-              ></a
-            >
-          </li>
-        </ul>
-      </nav>
-    <div class=" max-w-3xl h-auto border-solid ">
+      <ul class="flex justify-between items-center w-full">
+        <li>
+          <a href="/views/story.html" class="flex flex-col items-center py-1">
+            <img src="../assets/icon-home.svg" alt="홈으로 이동" />
+            <span class="text-xs inline-block w-16 text-center">홈</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex flex-col items-center px-"
+            ><img src="../assets/icon-life.svg" alt="게시판으로 이동" /><span
+              class="text-xs inline-block w-16 text-center"
+              >게시판</span
+            ></a
+          >
+        </li>
+        <li>
+          <a href="/views/device.html" class="flex flex-col items-center py-1"
+            ><img src="../assets/icon-map.svg" alt="내근처로 이동" /><span class="text-xs inline-block w-16 text-center"
+              >내 근처</span
+            ></a
+          >
+        </li>
+        <li>
+          <a href="#" class="flex flex-col items-center py-1"
+            ><img src="../assets/icon-chat.svg" alt="채팅으로 이동" /><span
+              class="text-xs inline-block w-16 text-center"
+              >채팅</span
+            ></a
+          >
+        </li>
+        <li>
+          <a href="#" class="flex flex-col items-center py-1"
+            ><img src="../assets/icon-full-my.svg" alt="마이이듬으로 이동" /><span
+              class="text-xs inline-block w-16 text-center"
+              >마이 이듬</span
+            ></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="max-w-3xl h-auto border-solid">
       <div class="w-auto h-60 pt-10 pl-8 pr-8 pb-5">
         <div class="w-auto h-32 pb-1">
           <div class="w-24 h-32 mx-auto relative">
@@ -126,39 +125,41 @@
             <img src="/assets/icon-information.svg" alt="세부정보" / class="w-4 h-4">
         </div>
         <div>
-            <div class="pl-profileDotLeft flex flex-row flex-nowrap justify-between">
-                <div class="w-1/3 h-6">
-                    <p class="text-mySize10 font-normal text-contentsSecondary w-16 h-3 mx-auto">첫 온도 36.5℃</p>
-                    <p class="text-mySize10 font-normal text-contentsSecondary w-2 h-2 mx-auto">▼</p>
-                </div>
-                <div>
-                    <p class="w-11 h-5 text-sm font-semibold text-blue-500 inline-block">41.2℃</p>
-                    <div class="inline-block">😄</div>
-                </div>
+          <div class="pl-profileDotLeft flex flex-row flex-nowrap justify-between">
+            <div class="w-1/3 h-6">
+              <p class="text-mySize10 font-normal text-contentsSecondary w-16 h-3 mx-auto">첫 온도 36.5℃</p>
+              <p class="text-mySize10 font-normal text-contentsSecondary w-2 h-2 mx-auto">▼</p>
             </div>
-            <div class="relative">
-                <div class="w-11/12 h-2 mx-auto mt-1.5 rounded-md bg-gray-500 absolute"></div>
-                <div class="w-5/12 h-2 mt-1.5 ml-auto rounded-md bg-primary absolute"></div>
+            <div>
+              <p class="w-11 h-5 text-sm font-semibold text-blue-500 inline-block">41.2℃</p>
+              <div class="inline-block">😄</div>
             </div>
+          </div>
+          <div class="relative">
+            <div class="w-11/12 h-2 mx-auto mt-1.5 rounded-md bg-gray-500 absolute"></div>
+            <div class="w-5/12 h-2 mt-1.5 ml-auto rounded-md bg-primary absolute"></div>
+          </div>
         </div>
       </div>
-      <div class="w-auto h-18 py-4 px-5  flex justify-between">
+      <div class="w-auto h-18 py-4 px-5 flex justify-between">
         <div class="w-mySize103 h-10 flex justify-between">
-            <img src="/assets/icon-heart-strignt.svg" alt="받은 좋아요" / class="w-4 h-4 inline-block">
-            <div>
-                <div class="w-auto h-4 flex justify-between">
-                    <p class=" text-mySize10 font-normal">받은 좋아요</p>
-                    <p class="text-mySize10 font-semibold">100%</p>
-                </div>
-                <p class="text-mySize10 text-contentsSecondary font-normal inline-block float-right">11개 중 11명이 만족</p>
+          <img src="/assets/icon-heart-strignt.svg" alt="받은 좋아요" class="w-4 h-4 inline-block" />
+          <div>
+            <div class="w-auto h-4 flex justify-between">
+              <p class="text-mySize10 font-normal">받은 좋아요</p>
+              <p class="text-mySize10 font-semibold">100%</p>
             </div>
+            <p class="text-mySize10 text-contentsSecondary font-normal inline-block float-right">11개 중 11명이 만족</p>
+          </div>
         </div>
         <div class="w-mySize141 h-10 flex justify-between">
-            <img src="/assets/common-icon-chat.svg" alt="채팅 갯수" / class="w-4 h-4">
-            <div class="flex flex-col justify-between pl-2">
-                <p class="w-12 h-5 text-mySize10 text-black font-normal inline-block">응답률 -%</p>
-                <p class="text-mySize10 text-contentsSecondary font-normal inline-block">표시될 만큼 충분히 채팅하지 않았어요.</p>
-            </div>
+          <img src="/assets/common-icon-chat.svg" alt="채팅 갯수" class="w-4 h-4" />
+          <div class="flex flex-col justify-between pl-2">
+            <p class="w-12 h-5 text-mySize10 text-black font-normal inline-block">응답률 -%</p>
+            <p class="text-mySize10 text-contentsSecondary font-normal inline-block">
+              표시될 만큼 충분히 채팅하지 않았어요.
+            </p>
+          </div>
         </div>
       </div>
       <div>
@@ -208,14 +209,16 @@
             <img src="/assets/icon-direction-right.svg" alt="우측 화살표" / class="w-4 h-4">
         </div>
       </div>
-      <div class="w-auto h-24 pt-3 pb-5 px-2.5 border-solid border-y-contentsSecondary border-y border-t-0 flex justify-between">
+      <div
+        class="w-auto h-24 pt-3 pb-5 px-2.5 border-solid border-y-contentsSecondary border-y border-t-0 flex justify-between"
+      >
         <div class="flex">
-            <div class="w-7 h-7 bg-contentsSecondary rounded-full mr-2"></div>
-            <div class="flex flex-col justify-between h-14">
-                <p class="text-mySize10 font-semibold">으갸갸갹</p>
-                <p class="text-mySize10 font-normal text-contentsSecondary">구매자ㆍ인천광역시 계양구ㆍ4개월 전</p>
-                <p class="text-sm font-normal">감사감사 감사합니다</p>
-            </div>
+          <div class="w-7 h-7 bg-contentsSecondary rounded-full mr-2"></div>
+          <div class="flex flex-col justify-between h-14">
+            <p class="text-mySize10 font-semibold">으갸갸갹</p>
+            <p class="text-mySize10 font-normal text-contentsSecondary">구매자ㆍ인천광역시 계양구ㆍ4개월 전</p>
+            <p class="text-sm font-normal">감사감사 감사합니다</p>
+          </div>
         </div>
         <div>
             <img src="./../assets/icon-more.svg" alt="더보기" />
@@ -237,9 +240,9 @@
         <div class="my-ml18">
           <a href="#" class="text-sm font-normal" tabindex="-1">공지사항</a>
         </div>
-        <div id="profileLogout" class=" my-ml18 flex flex-row justify-between hover:cursor-pointer" tabindex="2">
-            <p class="text-sm font-normal">로그아웃</p>
-            <p class="text-secondary text-sm font-normal logoutNickname">kimchihi</p>
+        <div id="profileLogout" class="my-ml18 flex flex-row justify-between hover:cursor-pointer" tabindex="2">
+          <p class="text-sm font-normal">로그아웃</p>
+          <p class="text-secondary text-sm font-normal logoutNickname">kimchihi</p>
         </div>
       </div>
     </div>

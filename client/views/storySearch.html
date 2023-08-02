@@ -8,26 +8,17 @@
     <meta name="author" content="방서빈" />
     <meta name="keywords" content="device, device search, swiper" />
     <meta name="description" content="상품 검색 화면입니다" />
+    <!-- prettier-ignore -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/storySearch.css" />
-    <link rel="stylesheet" href="/css/tailwind.css" />
-    <link rel="icon" href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" type="image/xml+svg" />
-    <link
-      rel="stylesheet"
-      as="style"
-      crossorigin
-      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="icon" href="/assets/euid-pavicon.png" />
     <title>✨Enter Euid - 검색</title>
-    <script defer src="/js/swiperSearchSlide.js"></script>
-    <script defer src="/js/storySearchTabBackEvent.js"></script>
-    <script defer src="/js/storySearchKeyword.js"></script>
-    <script src="/js/common/common.js" type="module"></script>
-    <script src="/js/storySearch.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="/js/common/common.js" type="module"></script>
+    <script src="/js/storySearch.js" defer></script>
   </head>
 
   <body class="m-auto">
@@ -41,84 +32,85 @@
         </div>
       </div>
     </header>
-    <div class="flex flex-col max-w-3xl h-screen">
+
+    <div class="flex flex-col max-w-3xl">
       <main>
         <h1 class="sr-only">카테고리 검색</h1>
-        <div class="flex pt-1 pl-0 pb-2 pr-0 self-stretch gap-4">
-          <div class="flex items-center">
-            <a href="/views/story.html">
-              <img tabindex="0" id="back" class="cursor-pointer" alt="뒤로가기" src="/assets/icons/Icon/backBtn.svg" />
-            </a>
-          </div>
-          <div class="w-3x1">
-            <form id="searchForm">
+        <div class="flex gap-2 w-[95%] mx-auto my-6">
+          <a href="/views/story.html" class="inline-block flex items-center">
+            <img src="/assets/icon-direction-left.svg" alt="이전 페이지로 이동하기" class="inline" />
+          </a>
+          <div class="flex py-1 grow mx-2">
+            <form class="grow bg-gray-100 mr-4 rounded-lg items-end mx-auto" id="searchForm">
+              <label for="searchInput" class="sr-only">검색창</label>
               <input
-                type="text"
-                name="searchQuery"
-                class="pt-4 pb-4 pr-[32.625rem] pl-2.5 text-base rounded-lg bg-gray-300"
+                type="search"
+                name="searchInput"
+                id="searchInput"
                 placeholder="창천동 근처에서 검색"
+                class="px-1.5 w-full bg-transparent focus:outline-none focus:placeholder-transparent py-2 px-4 leading-base"
               />
             </form>
           </div>
         </div>
-        <div class="flex flex-col justify-center pt-2 pr-0 pb-[3.5rem] pl-3 gap-3">
+        <div class="flex flex-col justify-center gap-3 w-[90%] mx-auto">
           <p class="text-3 font-semibold leading-150">친구들이 많이 찾고 있어요!</p>
-          <div class="swiper-container flex gap-1 w-full whitespace-no-wrap overflow-auto">
+          <div class="swiper-container flex gap-1 w-full whitespace-no-wrap overflow-hidden">
             <div class="swiper-wrapper">
               <div
-                class="swiper-slide swiper-custom-slide keyword flex justify-center items-center pt-[0.3rem] pb-2 pl-[1.5rem] pr-[0.375rem] w-[5.25rem] h-[2.2125rem] rounded-[1.25rem] bg-white border border-solid border-var-contents-content-tertiary"
+                class="swiper-slide swiper-custom-slide keyword flex justify-center items-center px-3 py-1.5 rounded-3xl bg-white border border-solid border-contentsSecondary"
               >
                 <a href="#">
-                  <span class="text-[0.7564375rem] leading-[160%]">노트북</span>
+                  <span class="text-sm leading-base">노트북</span>
                 </a>
               </div>
               <div
-                class="swiper-slide swiper-custom-slide-holder keyword flex justify-center items-center pt-[0.3rem] pb-2 pl-[1.5rem] pr-[0.375rem] w-[7.625rem] h-[2.2125rem] rounded-[1.25rem] bg-white border border-solid border-var-contents-content-tertiary overflow-x-scroll"
+                class="swiper-slide swiper-custom-slide-holder keyword flex justify-center items-center px-3 py-1.5 w-[7.625rem] rounded-3xl bg-white border border-solid border-contentsSecondary"
               >
                 <a href="#">
-                  <span class="text-[0.7564375rem] leading-[160%]">노트북 거치대 </span>
+                  <span class="text-sm leading-base">노트북 거치대</span>
                 </a>
               </div>
               <div
-                class="swiper-slide swiper-custom-slide keyword flex justify-center items-center pt-[0.3rem] pb-2 pl-[1.5rem] pr-[0.375rem] w-[5.25rem] h-[2.2125rem] rounded-[1.25rem] bg-white border border-solid border-var-contents-content-tertiar"
+                class="swiper-slide swiper-custom-slide keyword flex justify-center items-center px-3 py-1.5 rounded-3xl bg-white border border-solid border-contentsSecondary"
               >
                 <a href="#">
-                  <span class="text-[0.7564375rem] leading-[160%]">키보드</span>
+                  <span class="text-sm leading-base">키보드</span>
                 </a>
               </div>
               <div
-                class="swiper-slide swiper-custom-slide keyword flex justify-center items-center pt-[0.3rem] pb-2 pl-[1.5rem] pr-[0.375rem] w-[5.25rem] h-[2.2125rem] rounded-[1.25rem] bg-white border border-solid border-var-contents-content-tertiar"
+                class="swiper-slide swiper-custom-slide keyword flex justify-center items-center px-3 py-1.5 rounded-3xl bg-white border border-solid border-contentsSecondary"
               >
                 <a href="#">
-                  <span class="text-[0.7564375rem] leading-[160%]">마우스</span>
+                  <span class="text-sm leading-base">마우스</span>
                 </a>
               </div>
               <div
-                class="swiper-slide swiper-custom-slide keyword flex justify-center items-center pt-[0.3rem] pb-2 pl-[1.5rem] pr-[0.375rem] w-[5.25rem] h-[2.2125rem] rounded-[1.25rem] bg-white border border-solid border-var-contents-content-tertiar"
+                class="swiper-slide swiper-custom-slide keyword flex justify-center items-center px-3 py-1.5 rounded-3xl bg-white border border-solid border-contentsSecondary"
               >
                 <a href="#">
-                  <span class="text-[0.7564375rem] leading-[160%]">헤드셋</span>
+                  <span class="text-sm leading-base">헤드셋</span>
                 </a>
               </div>
               <div
-                class="swiper-slide swiper-custom-slide keyword flex justify-center items-center pt-[0.3rem] pb-2 pl-[1.5rem] pr-[0.375rem] w-[5.25rem] h-[2.2125rem] rounded-[1.25rem] bg-white border border-solid border-var-contents-content-tertiar"
+                class="swiper-slide swiper-custom-slide keyword flex justify-center items-center px-3 py-1.5 rounded-3xl bg-white border border-solid border-contentsSecondary"
               >
                 <a href="#">
-                  <span class="text-[0.7564375rem] leading-[160%]">냉장고</span>
+                  <span class="text-sm leading-base">냉장고</span>
                 </a>
               </div>
               <div
-                class="swiper-slide swiper-custom-slide keyword flex justify-center items-center pt-[0.3rem] pb-2 pl-[1.5rem] pr-[0.375rem] w-[5.25rem] h-[2.2125rem] rounded-[1.25rem] bg-white border border-solid border-var-contents-content-tertiar"
+                class="swiper-slide swiper-custom-slide keyword flex justify-center items-center px-3 py-1.5 rounded-3xl bg-white border border-solid border-contentsSecondary"
               >
                 <a href="#">
-                  <span class="text-[0.7564375rem] leading-[160%]">에어컨</span>
+                  <span class="text-sm leading-base">에어컨</span>
                 </a>
               </div>
               <div
-                class="swiper-slide swiper-custom-slide keyword flex justify-center items-center pt-[0.3rem] pb-2 pl-[1.5rem] pr-[0.375rem] w-[5.25rem] h-[2.2125rem] rounded-[1.25rem] bg-white border border-solid border-var-contents-content-tertiar"
+                class="swiper-slide swiper-custom-slide keyword flex justify-center items-center px-3 py-1.5 rounded-3xl bg-white border border-solid border-contentsSecondary"
               >
                 <a href="#">
-                  <span class="text-[0.7564375rem] leading-[160%]">테니스</span>
+                  <span class="text-sm leading-base">테니스</span>
                 </a>
               </div>
             </div>
