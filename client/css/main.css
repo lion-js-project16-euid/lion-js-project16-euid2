@@ -672,11 +672,6 @@ video {
   margin-bottom: 1rem;
 }
 
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
 .my-9 {
   margin-top: 2.25rem;
   margin-bottom: 2.25rem;
@@ -1024,6 +1019,10 @@ video {
   width: 10rem;
 }
 
+.w-5 {
+  width: 1.25rem;
+}
+
 .w-5\/12 {
   width: 41.666667%;
 }
@@ -1146,10 +1145,6 @@ video {
 
 .w-passionTemWord {
   width: 3.1125rem;
-}
-
-.w-5 {
-  width: 1.25rem;
 }
 
 .min-w-\[7\.25rem\] {
