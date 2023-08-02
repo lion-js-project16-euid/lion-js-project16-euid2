@@ -179,6 +179,50 @@ Enter-Euid 구현한 기능
 
 ![](https://lh6.googleusercontent.com/tQPTgYgz8KNWZyurtrOyGKPJ6w77eOqTKHce6ByaApfd9nzdqow8PQoACGwFJ2rmB8BdolQrElY5lsnk9JeSdTPTJUThZZnuKhWLqQ3hrFP2XSKqLXyq8KwpVRTbytT8k6siMlmnZ7eI7zYcMXJ4G4bPEg=s2048)
 
+### 이슈
+
+- stash사용 중 파일 삭제
+
+[문제상황]
+커밋할 내용을 Stash에 저장해 두었으나, 실수로 파일을 날리고, 마지막 commit은 하루전 내용이었던 상황. Stash에 두 가지 옵션이 있는데 꺼내면서 삭제하는 pop 옵션으로 진행하여 Stash에도 없고, reload를 해서 "ctrl + z"도 시행되지 않는 상황 발생.
+
+[해결방안]
+https://www.baeldung.com/git-recover-dropped-stash
+해당 사이트 내용 참고하여 복구 완료
+
+- 엔터 입력시 원하지 않는 곳을 선택
+
+[문제상황]
+회원가입,로그인 인증페이지에서 인증문자 입력 후 엔터를 입력했을 때, 동의하고 시작하기 가 눌러지는것이 바람직하나 인증문자 다시 받기가 눌러지는 이슈 발생
+
+[해결방안]
+alert창으로 안내해주고 focus를 동의하고 시작하기 로 이동시키는 방식으로 해결
+
+- 렌더링 시 data가 undefined로 처리되는 이슈
+
+[문제상황]
+페이지 로드 시 data.json에 저장된 정보를 화면에 렌더링해야 하나 데이터를 가져오지 못하는 이슈 발생
+
+[해결방안]
+구조 분해 할당으로 요소를 한 번 더 분해 후 적용하는 방식으로 해결
+
+- 카테고리 검색 시 한글로 검색되지 않는 이슈
+
+[문제상황]
+한글 입력과 영어 입력의 매커니즘 차이에서 오는 문제
+
+APPLE은 A->AP->APP->APPL->APPLE의 방식으로 입력되지만 프론 은 ㅍ->프->플->프로->프론의 방식으로 입력되어 중간에 원치않는 값도 인식될 수 있음
+
+[해결방안]
+추가로 해당 완성값이 include true일 경우 hidden속성을 제거해주는 방식을 채택하여 이슈 해결
+
+- 좋아요 버튼 클릭 시 동작하지 않는 이슈
+
+[문제상황]
+좋아요 버튼 클릭 시 html 파일에 마크업된 내용은 클릭 이벤트가 정상 작동하나, 동적 렌더링이 된 내용은 클릭 이벤트가 적용되지 않는 이슈 발생
+
+[해결방안]
+이벤트 위임을 활용하여 상위 요소에 클릭 이벤트를 주는 방법을 활용하여 해결
 
 ## JavaScript Project Scaffolding
 *자바스크립트 프로젝트 환경 구성 스케폴딩*
