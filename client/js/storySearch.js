@@ -61,3 +61,4 @@ function displayPosts(posts) {
   );
   postList.innerHTML = postItems.join('');
 }
+
