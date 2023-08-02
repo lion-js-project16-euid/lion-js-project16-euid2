@@ -63,8 +63,6 @@ function displayPosts(posts) {
   console.log(postItems);
 }
 
-<<<<<<< HEAD
-=======
 // Select Search Keyword
 keywordDivs.forEach(keywordDiv => {
   keywordDiv.addEventListener('click', event => {
@@ -85,4 +83,3 @@ const swiper = new Swiper('.swiper-container', {
   mousewheelControl: true,
   spaceBetween: 16,
 });
->>>>>>> 53a25b3ab4d333f967c3f584aefd5f25f2f6dce4
