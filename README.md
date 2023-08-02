@@ -8,7 +8,7 @@
 
 
 ### 프로젝트명
-Enter-Eudim
+Enter-Euid
 
 
 ### 프로젝트 조원
@@ -17,8 +17,9 @@ Enter-Eudim
 
 
 ### 프로젝트 목표
-1. 
-
+1. 각자 담당한 파트 프로젝트 기한 내 완료하기
+2. 가이드라인 준수 사항 지키기
+3. javascript로 기능 구현에 초점을 두기
 
 
 ### 역할 분담
@@ -30,7 +31,7 @@ Enter-Eudim
 
 ### 사용 기술
 - HTML
-- Tailwind
+- tailwind
 - javascript
 
 
@@ -128,9 +129,44 @@ Enter-Euid 구현한 기능
 2. 점 3개로 이루어진 아이콘을 클릭하면 메뉴가 노출 됨
 3. 한번 더 점 3개로 이루어진 아이콘을 클릭하면 메뉴가 사라짐
 4. 메시지 보내가 input 창에 text를 입력하고 enter 키 또는 화살표 아이콘 클릭하면 해당 text가 말풍선으로 노출
+5. 메세지를 보낸 시점에서 현재 날짜 출력
+6. 메세지를 보낸 시점에서 현재 시간 출력
+
+- 마이 페이지
+1. 나의 프로필을 클릭하면 프로필 수정 페이지로 이동
+2. 프로필 수정 페이지에서 상단 우측 "x" 아이콘 클릭하면 마이 페이지로 리디렉션
+3. 로그아웃 클릭 시 localStorage의 데이터인 Unique ID 값 삭제
 
 ### 성능 검사
+1. 시작 페이지 (index.html)
+![](https://lh6.googleusercontent.com/FzQF1Qt3RdpfnAonjFB_I__Yf7DXT5CaEqV4GAZkMYexliLUUcMH4r7rDj9CO0glOroCEkFE2zKzxSMgVO1aHJPTYcVTwodpGWgfJ_--8GvVgx-3vdOARYOVJegCp534CbGU_YKQoQFIpbw7fsnj2mVE9g=s2048)
 
+2. 회원가입 & 로그인 (sign-up.html & login.html)
+![](https://lh3.googleusercontent.com/zYToZMJiQAiIbHAEcRjglhwtSbM7MuJ710-dOVpbPZzVGCHyRBD7NkxdhIznpJgbBwzVpfOF0Pn-iJ07qUwOYl8PXaIRjiZbPbzsVbnH1jgzN0tQExzJyA-KtNoxRY-gZ2eIWE3N_3U3A1dSreB69RPO6A=s2048)
+
+3. 회원가입 & 로그인 인증 (sign-up-certification.html & login-certification.html)
+![](https://lh3.googleusercontent.com/u0Dm-stxnec4KbOahqo3SC07XXEI5xoSZXcrRvFamjWcIja1Rzkjwo4g1_wWUwwaX63Fvvv26cTyoNgXAslOHzDaexg4OWbjqmZviHND67wP8NXPgtV9XLTqjxwcWLmb70OhQLvT3m82uJiPR812KFhw-g=s2048)
+
+4. 카테고리 (category.html)
+![](https://lh3.googleusercontent.com/vHz02nVpyfZNQ1-tFwnA-eDMUNoWZifbmzBMmA-pPFEA2uqphtRvtPgqnS5gEdZILeAsogAu_nL4fALsteTb89EFGaU3bvG0mNR_XK7QVmv4fN1u71wBZi6i2ZoX3k_DbnIhZzYRN6VOxj3EwfuJ9W7yoQ=s2048)
+
+5. 선배님 스토리 (story.html)
+![](https://lh3.googleusercontent.com/yW1Ydf9mJswyxWm8zV--mOKQnMUfVVrz0Tb9_Tp0andGlnHr2iteJorkuXqPdGUVw2CpnxoHLg1ADejyVvOP5ftzRGdUWzu0jE0RsFuN3u2KvzpjQY5NPPaGCjc7_t1lDuLwIqnV1Pt2UaGv09FJH8REgQ=s2048)
+
+6. 기기 거래 (device.html)
+![](https://lh5.googleusercontent.com/I2WWxFG8Et4gdePibRgnb-bhcx6DXyHxp_AnBb96yv1IPz9W88EEsN9d54FaO0MnF94hYOejxUOr0nPl9S4gGgx0fWtPBHNwF9H2DiVuDGckFko28c1KJ0T9w93Z2xJHvt7vRRKlgKJ894Wq16QfOcCjNw=s2048)
+
+7. 기기 상세 
+![](https://lh4.googleusercontent.com/-1czJ3cZIXMz-wUiBo1vDgWimxucD-AGttkFQMt1KiAsPJdkMXmYaaubasvXdQXZyAP-HGxRTyUZpGahQYXIb3NBlySJRk64r2O2wrTCBYyll-RN-VG1099jmZdrWylJOTphPcjvPIURRl77uDjmfJz44A=s2048)
+
+8. 기기 거래 채팅 (chat.html)
+![](https://lh5.googleusercontent.com/Zl75ayf5bVGTnCnqpAcNSTbdPCdlIlloElf6z64fWjBFnJ7J9LXVahVDpYRGePBcOWJh437G80TukvPlewxVvUTT-Mlp_dRqjEKm_In5TVX_rMImWJzU8Fwly6Z7Kyvp0-DFmKmT38dqwUGd-kqGIS78wg=s2048)
+
+9. 프로필 (profile.html)
+![](https://lh5.googleusercontent.com/WIeI6uWe2RFq9LNzQ0bjsc3Tnpyy4wEKByvfoWK11G6N497a4wGDPAGOLSuYhQe6wnOUFHJTa_8aYRKMAfrpwP8eKf2J1ef1_U-Pw84RuX5D7VA93P6tP3hEqrW9RyUDojO6oyXcv-3DAPIYvglYSm-jJw=s2048)
+
+10. 프로필 수정 (profileCard.html)
+![](https://lh6.googleusercontent.com/tQPTgYgz8KNWZyurtrOyGKPJ6w77eOqTKHce6ByaApfd9nzdqow8PQoACGwFJ2rmB8BdolQrElY5lsnk9JeSdTPTJUThZZnuKhWLqQ3hrFP2XSKqLXyq8KwpVRTbytT8k6siMlmnZ7eI7zYcMXJ4G4bPEg=s2048)
 
 
 ## JavaScript Project Scaffolding
