@@ -1,7 +1,7 @@
+const searchForm = document.getElementById('searchForm');
 const searchInput = document.getElementById('searchInput');
 const keywordDivs = document.querySelectorAll('.keyword');
 const postList = document.getElementById('postList');
-const searchForm = document.getElementById('searchForm');
 
 document.addEventListener('DOMContentLoaded', () => {
   searchInput.addEventListener('submit', async event => {
