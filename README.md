@@ -38,7 +38,7 @@ Enter-Eudim
 1. localStorage를 사용하여 "관심분야 선택 항목"을 저장했습니다.
 2. 회원가입 기능을 구현했습니다. (휴대폰 번호, input, button 구성)
 3. 회원가입을 통해 사용자를 생성하고 관리했습니다.
-  + 휴대폰 번호 입력시 랜덤한 6자리 난수를 생성
+    + 휴대폰 번호 입력시 랜덤한 6자리 난수를 생성
   + 해당 인증번호 입력시 Upique ID 숫자를 부여 후 localStorage에 저장
   + 해당 유저의 Unique ID를 확인 후 로그인
   + 응답받은 Unique ID는 localStorage에 저장
