@@ -57,7 +57,7 @@ function displayPosts(posts) {
           <img src="/assets/icon-heart.svg" alt="좋아요 버튼" class="like-icon" /><span class="like-data p-1 text-xs">${post.like}</span>
         </button>
       </article>
-     `
+    `
   );
   postList.innerHTML = postItems.join('');
 }
