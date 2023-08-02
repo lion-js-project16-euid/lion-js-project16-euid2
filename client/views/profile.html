@@ -25,7 +25,7 @@
     <title>Enter Euid - Profile</title>
   </head>
   <body class="m-auto">
-    <h1 class="sr-only">프로필</h1>
+    <h1 class="sr-only">사용자 프로필</h1>
     <header>
         <div class="flex items-center justify-between px-3 py-2">
           <span class="nowTime text-sm font-semibold"></span>
@@ -107,21 +107,22 @@
         <div class="w-auto h-14 flex justify-evenly">
           <div class="flex flex-col justify-center">
             <img src="/assets/icon-chat.svg" alt="Q&A" / class="w-7 h-7 ml-ml6">
-            <p class="text-mySize10">나의 Q&A</p>
+            <h2 class="text-mySize10">나의 Q&A</h2>
           </div>
           <div class="flex flex-col justify-center myProfile hover:cursor-pointer" tabindex="1">
             <img src="/assets/icon-my.svg" alt="나의 프로필" / class="w-7 h-7 ml-2">
-            <p class="text-mySize10">나의 프로필</p>
+            <h2 class="text-mySize10">나의 프로필</h2>
           </div>
           <div class="flex flex-col justify-center">
             <img src="/assets/icon-alram-bell.svg" alt="내소식" / class="w-7 h-7 mr-0.5">
-            <p class="text-mySize10">내소식</p>
+            <h2 class="text-mySize10">내소식</h2>
           </div>
         </div>
       </div>
-      <div class="w-auto h-20 p-3"> 
+      <h2 class="sr-only">활동</h2>
+      <div class="w-auto h-20 p-3">
         <div class="w-passionTem h-4 flex flex-nowrap ">
-            <p class="w-passionTemWord h-4 text-sm">열정온도</p>
+          <h3 class="w-passionTemWord h-4 text-sm">열정온도</h3>
             <img src="/assets/icon-information.svg" alt="세부정보" / class="w-4 h-4">
         </div>
         <div>
@@ -162,36 +163,39 @@
       </div>
       <div>
         <div class="w-auto h-14 pr-5 pl-4 py-4 flex justify-between items-center">
+          <h3 class="sr-only">활동배지</h3> 
             <p class="text-sm font-semibold">활동배지 10개</p>
-            <img src="./../assets/icon-direction-right.svg" alt="" / class="w-4 h-4">
+            <img src="./../assets/icon-direction-right.svg" alt="활동배지 보기" / class="w-4 h-4">
         </div>
         <div class="w-auto h-14 pr-5 pl-4 py-4 border-solid border-y-contentsSecondary border-y flex justify-between items-center">
-            <p class="text-sm font-semibold">판매상품 3개</p>
-            <img src="./../assets/icon-direction-right.svg" alt="" / class="w-4 h-4">
+          <h3 class="sr-only">판매상품</h3>   
+          <p class="text-sm font-semibold">판매상품 3개</p>
+            <img src="./../assets/icon-direction-right.svg" alt="판매상품 보기" / class="w-4 h-4">
         </div>
         <div class="w-auto h-14 pr-5 pl-4 py-4 flex justify-between items-center">
-            <p class="text-sm font-semibold">받은 매너 평가</p>
-            <img src="./../assets/icon-direction-right.svg" alt="" / class="w-4 h-4">
+          <h3 class="sr-only">받은 매너 평가</h3>   
+          <p class="text-sm font-semibold">받은 매너 평가</p>
+            <img src="./../assets/icon-direction-right.svg" alt="받은 매너 평가 보기" / class="w-4 h-4">
         </div>
       </div>
       <div class="w-auto h-40 pt-2.5 pb-3 pl-2.5 pr-14">
         <div class="flex flex-nowrap mb-4">
             <div class="flex">
-                <img src="./../assets/icon-people.svg" alt="" / class="h-4 w-4">
+                <img src="./../assets/icon-people.svg" alt="매너 평가자" / class="h-4 w-4">
                 <p class="text-sm font-semibold pl-1.5">10</p>
             </div>
             <p class="bg-tertiary w-36 px-2 py-2 ml-3 text-sm font-normal rounded-r-lg rounded-bl-lg" >시간 약속을 잘 지켜요</p>
         </div>
         <div class="flex flex-nowrap mb-4">
             <div class="flex">
-                <img src="./../assets/icon-people.svg" alt="" / class="h-4 w-4">
+                <img src="./../assets/icon-people.svg" alt="매너 평가자" / class="h-4 w-4">
                 <p class="text-sm font-semibold pl-1.5">9</p>
             </div>
             <p class="bg-tertiary w-40 px-2 py-2 ml-5 text-sm font-normal rounded-r-lg rounded-bl-lg" >친절하고 매너가 좋아요</p>
         </div>
         <div class="flex flex-nowrap">
             <div class="flex">
-                <img src="./../assets/icon-people.svg" alt="" / class="h-4 w-4">
+                <img src="./../assets/icon-people.svg" alt="매너 평가자" / class="h-4 w-4">
                 <p class="text-sm font-semibold pl-1.5">8</p>
             </div>
             <p class="bg-tertiary w-52 px-2 py-2 ml-5 text-sm font-normal rounded-r-lg rounded-bl-lg" >제가 있는 곳까지 와서 거래했어요</p>
@@ -199,7 +203,8 @@
       </div>
       <div class="w-auto h-14 py-4align-bottom">
         <div class="w-auto h-14 pr-5 pl-3 py-3 border-solid border-y-contentsSecondary border-y flex justify-between items-center">
-            <p class="text-sm font-semibold">받은 거래 후기 1</p>
+          <h3 class="sr-only">받은 거래 후기</h3>   
+          <p class="text-sm font-semibold">받은 거래 후기 1</p>
             <img src="/assets/icon-direction-right.svg" alt="우측 화살표" / class="w-4 h-4">
         </div>
       </div>
@@ -213,7 +218,7 @@
             </div>
         </div>
         <div>
-            <img src="./../assets/icon-more.svg" alt="" />
+            <img src="./../assets/icon-more.svg" alt="더보기" />
         </div>
       </div>
       <div class="w-auto h-80 pt-4 pb-20 pl-5 pr-3">
