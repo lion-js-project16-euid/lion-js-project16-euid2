@@ -30,7 +30,7 @@
         </div>
       </div>
     </header>
-
+    <h1 class="sr-only">관심분야</h1>
     <div class="relative w-full max-w-3xl mx-auto px-5">
       <div class="flex gap-2 w-[95%] mx-auto mt-6">
         <a href="/index.html" class="flex items-center">
@@ -45,7 +45,7 @@
             name="searchCategory"
             id="searchCategory"
             placeholder="분야(이름)로 검색 (ex. 프론트)"
-            class="searchBox px-1.5 w-[95%] focus:outline-none"
+            class="searchBox px-1.5 w-[95%] focus:outline-none focus:placeholder-transparent"
           />
         </div>
       </div>
@@ -62,12 +62,16 @@
           class="categoryBox flex flex-row justify-between py-3 px-4 mx-0.5 mb-4 bg-gray-400 rounded-lg w-[48%]"
         >
           <div class="flex flex-col justify-between">
+            <h2 class="sr-only">프론트엔드</h2>
             <p class="text-white text-xs leading-base font-bold">프로그래밍</p>
             <p class="categoryTitle text-lg font-bold leading-base">프론트엔드</p>
           </div>
           <div class="relative flex items-center">
             <label for="categoryFrontend">
-              <span class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[20px]"></span>
+              <span
+                class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[20px]"
+                aria-label="관심분야 추가"
+              ></span>
             </label>
             <input type="checkbox" class="categoryCheckbox w-[20px] h-[20px] appearance-none" id="categoryFrontend" />
           </div>
@@ -77,12 +81,16 @@
           class="categoryBox flex flex-row justify-between py-3 px-4 mx-0.5 mb-4 bg-gray-400 rounded-lg w-[48%]"
         >
           <div class="flex flex-col justify-between">
+            <h2 class="sr-only">백엔드</h2>
             <p class="text-white text-xs leading-base font-bold">프로그래밍</p>
             <p class="categoryTitle text-lg font-bold leading-base">백엔드</p>
           </div>
           <div class="relative flex items-center">
             <label for="categoryBackend">
-              <span class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[20px]"></span>
+              <span
+                class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[20px]"
+                aria-label="관심분야 추가"
+              ></span>
             </label>
             <input type="checkbox" class="categoryCheckbox w-[18px] h-[20px] appearance-none" id="categoryBackend" />
           </div>
@@ -92,12 +100,16 @@
           class="categoryBox flex flex-row justify-between py-3 px-4 mx-0.5 mb-4 bg-gray-400 rounded-lg w-[48%]"
         >
           <div class="flex flex-col justify-between">
+            <h2 class="sr-only">리액트</h2>
             <p class="text-white text-xs leading-base font-bold">프로그래밍</p>
             <p class="categoryTitle text-lg font-bold leading-base">리액트</p>
           </div>
           <div class="relative flex items-center">
             <label for="categoryReact">
-              <span class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[20px]"></span>
+              <span
+                class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[20px]"
+                aria-label="관심분야 추가"
+              ></span>
             </label>
             <input type="checkbox" class="categoryCheckbox w-[18px] h-[20px] appearance-none" id="categoryReact" />
           </div>
@@ -107,12 +119,16 @@
           class="categoryBox flex flex-row justify-between py-3 px-4 mx-0.5 mb-4 bg-gray-400 rounded-lg w-[48%]"
         >
           <div class="flex flex-col justify-between">
+            <h2 class="sr-only">풀스택</h2>
             <p class="text-white text-xs leading-base font-bold">프로그래밍</p>
             <p class="categoryTitle text-lg font-bold leading-base">풀스택</p>
           </div>
           <div class="relative flex items-center">
             <label for="categoryFullstack">
-              <span class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[20px]"></span>
+              <span
+                class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[20px]"
+                aria-label="관심분야 추가"
+              ></span>
             </label>
             <input type="checkbox" class="categoryCheckbox w-[18px] h-[20px] appearance-none" id="categoryFullstack" />
           </div>
@@ -122,12 +138,16 @@
           class="categoryBox flex flex-row justify-between py-3 px-4 mx-0.5 mb-4 bg-gray-400 rounded-lg w-[48%]"
         >
           <div class="flex flex-col justify-between">
+            <h2 class="sr-only">알고리즘</h2>
             <p class="text-white text-xs leading-base font-bold">프로그래밍</p>
             <p class="categoryTitle text-lg font-bold leading-base">알고리즘</p>
           </div>
           <div class="relative flex items-center">
             <label for="categoryAlgorithm">
-              <span class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[20px]"></span>
+              <span
+                class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[20px]"
+                aria-label="관심분야 추가"
+              ></span>
             </label>
             <input type="checkbox" class="categoryCheckbox w-[18px] h-[20px] appearance-none" id="categoryAlgorithm" />
           </div>
@@ -137,12 +157,16 @@
           class="categoryBox flex flex-row justify-between py-3 px-4 mx-0.5 mb-4 bg-gray-400 rounded-lg w-[48%]"
         >
           <div class="flex flex-col justify-between">
+            <h2 class="sr-only">기초지식</h2>
             <p class="text-white text-xs leading-base font-bold">프로그래밍</p>
             <p class="categoryTitle text-lg font-bold leading-base">기초지식</p>
           </div>
           <div class="relative flex items-center">
             <label for="categoryKnowledge">
-              <span class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[20px]"></span>
+              <span
+                class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[20px]"
+                aria-label="관심분야 추가"
+              ></span>
             </label>
             <input type="checkbox" class="categoryCheckbox w-[18px] h-[20px] appearance-none" id="categoryKnowledge" />
           </div>
@@ -152,12 +176,16 @@
           class="categoryBox flex flex-row justify-between py-3 px-4 mx-0.5 mb-4 bg-gray-400 rounded-lg w-[48%]"
         >
           <div class="flex flex-col justify-between">
+            <h2 class="sr-only">UI디자인</h2>
             <p class="text-white text-xs leading-base font-bold">디자인</p>
             <p class="categoryTitle text-lg font-bold leading-base">UI디자인</p>
           </div>
           <div class="relative flex items-center">
             <label for="categoryUIdesign">
-              <span class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[20px]"></span>
+              <span
+                class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[20px]"
+                aria-label="관심분야 추가"
+              ></span>
             </label>
             <input type="checkbox" class="categoryCheckbox w-[18px] h-[20px] appearance-none" id="categoryUIdesign" />
           </div>
@@ -167,12 +195,16 @@
           class="categoryBox flex flex-row justify-between py-3 px-4 mx-0.5 mb-4 bg-gray-400 rounded-lg w-[48%]"
         >
           <div class="flex flex-col justify-between">
+            <h2 class="sr-only">UX디자인</h2>
             <p class="text-white text-xs leading-base font-bold">디자인</p>
             <p class="categoryTitle text-lg font-bold leading-base">UX디자인</p>
           </div>
           <div class="relative flex items-center">
             <label for="categoryUXdesign">
-              <span class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[20px]"></span>
+              <span
+                class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[20px]"
+                aria-label="관심분야 추가"
+              ></span>
             </label>
             <input type="checkbox" class="categoryCheckbox w-[18px] h-[20px] appearance-none" id="categoryUXdesign" />
           </div>
@@ -182,12 +214,16 @@
           class="categoryBox flex flex-row justify-between py-3 px-4 mx-0.5 mb-4 bg-gray-400 rounded-lg w-[48%]"
         >
           <div class="flex flex-col justify-between">
+            <h2 class="sr-only">UI &middot; UX</h2>
             <p class="text-white text-xs leading-base font-bold">디자인</p>
             <p class="categoryTitle text-lg font-bold leading-base">UI &middot; UX</p>
           </div>
           <div class="relative flex items-center">
             <label for="categoryUIUX">
-              <span class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[20px]"></span>
+              <span
+                class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[20px]"
+                aria-label="관심분야 추가"
+              ></span>
             </label>
             <input type="checkbox" class="categoryCheckbox w-[18px] h-[20px] appearance-none" id="categoryUIUX" />
           </div>
@@ -197,12 +233,16 @@
           class="categoryBox flex flex-row justify-between py-3 px-4 mx-0.5 mb-4 bg-gray-400 rounded-lg w-[48%]"
         >
           <div class="flex flex-col justify-between">
+            <h2 class="sr-only">데이터분석</h2>
             <p class="text-white text-xs leading-base font-bold">데이터</p>
             <p class="categoryTitle text-lg font-bold leading-base">데이터분석</p>
           </div>
           <div class="relative flex items-center">
             <label for="categoryDataAnalyze">
-              <span class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[20px]"></span>
+              <span
+                class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[20px]"
+                aria-label="관심분야 추가"
+              ></span>
             </label>
             <input
               type="checkbox"
@@ -216,12 +256,16 @@
           class="categoryBox flex flex-row justify-between py-3 px-4 mx-0.5 mb-4 bg-gray-400 rounded-lg w-[48%]"
         >
           <div class="flex flex-col justify-between">
+            <h2 class="sr-only">통계분석</h2>
             <p class="text-white text-xs leading-base font-bold">데이터</p>
             <p class="categoryTitle text-lg font-bold leading-base">통계분석</p>
           </div>
           <div class="relative flex items-center">
             <label for="categoryStatistics">
-              <span class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[20px]"></span>
+              <span
+                class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[20px]"
+                aria-label="관심분야 추가"
+              ></span>
             </label>
             <input type="checkbox" class="categoryCheckbox w-[18px] h-[20px] appearance-none" id="categoryStatistics" />
           </div>
@@ -231,12 +275,16 @@
           class="categoryBox flex flex-row justify-between py-3 px-4 mx-0.5 mb-4 bg-gray-400 rounded-lg w-[48%]"
         >
           <div class="flex flex-col justify-between">
+            <h2 class="sr-only">시각화</h2>
             <p class="text-white text-xs leading-base font-bold">데이터</p>
             <p class="categoryTitle text-lg font-bold leading-base">시각화</p>
           </div>
           <div class="relative flex items-center">
             <label for="categoryVisualization">
-              <span class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[20px]"></span>
+              <span
+                class="absolute -translate-y-1/2 bg-icon-plus bg-no-repeat w-[18px] h-[20px]"
+                aria-label="관심분야 추가"
+              ></span>
             </label>
             <input
               type="checkbox"

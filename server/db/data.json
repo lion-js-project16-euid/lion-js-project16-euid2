@@ -157,7 +157,7 @@
       "upload": "",
       "image": {
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmzDw2Cm5zMwwkJ3oYWkQkLjJVzYYeJ5PhKg&usqp=CAU",
-        "alt": ""
+        "alt": "흰색 배경"
       },
       "like": "",
       "href": ""
@@ -217,6 +217,24 @@
       "text": "필수 교육시간 9-18시 시간외에도 활발히 소통하는 운영부가 최대 장점이었다고 생각합니다. 100% 온라인 교육이라는 것을 알고 기대 없이 시작했는데 온라인 교육도 연결감을 형성할 수 잇다는 것에 놀랐습니다. 국비교육치고 이탈자가 정말 적엇다고 들었는데 이점이 큰 역할을 한것 같습니다.",
       "school": "프론트엔드",
       "writer": "1기 수강생"
+    },
+    {
+      "id": 7,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmzDw2Cm5zMwwkJ3oYWkQkLjJVzYYeJ5PhKg&usqp=CAU",
+      "alt": "흰색 배경",
+      "title": "",
+      "text": "",
+      "school": "",
+      "writer": ""
+    },
+    {
+      "id": 8,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmzDw2Cm5zMwwkJ3oYWkQkLjJVzYYeJ5PhKg&usqp=CAU",
+      "alt": "흰색 배경",
+      "title": "",
+      "text": "",
+      "school": "",
+      "writer": ""
     }
   ],
   "searchData": [
