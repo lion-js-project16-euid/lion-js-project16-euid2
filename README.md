@@ -1,4 +1,240 @@
-# JavaScript Project Scaffolding
+# 멋쟁이 사자처럼 FE 6기 Javascript 프로젝트 - 김민성조
+
+
+프로젝트 기간 : 2023년 7월 28일 ~ 2023년 8월 2일
+
+
+## 프로젝트 설명
+
+
+### 프로젝트명
+Enter-Euid
+
+
+### 프로젝트 조원
+- 조장 : 김규민
+- 조원 : 김민성, 이은빈, 방서빈
+
+
+### 프로젝트 목표
+1. 각자 담당한 파트 프로젝트 기한 내 완료하기
+2. 가이드라인 준수 사항 지키기
+3. javascript로 기능 구현에 초점을 두기
+
+
+### 역할 분담
+- 김규민 : 프로젝트 setting, 로고 페이지, 카테고리 페이지, 채팅 페이지, 전체 UI 및 스크립트 동작 점검 (QA)
+- 김민성 : 스크럼 마스터, 로그인/회원가입 페이지, 회원가입/로그인 인증 페이지, 프로필 페이지, 웹 접근성 점검
+- 이은빈 : 기기 거래 페이지, 기기 거래 상세 페이지, 채팅 페이지 스크립트 기능 구현
+- 방서빈 : 선배님 스토리 페이지, 스와이프 구현, 검색 페이지
+
+
+### 사용 기술
+- HTML
+- tailwind
+- javascript
+
+
+### 가이드라인 준수 사항
+1. localStorage를 사용하여 "관심분야 선택 항목"을 저장했습니다.
+2. 회원가입 기능을 구현했습니다. (휴대폰 번호, input, button 구성)
+3. 회원가입을 통해 사용자를 생성하고 관리했습니다.
+    + 휴대폰 번호 입력시 랜덤한 6자리 난수를 생성
+    + 해당 인증번호 입력시 Upique ID 숫자를 부여 후 localStorage에 저장
+    + 해당 유저의 Unique ID를 확인 후 로그인
+    + 응답받은 Unique ID는 localStorage에 저장
+    + 다음 번에 로그인 시 Unique ID가 존재한다면 루트 경로로 리디렉션
+    + 어떤 경우든 Unique ID가 유효하지 않다면 사용자에게 알리고 로그인 페이지로 리디렉션
+    + 로그아웃은 클라인트 단에서 localStorafe에 저장된 Unique ID를 삭제하는 방식으로 구현
+4. 인증번호 유효성 검사했습니다.
+    + 휴대폰 번호: localStorage에 저장된 key 값으로 사용
+    + 인증번호 : 입력받은 고유한 ID를 value 값으로 가짐
+    + 휴대폰 번호와 인증번호 모두 입력, 조건을 만족해야 제출 버튼이 활성화
+5. 기기 거래 화면 구성했습니다.
+    + 데이터 스키마를 통해 데이터 설계 후 기기 거래 화면에 해당 데이터들 불러와 노출
+    + 거래 항목 선택시 디테일 페이지로 들어가 이미지, 유저정보, 본문 등을 불러와 노출
+6. 검색창 기능 구현했습니다.
+    + 검색 기능을 구현해 거래 항목의 text와 일치하는 항목들을 리랜더링
+
+
+### Enter-Euid 설명
+
+Enter-Euid 구현한 기능
+
+- 모든 페이지의 상단 바
+1. 현재 시간 노출
+
+- 선배님 스토리, 거래 기기, 마이 이듬 페이지의 하단 바 
+1. 메뉴를 클릭하면 해당하는 메뉴의 아이콘만 색상 변경
+
+- 시작 페이지
+1. Unique ID 없이 시작하기 누르면 유효하지 않음을 알리는 창이 뜨고 로그인 페이지로 리디렉션
+
+- 로그인 페이지
+1. input에 휴대폰 번호 입력
+2. 정규 표현식으로 입력한 휴대폰 번호가 11자리 숫자인지 확인
+3. 입력받은 값과 정규표현식 매치되는지 확인
+4. 숫자 11자리 입력되면 인증번호 문자받기 버튼 활성화
+5. 활성화된 인증번호 문자받기 버튼 클릭하면 랜덤 숫자 alert 창으로 알림
+6. 인증문자 다시 받기 클릭 시 새로운 숫자 노출
+7. 노출된 숫자 그대로 입력을 해야 동의하고 시작하기 버튼 클릭이 됨
+8. 동의하고 시작하기 버튼을 클릭 시 선배님 스토리 페이지로 리디렉션
+
+- 회원가입 페이지
+1. input에 휴대폰 번호 입력
+2. 정규 표현식으로 입력한 휴대폰 번호가 11자리 숫자인지 확인
+3. 입력받은 값과 정규표현식 매치되는지 확인
+4. 숫자 11자리 입력되면 인증번호 문자받기 버튼 활성화
+5. 활성화된 인증번호 문자받기 버튼 클릭하면 랜덤 숫자 alert 창으로 알림
+6. 인증문자 다시 받기 클릭 시 새로운 숫자 노출
+7. 노출된 숫자 그대로 입력을 해야 동의하고 시작하기 버튼 클릭이 됨
+8. 동의하고 시작하기 버튼을 클릭 시 카테고리를 선택하는 페이지로 리디렉션
+9. 검색창에 관심분야 입력시 해당되는 관심분야만 노출
+10. "+" 버튼을 클릭 시 해당 관심분야의 데이터 값이 localStorage에 저장됨
+11. 체크된 버튼을 클릭 시 해당 관심분야의 데이터 값이 localStorage에서 삭제됨
+12. 이대로 저장할래요 버튼을 클릭 시 선배님 스토리 페이지로 리디렉션
+
+- 선배님 스토리 페이지
+1. swiper를 사용해서 data 값들을 슬라이드
+2. 다음으로 이동하는 화살표, 이전으로 이동하는 화살표 클릭 시 동작
+3. 중앙 밑에 위치한 버튼 클릭 시 슬라이드 정지 그리고 다시 클릭하면 버튼이 바뀌고 슬라이드 동작
+4. data.json의 데이터들을 fetch를 사용하여 불러와서 화면에 노출함
+5. 선배님 스토리, 기기거래, 질의응답, 같이해요 메뉴 클릭 시 text 색상이 바뀌고 border-bottom 생김
+
+- 검색 페이지
+1. input 창에 title 값 입력하고 enter 키 누르면 일치하는 값이 노출
+2. 노출된 리스트 클릭하면 상세페이지로 이동
+3. 친구들이 많이 찾고 있어요! 아래의 키워드 부분을 옆으로 밀면 슬라이드
+3. 키워드들을 선택하면 input 창에 입력됨
+4. 키워드 선택으로 input창에 입력된 상태에서 enter 키 누르면 일치하는 값이 노출
+5. 일치하는 값이 없을 경우 "검색 결과가 없습니다." 문구 페이지에 노출
+
+- 기기거래 페이지
+1. data.json의 데이터들을 fetch를 사용해서 불러와서 화면에 노출
+2. 하트 아이콘 클릭 시 붉은 색으로 변경되는 동시에 숫자 값 증가
+3. 증가된 상태에서 한번 더 클릭하면 색상이 변경되는 동시에 숫자 값 감소
+4. 리스트 클릭 시 상세 페이지로 리디렉션
+
+- 상세페이지
+1. data.json의 데이터들을 fetch를 사용해서 불러와서 화면에 노출
+2. 상단 오른쪽에 위치한 다운로드 아이콘을 클릭하면 해당 페이지의 화면 파일이 다운로드됨
+3. 점 3개로 이루어진 아이콘을 클릭하면 메뉴가 노출 됨
+4. 한번 더 점 3개로 이루어진 아이콘을 클릭하면 메뉴가 사라짐
+5. 하트 아이콘 클릭 시 아이콘 색상 변경
+6. 하단에 노출되는 리스트들 선택하면 해당하는 상세페이지로 리디렉션
+7. 채팅하기 버튼 클릭 시 채팅 페이지로 리디렉션
+
+- 채팅 페이지
+1. 상단 우측에 위치한 전화기 아이콘 클릭 시 FaceTime으로 연결됨 (mac으로 확인 가능)
+2. 점 3개로 이루어진 아이콘을 클릭하면 메뉴가 노출 됨
+3. 한번 더 점 3개로 이루어진 아이콘을 클릭하면 메뉴가 사라짐
+4. 메시지 보내가 input 창에 text를 입력하고 enter 키 또는 화살표 아이콘 클릭하면 해당 text가 말풍선으로 노출
+5. 메세지를 보낸 시점에서 현재 날짜 출력
+6. 메세지를 보낸 시점에서 현재 시간 출력
+
+- 마이 페이지
+1. 나의 프로필을 클릭하면 프로필 수정 페이지로 이동
+2. 프로필 수정 페이지에서 상단 우측 "x" 아이콘 클릭하면 마이 페이지로 리디렉션
+3. 로그아웃 클릭 시 localStorage의 데이터인 Unique ID 값 삭제
+
+### 성능 검사
+
+1. 시작 페이지 (index.html)
+
+![](https://lh6.googleusercontent.com/FzQF1Qt3RdpfnAonjFB_I__Yf7DXT5CaEqV4GAZkMYexliLUUcMH4r7rDj9CO0glOroCEkFE2zKzxSMgVO1aHJPTYcVTwodpGWgfJ_--8GvVgx-3vdOARYOVJegCp534CbGU_YKQoQFIpbw7fsnj2mVE9g=s2048)
+
+2. 회원가입 & 로그인 (sign-up.html & login.html)
+
+![](https://lh3.googleusercontent.com/zYToZMJiQAiIbHAEcRjglhwtSbM7MuJ710-dOVpbPZzVGCHyRBD7NkxdhIznpJgbBwzVpfOF0Pn-iJ07qUwOYl8PXaIRjiZbPbzsVbnH1jgzN0tQExzJyA-KtNoxRY-gZ2eIWE3N_3U3A1dSreB69RPO6A=s2048)
+
+3. 회원가입 & 로그인 인증 (sign-up-certification.html & login-certification.html)
+
+![](https://lh3.googleusercontent.com/u0Dm-stxnec4KbOahqo3SC07XXEI5xoSZXcrRvFamjWcIja1Rzkjwo4g1_wWUwwaX63Fvvv26cTyoNgXAslOHzDaexg4OWbjqmZviHND67wP8NXPgtV9XLTqjxwcWLmb70OhQLvT3m82uJiPR812KFhw-g=s2048)
+
+4. 카테고리 (category.html)
+
+![](https://lh3.googleusercontent.com/vHz02nVpyfZNQ1-tFwnA-eDMUNoWZifbmzBMmA-pPFEA2uqphtRvtPgqnS5gEdZILeAsogAu_nL4fALsteTb89EFGaU3bvG0mNR_XK7QVmv4fN1u71wBZi6i2ZoX3k_DbnIhZzYRN6VOxj3EwfuJ9W7yoQ=s2048)
+
+5. 선배님 스토리 (story.html)
+
+![](https://lh3.googleusercontent.com/yW1Ydf9mJswyxWm8zV--mOKQnMUfVVrz0Tb9_Tp0andGlnHr2iteJorkuXqPdGUVw2CpnxoHLg1ADejyVvOP5ftzRGdUWzu0jE0RsFuN3u2KvzpjQY5NPPaGCjc7_t1lDuLwIqnV1Pt2UaGv09FJH8REgQ=s2048)
+
+6. 기기 거래 (device.html)
+
+![](https://lh5.googleusercontent.com/I2WWxFG8Et4gdePibRgnb-bhcx6DXyHxp_AnBb96yv1IPz9W88EEsN9d54FaO0MnF94hYOejxUOr0nPl9S4gGgx0fWtPBHNwF9H2DiVuDGckFko28c1KJ0T9w93Z2xJHvt7vRRKlgKJ894Wq16QfOcCjNw=s2048)
+
+7. 기기 상세 
+
+![](https://lh4.googleusercontent.com/-1czJ3cZIXMz-wUiBo1vDgWimxucD-AGttkFQMt1KiAsPJdkMXmYaaubasvXdQXZyAP-HGxRTyUZpGahQYXIb3NBlySJRk64r2O2wrTCBYyll-RN-VG1099jmZdrWylJOTphPcjvPIURRl77uDjmfJz44A=s2048)
+
+8. 기기 거래 채팅 (chat.html)
+
+![](https://lh5.googleusercontent.com/Zl75ayf5bVGTnCnqpAcNSTbdPCdlIlloElf6z64fWjBFnJ7J9LXVahVDpYRGePBcOWJh437G80TukvPlewxVvUTT-Mlp_dRqjEKm_In5TVX_rMImWJzU8Fwly6Z7Kyvp0-DFmKmT38dqwUGd-kqGIS78wg=s2048)
+
+9. 프로필 (profile.html)
+
+![](https://lh5.googleusercontent.com/WIeI6uWe2RFq9LNzQ0bjsc3Tnpyy4wEKByvfoWK11G6N497a4wGDPAGOLSuYhQe6wnOUFHJTa_8aYRKMAfrpwP8eKf2J1ef1_U-Pw84RuX5D7VA93P6tP3hEqrW9RyUDojO6oyXcv-3DAPIYvglYSm-jJw=s2048)
+
+10. 프로필 수정 (profileCard.html)
+
+![](https://lh6.googleusercontent.com/tQPTgYgz8KNWZyurtrOyGKPJ6w77eOqTKHce6ByaApfd9nzdqow8PQoACGwFJ2rmB8BdolQrElY5lsnk9JeSdTPTJUThZZnuKhWLqQ3hrFP2XSKqLXyq8KwpVRTbytT8k6siMlmnZ7eI7zYcMXJ4G4bPEg=s2048)
+
+### 이슈
+
+- stash사용 중 파일 삭제
+
+[문제상황]
+
+커밋할 내용을 Stash에 저장해 두었으나, 실수로 파일을 날리고, 마지막 commit은 하루전 내용이었던 상황. Stash에 두 가지 옵션이 있는데 꺼내면서 삭제하는 pop 옵션으로 진행하여 Stash에도 없고, reload를 해서 "ctrl + z"도 시행되지 않는 상황 발생.
+
+[해결방안]
+
+https://www.baeldung.com/git-recover-dropped-stash
+해당 사이트 내용 참고하여 복구 완료
+
+- 엔터 입력시 원하지 않는 곳을 선택
+
+[문제상황]
+
+회원가입,로그인 인증페이지에서 인증문자 입력 후 엔터를 입력했을 때, 동의하고 시작하기 가 눌러지는것이 바람직하나 인증문자 다시 받기가 눌러지는 이슈 발생
+
+[해결방안]
+
+alert창으로 안내해주고 focus를 동의하고 시작하기 로 이동시키는 방식으로 해결
+
+- 렌더링 시 data가 undefined로 처리되는 이슈
+
+[문제상황]
+
+페이지 로드 시 data.json에 저장된 정보를 화면에 렌더링해야 하나 데이터를 가져오지 못하는 이슈 발생
+
+[해결방안]
+
+구조 분해 할당으로 요소를 한 번 더 분해 후 적용하는 방식으로 해결
+
+- 카테고리 검색 시 한글로 검색되지 않는 이슈
+
+[문제상황]
+
+한글 입력과 영어 입력의 매커니즘 차이에서 오는 문제
+
+APPLE은 A->AP->APP->APPL->APPLE의 방식으로 입력되지만 프론 은 ㅍ->프->플->프로->프론의 방식으로 입력되어 중간에 원치않는 값도 인식될 수 있음
+
+[해결방안]
+
+추가로 해당 완성값이 include true일 경우 hidden속성을 제거해주는 방식을 채택하여 이슈 해결
+
+- 좋아요 버튼 클릭 시 동작하지 않는 이슈
+
+[문제상황]
+
+좋아요 버튼 클릭 시 html 파일에 마크업된 내용은 클릭 이벤트가 정상 작동하나, 동적 렌더링이 된 내용은 클릭 이벤트가 적용되지 않는 이슈 발생
+
+[해결방안]
+
+이벤트 위임을 활용하여 상위 요소에 클릭 이벤트를 주는 방법을 활용하여 해결
+
+## JavaScript Project Scaffolding
 *자바스크립트 프로젝트 환경 구성 스케폴딩*
 
 > **Note**: 해당 문서는 자바스크립트 프로젝트에 필요한 기본적인 환경 구성을 위한 [스케폴딩](https://www.wisewiredbooks.com/term-dict/common/scaffolding.html) 자료입니다. 
@@ -118,6 +354,7 @@ npm run tailwind
 ```bash
 npm run start
 ```
+
 
 
 

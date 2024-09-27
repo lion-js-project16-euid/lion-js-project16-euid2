@@ -1,6 +1,7 @@
-import { getNode } from './getNode.js';
-
-export function clearContents(node) {
-  if (typeof node === 'string') node = getNode(node);
-  node.textContent = '';
+export function clearContents(target) {
+  if (target.nodeName === 'INPUT' || target.nodeName === 'TRXTAREA') {
+    target.value = '';
+    return;
+  }
+  target.textContent = '';
 }

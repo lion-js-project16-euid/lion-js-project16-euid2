@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="✨Enter Euid - 스티커 상세 페이지" />
+    <meta name="author" content="이은빈" />
+    <meta name="keywords" content="device, sticker, simseonbeom, tiger, hobbang" />
+    <meta name="description" content="스티커 상세 페이지입니다" />
+    <!-- prettier-ignore -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="icon" href="/assets/euid-pavicon.png" />
+    <script src="/js/common/common.js" type="module"></script>
+    <script src="/js/detail/0.sticker.js" type="module"></script>
+    <title>✨Enter Euid - 날아라 호빵맨 스티커</title>
+  </head>
+
+  <body class="mx-auto">
+    <header>
+      <div class="flex items-center justify-between px-3 py-2">
+        <span class="nowTime text-sm font-semibold"></span>
+        <div class="flex">
+          <img src="/assets/icon-celluar.svg" alt="네트워크" class="pl-1" />
+          <img src="/assets/icon-lte.svg" alt="LTE" class="p-1" />
+          <img src="/assets/icon-battery.svg" alt="배터리 잔량" class="p-1" />
+        </div>
+      </div>
+      <div class="flex justify-between">
+        <div class="inline-flex px-4 py-2">
+          <a href="/views/device.html" class="pr-3"
+            ><img src="/assets/icon-direction-left.svg" alt="이전으로 가기"
+          /></a>
+          <a href="/views/story.html"><img src="/assets/icon-home.svg" alt="홈으로 가기" /></a>
+        </div>
+        <div class="inline-flex pl-4 py-2">
+          <a href="/assets/detail/download_sticker.png" download="sticker.png" class="pr-3"
+            ><img src="/assets/icon-share.svg" alt="다운로드"
+          /></a>
+          <div class="flex flex-col items-end">
+            <button type="button" class="plus-button"><img src="/assets/icon-more.svg" alt="더보기" /></button>
+            <ul class="hidden plus-list absolute mt-5">
+              <li>
+                <a href="#" class="block px-1 py-1 rounded-md bg-black mt-2 text-xs text-white text-center"
+                  >이 사용자 신고하기</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block px-1 py-1 rounded-md bg-black mt-1 text-xs text-white text-center"
+                  >이 사용자의 글 보지 않기</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="sr-only">기기 상세보기</h1>
+      <div class="detail-wrapper">
+        <img src="/assets/device/sticker.png" alt="날아라 호빵맨 띠부씰" class="w-full" />
+        <a href="#" class="flex justify-between m-[10px]">
+          <div class="flex items-center">
+            <img
+              src="/assets/detail/profile_carat.avif"
+              alt="캐럿이지 사용자 프로필 사진"
+              class="w-12 h-12 rounded-[50px] m-[6px] mr-3"
+            />
+            <div class="flex flex-col">
+              <span class="text-sm font-semibold" aria-label="닉네임 캐럿이지">캐럿이지</span>
+              <span class="text-xs" aria-label="위치 마포구 공덕동">마포구 공덕동</span>
+            </div>
+          </div>
+          <div class="flex flex-col-reverse justify-center">
+            <span class="text-xs text-contentsSecondary">매너온도</span>
+            <span class="text-secondary text-sm font-semibold">53.0℃ 😍</span>
+          </div>
+        </a>
+      </div>
+
+      <article class="m-4">
+        <h2 class="text-lg font-semibold my-1">날아라 호빵맨 스티커(카레빵맨 포함)</h2>
+        <div class="text-xs text-contentsSecondary">
+          <span aria-label="카테고리 기타 등등">기타 등등</span>
+          <span class="p-1">&middot;</span>
+          <span aria-label="업로드 3분 전">3분 전</span>
+        </div>
+        <p class="text-sm my-3">
+          노트북에 부착할 수 있는 날아라 호빵맨 스티커입니다. 제2의 뮤! 카레빵맨 스티커도 포함되어 있습니다!! 얼른얼른
+          가져가세요!!
+        </p>
+        <div class="flex items-center relative my-9">
+          <button type="button" class="detail-button">
+            <img src="/assets/icon-heart-strignt.svg" alt="좋아요" class="detail-like-button" />
+          </button>
+          <div class="flex flex-col border-l border-contentsSecondary border-solid mx-3 px-3">
+            <span class="text-sm font-semibold">30,000원</span>
+            <a href="#" class="text-secondary text-xs font-semibold">가격 제안하기</a>
+          </div>
+          <a
+            href="/views/chat.html"
+            class="px-[14px] py-2 rounded-lg bg-secondary text-white text-sm font-semibold absolute right-0"
+            >채팅하기</a
+          >
+        </div>
+      </article>
+
+      <article>
+        <h2 class="text-sm font-semibold border-t border-gray-200 border-solid px-2 py-3">이 글과 함께 봤어요</h2>
+        <div class="flex flex-wrap justify-between px-5 mb-5">
+          <a href="/views/detail/6.coffee.html" class="w-[45%] my-2">
+            <figure>
+              <img src="/assets/detail/coffee.jpeg" alt="스타벅스 아이스 아메리카노" class="rounded-lg aspect-4/3" />
+              <figcaption class="text-xs leading-base flex flex-col my-3">
+                <span>스타벅스 아이스 아메리카노</span>
+                <span class="font-semibold">3,500원</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="/views/detail/7.applePencil.html" class="w-[45%] my-2">
+            <figure>
+              <img src="/assets/detail/apple-pencil.jpeg" alt="애플 펜슬 2세대" class="rounded-lg aspect-4/3" />
+              <figcaption class="text-xs leading-base flex flex-col my-3">
+                <span>Apple Pencil 2세대</span>
+                <span class="font-semibold">100,000원</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="/views/detail/8.coxKeyboard.html" class="w-[45%] my-2">
+            <figure>
+              <img
+                src="/assets/detail/coxKeyboard.jpeg"
+                alt="콕스 엠프리스 오리지널 레트로 PBT 무접점 키보드 50g"
+                class="rounded-lg aspect-4/3"
+              />
+              <figcaption class="text-xs leading-base flex flex-col my-3">
+                <span>COX 무접점 키보드</span>
+                <span>80,000원</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="/views/detail/4.jooyonMonitor.html" class="w-[45%] my-2">
+            <figure>
+              <img
+                src="/assets/device/jooyonMonitor.png"
+                alt="주연테크 71cm 울트라 4K UHD HDR USB C지원 모니터"
+                class="rounded-lg aspect-4/3"
+              />
+              <figcaption class="text-xs leading-base flex flex-col my-3">
+                <span>주연테크 4K UHD 모니터</span>
+                <span>300,000원</span>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="✨Enter Euid - cox키보드 상세 페이지" />
+    <meta name="author" content="이은빈" />
+    <meta name="keywords" content="keyboard, cox, cox keyboard" />
+    <meta name="description" content="cox키보드 상세 페이지입니다" />
+    <!-- prettier-ignore -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="icon" href="/assets/euid-pavicon.png" />
+    <script src="/js/common/common.js" type="module"></script>
+    <script src="/js/detail/8.coxKeyboard.js" type="module"></script>
+    <title>✨Enter Euid - COX 무접점 키보드</title>
+  </head>
+
+  <body class="mx-auto">
+    <header>
+      <div class="flex items-center justify-between px-3 py-2">
+        <span class="nowTime text-sm font-semibold"></span>
+        <div class="flex">
+          <img src="/assets/icon-celluar.svg" alt="네트워크" class="pl-1" />
+          <img src="/assets/icon-lte.svg" alt="LTE" class="p-1" />
+          <img src="/assets/icon-battery.svg" alt="배터리 잔량" class="p-1" />
+        </div>
+      </div>
+      <div class="flex justify-between">
+        <div class="inline-flex px-4 py-2">
+          <a href="/views/device.html" class="pr-3"
+            ><img src="/assets/icon-direction-left.svg" alt="이전으로 가기"
+          /></a>
+          <a href="/views/story.html"><img src="/assets/icon-home.svg" alt="홈으로 가기" /></a>
+        </div>
+        <div class="inline-flex pl-4 py-2">
+          <a href="/assets/detail/download_sonyHeadset.png" download="sonyHeadset.png" class="pr-3"
+            ><img src="/assets/icon-share.svg" alt="다운로드"
+          /></a>
+          <div class="flex flex-col items-end">
+            <button type="button" class="plus-button"><img src="/assets/icon-more.svg" alt="더보기" /></button>
+            <ul class="hidden plus-list absolute mt-5">
+              <li>
+                <a href="#" class="block px-1 py-1 rounded-md bg-black mt-2 text-xs text-white text-center"
+                  >이 사용자 신고하기</a
+                >
+              </li>
+              <li>
+                <a href="#" class="block px-1 py-1 rounded-md bg-black mt-1 text-xs text-white text-center"
+                  >이 사용자의 글 보지 않기</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="sr-only">기기 상세보기</h1>
+      <div class="detail-wrapper"></div>
+      <article>
+        <h2 class="text-sm font-semibold border-t border-gray-200 border-solid px-2 py-3">이 글과 함께 봤어요</h2>
+        <div class="flex flex-wrap justify-between px-5 mb-5">
+          <a href="/views/detail/6.coffee.html" class="w-[45%] my-2">
+            <figure>
+              <img src="/assets/detail/coffee.jpeg" alt="스타벅스 아이스 아메리카노" class="rounded-lg aspect-4/3" />
+              <figcaption class="text-xs leading-base flex flex-col my-3">
+                <span>스타벅스 아이스 아메리카노</span>
+                <span class="font-semibold">3,500원</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="/views/detail/7.applePencil.html" class="w-[45%] my-2">
+            <figure>
+              <img src="/assets/detail/apple-pencil.jpeg" alt="애플 펜슬 2세대" class="rounded-lg aspect-4/3" />
+              <figcaption class="text-xs leading-base flex flex-col my-3">
+                <span>Apple Pencil 2세대</span>
+                <span class="font-semibold">100,000원</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="/views/detail/4.jooyonMonitor.html" class="w-[45%] my-2">
+            <figure>
+              <img
+                src="/assets/device/jooyonMonitor.png"
+                alt="주연테크 71cm 울트라 4K UHD HDR USB C지원 모니터"
+                class="rounded-lg aspect-4/3"
+              />
+              <figcaption class="text-xs leading-base flex flex-col my-3">
+                <span>주연테크 4K UHD 모니터</span>
+                <span>300,000원</span>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="/views/detail/0.sticker.html" class="w-[45%] my-2">
+            <figure>
+              <img src="/assets/device/sticker.png" alt="날아라 호빵맨 띠부씰" class="rounded-lg aspect-4/3" />
+              <figcaption class="text-xs leading-base flex flex-col my-3">
+                <span>날아라 호빵맨 스티커(카레빵맨 포함)</span>
+                <span>30,000원</span>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
